@@ -195,3 +195,7 @@ Expect several GB of RAM per replication. With `QTABLE_CSV_OD_MODE="inline"`
 (the default, as specified) expect about 1.4 KB per CSV row, i.e. roughly 10 GB of
 CSV per replication. `--od-mode reference` stores each OD matrix once
 (`REF:<hour>` + `od_matrices.json`). It is equally lossless and about 5× smaller.
+
+## Interactive training viewer
+
+Double-click Open Training Studio.cmd on Windows, or run python -m transit_rl.visualizer in your training environment. See docs/VISUALIZER.md for play/pause, stepping, fast training, replay, and evaluation. The viewer uses a separate in-memory learner and does not overwrite saved experiment outputs.
