@@ -124,7 +124,7 @@ class TransitEnvironment:
         self.hour_rl_reward = 0.0
         self._current_eval: Optional[PlanEvaluation] = (
             self.evaluate_plan(self.current_plan)
-            if self.cfg.reward_mode in ("delta", "dense") else None)
+            if self.cfg.reward_mode in ("delta", "dense", "committed") else None)
         self._hour_start_reward = (
             self._current_eval.reward["total_reward"] if self._current_eval is not None else 0.0)
 
@@ -221,6 +221,12 @@ class TransitEnvironment:
             info["reward_breakdown"] = new_eval.reward
             info["tentative_route_scored"] = bool(
                 self.current_route and self.masker.end_route_frequency(self.state) is not None)
+        elif self.cfg.reward_mode == "committed":
+            if plan_changed:
+                new_eval = self.evaluate_plan(self.current_plan)
+                reward = new_eval.reward["total_reward"] - self._current_eval.reward["total_reward"]
+                self._current_eval = new_eval
+                info["reward_breakdown"] = new_eval.reward
         elif plan_changed and (self.cfg.evaluate_after_each_change or self.cfg.reward_mode == "delta"):
             new_eval = self.evaluate_plan(self.current_plan)
             info["reward_breakdown"] = new_eval.reward
@@ -255,7 +261,7 @@ class TransitEnvironment:
         if self.cfg.reward_mode == "delta":
             # Any change since the last evaluation was already rewarded.
             reward = final.reward["total_reward"] - self._current_eval.reward["total_reward"]
-        elif self.cfg.reward_mode == "dense":
+        elif self.cfg.reward_mode in ("dense", "committed"):
             # Undo any tentative service discarded at the deadline, and restore
             # the hour's starting score. Intermediate deltas + this correction
             # sum to the committed plan's score, even with an inherited plan.

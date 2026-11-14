@@ -1,0 +1,47 @@
+[
+  {
+    "pid": 10452,
+    "mode": "A_dense",
+    "stops": 15,
+    "hourly_matrices": 24,
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "working_set_mib": 68.33984375,
+    "free_memory_mib": 12259.14453125,
+    "numerical_threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  {
+    "pid": 16224,
+    "mode": "B_committed",
+    "stops": 15,
+    "hourly_matrices": 24,
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "working_set_mib": 68.46875,
+    "free_memory_mib": 12259.14453125,
+    "numerical_threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  {
+    "pid": 14568,
+    "mode": "C_hour_end",
+    "stops": 15,
+    "hourly_matrices": 24,
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "working_set_mib": 68.6796875,
+    "free_memory_mib": 12259.14453125,
+    "numerical_threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "captured_at_utc": "2026-11-14T10:17:37.4306324+00:00",
+  "timezone": "UTC",
+  "tests_passed": 43,
+  "test_command": ".\\.venv-visualizer\\Scripts\\python.exe -m unittest discover -s tests -v",
+  "preflight": "Three independent spawned processes loaded the real 15-stop network and all 24 OD matrices with one numerical thread each; no training",
+  "python": "3.13.3",
+  "syntax_check": "archive_and_analyze.py passed py_compile"
+}

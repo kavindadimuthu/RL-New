@@ -186,6 +186,8 @@ APPLY_TRANSITION_COST_FIRST_HOUR = False
 #             including feasible tentative routes. At hour end, reconcile to
 #             the committed plan and add the starting score. With gamma = 1,
 #             hourly rewards sum exactly to R(P_t), preserving the objective.
+# "committed": score only committed service changes; reconcile at hour end
+#              so rewards still sum to R(P_t). Experimental comparison mode.
 REWARD_MODE = "dense"  # ASSUMPTION
 
 # S_t = served_passengers / total_demand (actual assignment counts).
@@ -344,13 +346,13 @@ class ExperimentConfig:
             (self.current_plan_start_mode in ("copy_previous", "empty"), "bad CURRENT_PLAN_START_MODE"),
             (self.path_choice_rule in ("min_transfers_first", "min_generalised_time"), "bad PATH_CHOICE_RULE"),
             (self.route_matching_method in ("hungarian", "greedy"), "bad ROUTE_MATCHING_METHOD"),
-            (self.reward_mode in ("terminal", "delta", "dense"), "bad REWARD_MODE"),
+            (self.reward_mode in ("terminal", "delta", "dense", "committed"), "bad REWARD_MODE"),
             (math.isfinite(self.operator_cost_alpha) and self.operator_cost_alpha >= 0,
              "operator_cost_alpha must be finite and >= 0"),
             (math.isfinite(self.transition_penalty_lambda) and self.transition_penalty_lambda >= 0,
              "transition_penalty_lambda must be finite and >= 0"),
-            (self.reward_mode != "dense" or self.discount_factor == 1.0,
-             "dense rewards require discount_factor = 1 to preserve the daily objective"),
+            (self.reward_mode not in ("dense", "committed") or self.discount_factor == 1.0,
+             "dense/committed rewards require discount_factor = 1 to preserve the daily objective"),
             (self.qtable_csv_od_mode in ("inline", "reference"), "bad QTABLE_CSV_OD_MODE"),
             (self.max_steps_per_hour >= 1, "max_steps_per_hour >= 1"),
             (self.input_stop_id_base in (0, 1), "input_stop_id_base must be 0 or 1"),
