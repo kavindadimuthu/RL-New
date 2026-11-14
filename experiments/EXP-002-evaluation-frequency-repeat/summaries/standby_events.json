@@ -1,0 +1,48 @@
+{
+  "captured_at_utc": "2026-11-14T13:35:05.6939896+00:00",
+  "type": "post_hoc_system_event_diagnostic",
+  "source": "Windows System event log",
+  "original_evidence_unchanged": true,
+  "events": [
+    {
+      "record_id": 97411,
+      "event_id": 506,
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "timestamp_utc": "2026-11-14T10:31:46.0969807+00:00",
+      "timestamp_colombo": "2026-11-14T16:01:46.0969807+05:30",
+      "message": "The system is entering Modern Standby \r\n\r\nReason: Idle Timeout."
+    },
+    {
+      "record_id": 97437,
+      "event_id": 507,
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "timestamp_utc": "2026-11-14T12:37:46.0503559+00:00",
+      "timestamp_colombo": "2026-11-14T18:07:46.0503559+05:30",
+      "message": "The system is exiting Modern Standby \r\n\r\nReason: 16777220."
+    },
+    {
+      "record_id": 97439,
+      "event_id": 506,
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "timestamp_utc": "2026-11-14T12:37:46.0509138+00:00",
+      "timestamp_colombo": "2026-11-14T18:07:46.0509138+05:30",
+      "message": "The system is entering Modern Standby \r\n\r\nReason: 16777220."
+    },
+    {
+      "record_id": 97441,
+      "event_id": 507,
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "timestamp_utc": "2026-11-14T12:37:47.5419173+00:00",
+      "timestamp_colombo": "2026-11-14T18:07:47.5419173+05:30",
+      "message": "The system is exiting Modern Standby \r\n\r\nReason: Input Mouse."
+    },
+    {
+      "record_id": 97452,
+      "event_id": 506,
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "timestamp_utc": "2026-11-14T12:38:21.8572851+00:00",
+      "timestamp_colombo": "2026-11-14T18:08:21.8572851+05:30",
+      "message": "The system is entering Modern Standby \r\n\r\nReason: Idle Timeout."
+    }
+  ]
+}

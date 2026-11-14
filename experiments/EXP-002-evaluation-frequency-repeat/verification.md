@@ -21,3 +21,7 @@ An independent post-run audit found that the first equal-time wave (seed 2027, a
 This qualifies Stage 3: its recorded compute budgets were met, but it is not evidence of uninterrupted two-minute wall-calendar execution. Do not claim a six-minute uninterrupted Stage 3 turnaround from these observations. The whole study's recorded UTC span includes the discrepancy; it is not the active training duration.
 
 The supplemental `analysis/audit_timestamps.py` and [timing review](timing_review.md) were added post hoc, with their diagnostic threshold disclosed. They neither change the primary calculations nor exclude/replace seeds. All originally planned observations remain reported. A separate amended repeat would be needed if uninterrupted calendar-time performance is required. Other protocol deviations/failures: none observed; no automatic reruns performed.
+
+## Subsequent diagnosis and closeout
+
+Windows Kernel-Power events subsequently showed idle-timeout entry into Modern Standby and exit over the long calendar gap. The captured events and interpretation are recorded in [closeout.md](closeout.md) and `summaries/standby_events.json`. This supplements the earlier unknown-cause audit rather than rewriting it. The study is closed with the timing qualification retained and the decision in EXP-002-D01 accepted. Off-machine backup remains pending.

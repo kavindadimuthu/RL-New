@@ -4,6 +4,8 @@
 
 **Important qualification:** a post-execution audit found a large UTC-versus-performance-counter discrepancy in Stage 3's first seed wave. Read the [timing review](timing_review.md) before interpreting its equal-time results. The recorded training/CPU budgets were met, but uninterrupted wall-calendar timing is not established. Original observations are retained without silent exclusions or replacements.
 
+**Closed:** see [closeout and subsequent standby diagnosis](closeout.md). Windows events subsequently identified a Modern Standby interval; the original qualified observations remain unchanged. Research direction is handed off to EXP-003. Off-machine backup is still pending.
+
 - [Prespecified protocol](protocol.md): prior knowledge, fresh seeds, budgets, evaluation, stopping and retention.
 - [Results and interpretation](report.md): primary numerical tables, per-seed results and limits.
 - [Research decision EXP-002-D01](decision.md): retain A as default, B as a candidate, and deprioritize C under the tested conditions; procedure for subsequent studies.
