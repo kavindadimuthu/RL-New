@@ -6,6 +6,7 @@ Follow the [project research standard](../docs/RESEARCH_EXPERIMENT_STANDARD.md).
 |---|---|---|---|
 | EXP-001-evaluation-frequency | Original evaluation-frequency study | Legacy archive | Commit `6de521d` on `archive/evaluation-frequency-legacy`; do not combine with the repeat |
 | [EXP-002-evaluation-frequency-repeat](EXP-002-evaluation-frequency-repeat/README.md) | Prospective repeat with recorded provenance | Closed; standby diagnosis and timing qualification retained; off-machine backup pending | [Report](EXP-002-evaluation-frequency-repeat/report.md), [closeout](EXP-002-evaluation-frequency-repeat/closeout.md), and verified compact evidence |
+| [EXP-003-passenger-assignment-optimization](EXP-003-passenger-assignment-optimization/README.md) | Faster assignment implementation with unchanged evaluation outputs | Foundation verified: 50 tests, 67 comparisons; performance stages not started | [Protocol](EXP-003-passenger-assignment-optimization/protocol.md), [baseline](EXP-003-passenger-assignment-optimization/baseline.json), [verification](EXP-003-passenger-assignment-optimization/verification.md) |
 
 Add study records in their own experiment changes. Distinguish a local inventory from a tracked, backed-up evidence archive.
 

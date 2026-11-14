@@ -1,0 +1,23 @@
+# EXP-003: Passenger-assignment implementation optimization
+
+Status: foundation/correctness phase. No candidate optimization or performance result is claimed yet.
+
+Goal: calculate the same passenger assignments and evaluation outputs more efficiently while retaining every-action evaluation (A). EXP-002 is closed with [its decision](../EXP-002-evaluation-frequency-repeat/decision.md) and [timing/standby qualification](../EXP-002-evaluation-frequency-repeat/closeout.md) retained.
+
+- [Protocol](protocol.md): fixed behavior, acceptance criteria and staged investigation.
+- [Frozen baseline identity](baseline.json): master handoff commit, exact source blob and SHA-256.
+- [Reference implementation](reference/passenger_assignment.py): byte-preserved copy; never edit to make a candidate pass.
+- [Verification](verification.md): foundation tests/preflight and pending work.
+
+Commands from the repository root:
+
+```powershell
+.\.venv-visualizer\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv-visualizer\Scripts\python.exe -m transit_rl.experiment.assignment_equivalence --output transit_rl/results/EXP-003-preflight
+```
+
+The second command performs strict correctness comparisons only. It is not a timing benchmark or RL training experiment. Preserve its small result under preexecution/ before committing the foundation. It refuses an existing output directory; choose a new path for a repeated preflight.
+
+Next step: define/profile representative real-data workloads, prerecord a specific candidate and timing protocol, then implement and differentially verify it. Candidate timings must not be reported from this foundation check.
+
+No large model files are needed. Local records are not an off-machine backup; backup remains pending until explicitly verified. No remote publication or automatic deletion is implied.

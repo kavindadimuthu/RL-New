@@ -1,0 +1,57 @@
+test_allocation_difference_is_detected (test_assignment_optimization_foundation.AssignmentFoundationTests.test_allocation_difference_is_detected) ... ok
+test_current_implementation_matches_frozen_reference (test_assignment_optimization_foundation.AssignmentFoundationTests.test_current_implementation_matches_frozen_reference) ... ok
+test_scalar_difference_is_detected (test_assignment_optimization_foundation.AssignmentFoundationTests.test_scalar_difference_is_detected) ... ok
+test_writable_array_is_detected (test_assignment_optimization_foundation.AssignmentFoundationTests.test_writable_array_is_detected) ... ok
+test_disabled_scope_does_not_call_windows (test_assignment_optimization_foundation.AwakeScopeTests.test_disabled_scope_does_not_call_windows) ... ok
+test_failed_request_does_not_start_work (test_assignment_optimization_foundation.AwakeScopeTests.test_failed_request_does_not_start_work) ... ok
+test_request_restores_previous_flags_on_error (test_assignment_optimization_foundation.AwakeScopeTests.test_request_restores_previous_flags_on_error) ... ok
+test_all_actions_and_inherited_hour_conserve_rewards (test_dense_rewards.DenseRewardTests.test_all_actions_and_inherited_hour_conserve_rewards) ... ok
+test_construction_feedback_and_commit_not_double_rewarded (test_dense_rewards.DenseRewardTests.test_construction_feedback_and_commit_not_double_rewarded) ... ok
+test_forced_finish_removes_tentative_service_reward (test_dense_rewards.DenseRewardTests.test_forced_finish_removes_tentative_service_reward) ... ok
+test_forced_frequency_change_logged_once (test_dense_rewards.DenseRewardTests.test_forced_frequency_change_logged_once) ... ok
+test_legacy_modes_remain_available (test_dense_rewards.DenseRewardTests.test_legacy_modes_remain_available) ... ok
+test_training_return_matches_daily_objective (test_dense_rewards.DenseRewardTests.test_training_return_matches_daily_objective) ... ok
+test_committed_changes_and_inherited_hour_preserve_daily_objective (test_evaluation_comparison.EvaluationComparisonTests.test_committed_changes_and_inherited_hour_preserve_daily_objective) ... ok
+test_common_evaluation_preserves_training_q_rng_and_cache (test_evaluation_comparison.EvaluationComparisonTests.test_common_evaluation_preserves_training_q_rng_and_cache) ... ok
+test_default_mode_and_schedule_are_unchanged (test_evaluation_comparison.EvaluationComparisonTests.test_default_mode_and_schedule_are_unchanged) ... ok
+test_failed_worker_retains_original_run_identity (test_evaluation_comparison.EvaluationComparisonTests.test_failed_worker_retains_original_run_identity) ... ok
+test_forced_committed_change_preserves_return (test_evaluation_comparison.EvaluationComparisonTests.test_forced_committed_change_preserves_return) ... ok
+test_forced_discard_preserves_return (test_evaluation_comparison.EvaluationComparisonTests.test_forced_discard_preserves_return) ... ok
+test_many_fixed_action_sequences_conserve_returns (test_evaluation_comparison.EvaluationComparisonTests.test_many_fixed_action_sequences_conserve_returns) ... ok
+test_uncommitted_stops_trigger_no_assignment_in_B_or_C (test_evaluation_comparison.EvaluationComparisonTests.test_uncommitted_stops_trigger_no_assignment_in_B_or_C) ... ok
+test_alternative_transfer_path_uses_remaining_capacity (test_passenger_assignment.CapacityAssignmentTests.test_alternative_transfer_path_uses_remaining_capacity) ... ok
+test_common_lines_rebalance_after_one_fills (test_passenger_assignment.CapacityAssignmentTests.test_common_lines_rebalance_after_one_fills) ... ok
+test_direct_overflow_can_use_transfer_path (test_passenger_assignment.CapacityAssignmentTests.test_direct_overflow_can_use_transfer_path) ... ok
+test_directions_have_independent_capacity (test_passenger_assignment.CapacityAssignmentTests.test_directions_have_independent_capacity) ... ok
+test_empty_plan_zero_demand_and_diagonal (test_passenger_assignment.CapacityAssignmentTests.test_empty_plan_zero_demand_and_diagonal) ... ok
+test_fifty_passengers_per_departure_and_frequency_scaling (test_passenger_assignment.CapacityAssignmentTests.test_fifty_passengers_per_departure_and_frequency_scaling) ... ok
+test_invalid_load_factors_are_rejected (test_passenger_assignment.CapacityAssignmentTests.test_invalid_load_factors_are_rejected) ... ok
+test_load_factor_changes_boarding_limit (test_passenger_assignment.CapacityAssignmentTests.test_load_factor_changes_boarding_limit) ... ok
+test_rejected_transfer_does_not_consume_upstream_capacity (test_passenger_assignment.CapacityAssignmentTests.test_rejected_transfer_does_not_consume_upstream_capacity) ... ok
+test_rerouting_respects_trip_time_limit (test_passenger_assignment.CapacityAssignmentTests.test_rerouting_respects_trip_time_limit) ... ok
+test_seats_reused_after_alighting (test_passenger_assignment.CapacityAssignmentTests.test_seats_reused_after_alighting) ... ok
+test_shared_segments_compete_for_capacity (test_passenger_assignment.CapacityAssignmentTests.test_shared_segments_compete_for_capacity) ... ok
+test_slower_direct_path_is_used_after_fast_route_fills (test_passenger_assignment.CapacityAssignmentTests.test_slower_direct_path_is_used_after_fast_route_fills) ... ok
+test_transfer_requires_capacity_on_every_leg (test_passenger_assignment.CapacityAssignmentTests.test_transfer_requires_capacity_on_every_leg) ... ok
+test_two_transfers_use_bottleneck_capacity (test_passenger_assignment.CapacityAssignmentTests.test_two_transfers_use_bottleneck_capacity) ... ok
+test_config_and_cli_coefficients (test_reward.RewardTests.test_config_and_cli_coefficients) ... ok
+test_diagnostic_metrics_do_not_add_reward_terms (test_reward.RewardTests.test_diagnostic_metrics_do_not_add_reward_terms) ... ok
+test_first_hour_transition_policy_is_preserved (test_reward.RewardTests.test_first_hour_transition_policy_is_preserved) ... ok
+test_fleet_masking_and_bus_release_are_preserved (test_reward.RewardTests.test_fleet_masking_and_bus_release_are_preserved) ... ok
+test_fleet_rounding_and_capacity_feasible_service (test_reward.RewardTests.test_fleet_rounding_and_capacity_feasible_service) ... ok
+test_frequency_transition_is_diagnostic_only (test_reward.RewardTests.test_frequency_transition_is_diagnostic_only) ... ok
+test_hand_calculated_reward_and_component_scales (test_reward.RewardTests.test_hand_calculated_reward_and_component_scales) ... ok
+[rep 1] ep      1/2 | eps 1.000 | mean reward 0.341 | S 0.5, alpha*O 0.009, lambda*C 0.15 | states        12 | Q pairs        13 | mem      nan MB |     0.0s
+[rep 1] ep      2/2 | eps 0.154 | mean reward 1.591 | S 1.75, alpha*O 0.009, lambda*C 0.15 | states        31 | Q pairs        38 | mem      nan MB |     0.0s
+test_hourly_export_and_daily_components_match_formulas (test_reward.RewardTests.test_hourly_export_and_daily_components_match_formulas) ... ok
+test_hungarian_reversal_and_edit_distance_are_preserved (test_reward.RewardTests.test_hungarian_reversal_and_edit_distance_are_preserved) ... ok
+test_route_addition_removal_threshold_and_empty_plans (test_reward.RewardTests.test_route_addition_removal_threshold_and_empty_plans) ... ok
+test_service_depends_on_coverage_and_is_independent_of_travel_time (test_reward.RewardTests.test_service_depends_on_coverage_and_is_independent_of_travel_time) ... ok
+test_training_csv_and_progress_match_reward_components (test_reward.RewardTests.test_training_csv_and_progress_match_reward_components) ... ok
+test_transfer_service_uses_actual_served_count (test_reward.RewardTests.test_transfer_service_uses_actual_served_count) ... ok
+test_zero_demand_and_unserved_are_safe (test_reward.RewardTests.test_zero_demand_and_unserved_are_safe) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.246s
+
+OK

@@ -1,0 +1,12 @@
+{
+  "study_id": "EXP-003",
+  "frozen_at_utc": "2026-11-14T13:38:00.7772628+00:00",
+  "base_commit": "a2f9c04d90c398d63c08beb5b48d0b97d2af22d2",
+  "source_path": "transit_rl/environment/passenger_assignment.py",
+  "git_blob": "c43d08b431310eb90d502c5a0352cdd91f9301e6",
+  "raw_sha256": "df8e36a8b66a4246661304b68cb58beef137d5562e8fb1f408138c72185899f8",
+  "reference_file": "reference/passenger_assignment.py",
+  "policy": "Frozen baseline; do not edit to make a candidate pass",
+  "production_default": "A_dense",
+  "strict_output_equivalence": true
+}

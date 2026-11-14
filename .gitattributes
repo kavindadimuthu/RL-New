@@ -1,2 +1,4 @@
 # Preserve archived observations, raw source snapshots and checksums exactly.
 experiments/EXP-002-evaluation-frequency-repeat/evidence/** -text whitespace=cr-at-eol
+experiments/EXP-003-passenger-assignment-optimization/reference/** -text whitespace=cr-at-eol
+experiments/EXP-003-passenger-assignment-optimization/preexecution/** -text whitespace=cr-at-eol
