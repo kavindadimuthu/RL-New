@@ -1,0 +1,320 @@
+{
+  "total_profiled_seconds": 7.3459874,
+  "functions": [
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\transit_rl\\experiment\\assignment_profile.py",
+      "line": 115,
+      "function": "replay",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_seconds": 0.0037271,
+      "cumulative_seconds": 7.345955000000001
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 161,
+      "function": "assign",
+      "primitive_calls": 3559,
+      "calls": 3559,
+      "self_seconds": 0.0260459,
+      "cumulative_seconds": 7.3422279
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 294,
+      "function": "_assign_uncached",
+      "primitive_calls": 1895,
+      "calls": 1895,
+      "self_seconds": 1.0089178,
+      "cumulative_seconds": 7.3050715
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 189,
+      "function": "_choose_path",
+      "primitive_calls": 317319,
+      "calls": 317319,
+      "self_seconds": 1.6423151,
+      "cumulative_seconds": 5.5080808
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 201,
+      "function": "travel_time",
+      "primitive_calls": 2251012,
+      "calls": 2251012,
+      "self_seconds": 1.0346024,
+      "cumulative_seconds": 3.5876327000000003
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 319,
+      "function": "available",
+      "primitive_calls": 1029713,
+      "calls": 1029713,
+      "self_seconds": 0.8580449,
+      "cumulative_seconds": 2.7285314
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'max' of 'numpy.ndarray' objects>",
+      "primitive_calls": 1056849,
+      "calls": 1056849,
+      "self_seconds": 0.3810353,
+      "cumulative_seconds": 1.4169420000000001
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Lib\\site-packages\\numpy\\_core\\_methods.py",
+      "line": 39,
+      "function": "_amax",
+      "primitive_calls": 1056849,
+      "calls": 1056849,
+      "self_seconds": 0.2687946,
+      "cumulative_seconds": 1.0359067
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "primitive_calls": 1056849,
+      "calls": 1056849,
+      "self_seconds": 0.7671121000000001,
+      "cumulative_seconds": 0.7671121000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.min>",
+      "primitive_calls": 241342,
+      "calls": 241342,
+      "self_seconds": 0.12311100000000001,
+      "cumulative_seconds": 0.6417145000000001
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 334,
+      "function": "<genexpr>",
+      "primitive_calls": 244986,
+      "calls": 244986,
+      "self_seconds": 0.08360010000000001,
+      "cumulative_seconds": 0.4988614
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 315,
+      "function": "leg_load",
+      "primitive_calls": 1182107,
+      "calls": 1182107,
+      "self_seconds": 0.40092560000000005,
+      "cumulative_seconds": 0.40092560000000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'get' of 'dict' objects>",
+      "primitive_calls": 1284190,
+      "calls": 1284190,
+      "self_seconds": 0.2465958,
+      "cumulative_seconds": 0.2465958
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.max>",
+      "primitive_calls": 1190145,
+      "calls": 1190145,
+      "self_seconds": 0.1651516,
+      "cumulative_seconds": 0.1651516
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sum>",
+      "primitive_calls": 112316,
+      "calls": 112316,
+      "self_seconds": 0.0730224,
+      "cumulative_seconds": 0.11138550000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.len>",
+      "primitive_calls": 348613,
+      "calls": 348613,
+      "self_seconds": 0.0493873,
+      "cumulative_seconds": 0.0493873
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'append' of 'list' objects>",
+      "primitive_calls": 225935,
+      "calls": 225935,
+      "self_seconds": 0.045100100000000004,
+      "cumulative_seconds": 0.045100100000000004
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 208,
+      "function": "acceptable",
+      "primitive_calls": 148090,
+      "calls": 148090,
+      "self_seconds": 0.0279187,
+      "cumulative_seconds": 0.0279187
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 180,
+      "function": "_table",
+      "primitive_calls": 13568,
+      "calls": 13568,
+      "self_seconds": 0.0051742,
+      "cumulative_seconds": 0.020586200000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sorted>",
+      "primitive_calls": 86306,
+      "calls": 86306,
+      "self_seconds": 0.0204096,
+      "cumulative_seconds": 0.0204096
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.zeros>",
+      "primitive_calls": 34716,
+      "calls": 34716,
+      "self_seconds": 0.019977400000000003,
+      "cumulative_seconds": 0.019977400000000003
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 220,
+      "function": "<genexpr>",
+      "primitive_calls": 129787,
+      "calls": 129787,
+      "self_seconds": 0.019742100000000002,
+      "cumulative_seconds": 0.019742100000000002
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 224,
+      "function": "<genexpr>",
+      "primitive_calls": 126863,
+      "calls": 126863,
+      "self_seconds": 0.0192494,
+      "cumulative_seconds": 0.0192494
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 222,
+      "function": "<genexpr>",
+      "primitive_calls": 126863,
+      "calls": 126863,
+      "self_seconds": 0.0191137,
+      "cumulative_seconds": 0.0191137
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 114,
+      "function": "_route_table",
+      "primitive_calls": 368,
+      "calls": 368,
+      "self_seconds": 0.005128000000000001,
+      "cumulative_seconds": 0.0111193
+    },
+    {
+      "file": "<string>",
+      "line": 2,
+      "function": "__init__",
+      "primitive_calls": 1895,
+      "calls": 1895,
+      "self_seconds": 0.0090785,
+      "cumulative_seconds": 0.0090785
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 165,
+      "function": "<genexpr>",
+      "primitive_calls": 28715,
+      "calls": 28715,
+      "self_seconds": 0.0065348,
+      "cumulative_seconds": 0.0065348
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'setflags' of 'numpy.ndarray' objects>",
+      "primitive_calls": 7580,
+      "calls": 7580,
+      "self_seconds": 0.0052484,
+      "cumulative_seconds": 0.0052484
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\transit_rl\\data\\network.py",
+      "line": 50,
+      "function": "link_time",
+      "primitive_calls": 2218,
+      "calls": 2218,
+      "self_seconds": 0.0045439,
+      "cumulative_seconds": 0.0045439
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\experiments\\EXP-003-passenger-assignment-optimization\\reference\\passenger_assignment.py",
+      "line": 106,
+      "function": "__init__",
+      "primitive_calls": 13568,
+      "calls": 13568,
+      "self_seconds": 0.0028387,
+      "cumulative_seconds": 0.0028387
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'move_to_end' of 'collections.OrderedDict' objects>",
+      "primitive_calls": 1664,
+      "calls": 1664,
+      "self_seconds": 0.0013212,
+      "cumulative_seconds": 0.0013212
+    },
+    {
+      "file": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\transit_rl\\data\\network.py",
+      "line": 43,
+      "function": "stops",
+      "primitive_calls": 1895,
+      "calls": 1895,
+      "self_seconds": 0.0012139000000000002,
+      "cumulative_seconds": 0.0012139000000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'items' of 'dict' objects>",
+      "primitive_calls": 1845,
+      "calls": 1845,
+      "self_seconds": 0.000521,
+      "cumulative_seconds": 0.000521
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'setdefault' of 'dict' objects>",
+      "primitive_calls": 1477,
+      "calls": 1477,
+      "self_seconds": 0.00045240000000000005,
+      "cumulative_seconds": 0.00045240000000000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_seconds": 3.24e-05,
+      "cumulative_seconds": 3.24e-05
+    }
+  ]
+}

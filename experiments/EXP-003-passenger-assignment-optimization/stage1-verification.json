@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-11-14T14:02:09.884341+00:00",
+  "validation_type": "post_run_archive_and_replay",
+  "execution_commit": "d08842d37384f978f04958a2090b7056c5fe989d",
+  "replay_output_hashes_verified": 6119,
+  "workload_hash_verified": true,
+  "input_and_source_hashes_verified": true,
+  "sleep_request_restored": true,
+  "timing_qualified": false,
+  "performance_improvement_claim": false,
+  "report_regenerated_identically": true
+}

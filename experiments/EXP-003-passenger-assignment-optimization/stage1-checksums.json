@@ -1,0 +1,13 @@
+{
+  "baseline_measurements.json": "114a9c8acb87b0b4450f1bf58d0a65fc7893360e6c0943a645998596764e1c11",
+  "machine.json": "8d6643af0d70bbf2a71b14f5acdc40e500f8661bfa0db9a784a39704d2f9f4c1",
+  "manifest.json": "8b7c4da97aa8b51f0f90e75eb754a3ee76a6acf53da9e5c00bc2682393fbff63",
+  "miss_stream_profile.json": "1e1ad03e241b75fe752069f53f3bdac036da1b2e30d812b41e3028e4eb865dec",
+  "miss_stream_profile.txt": "7c4382d02528a591c52378f331838488d4cf2b5f341f7a7691a77df33a27a8e9",
+  "power_events.json": "7cf4a7161e948190b2e5e0b8b19344de5bb0b382bbed42a2ce1e014a18f206bd",
+  "REPORT.md": "b3b3ff9232fa0443d7252d1475706ea4254a2b1fe6e0e1d106f1210df2075b84",
+  "requirements-lock.txt": "86b761d905078d5fb4d269543a92a6e956d6a0b7d137963cf5e3fe7f5da5d526",
+  "training_stream_profile.json": "32238f39e7a1194707caef5710a136d457835703dd43e47b6f747b476bdb3157",
+  "training_stream_profile.txt": "9ff79fc72bcb76ab74fb2cf129d5c2ab30b7535422eaf456d68965de7d63774d",
+  "workload.json": "3ad52a27bb1dcc0d378fbb974a51f7ee73d1898c9dffce68fc6cf8727a45c960"
+}

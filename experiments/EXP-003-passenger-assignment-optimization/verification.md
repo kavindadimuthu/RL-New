@@ -12,4 +12,12 @@ The Windows scoped sleep request was actually acquired and restored during the s
 
 Candidate code changes: none. Performance comparisons: not started. Training comparisons: not started. No speedup, memory reduction or equivalence beyond the exercised cases is claimed.
 
-Next action is prospective registration of workload capture/profiling and a specific candidate, followed by differential validation. Off-machine backup remains pending; no files are deleted automatically.
+## Stage 1: real workload and baseline profile
+
+The registered procedure executed from clean commit `d08842d` after 52 passing tests. It captured four short real-data episodes for workload construction; these instrumented capture durations are not ordinary training-speed evidence. Three baseline workload scenarios were measured serially with three repetitions each; cProfile was run separately.
+
+The run completed with the scoped sleep request restored, no recorded standby events, and approximately 0.003 seconds UTC/counter discrepancy. Source/input/workload hashes, configuration, scenario hit/miss counts and all capture identities were verified. Archive-only verification replayed 6,119 exact output hashes and regenerated the baseline report identically. See `stage1-verification.json` and `stage1-checksums.json`.
+
+The archive/replay helper is post-execution verification; primary capture/timing/report code was committed before measurements. No original outputs were altered. No performance improvement or candidate training-equivalence result exists yet. See [stage1-results.md](stage1-results.md) for observations and limitations.
+
+Next action is implementation and strict differential validation of registered C01, then commit its exact candidate/analysis before paired timing. Off-machine backup remains pending; no files are deleted automatically.
