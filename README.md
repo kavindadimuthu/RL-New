@@ -1,5 +1,10 @@
 # Raw-state tabular Q-learning for time-dependent bus network design (Mandl)
 
+Research contributors follow the [research experiment and evidence standard](docs/RESEARCH_EXPERIMENT_STANDARD.md)
+and [contribution guide](CONTRIBUTING.md). Use the [experiment registry and templates](experiments/README.md)
+to retain reproducible settings, small original numerical results, and conclusions. Large model exports are optional;
+generated PDFs remain outside Git.
+
 The agent builds 24 sequential hourly service plans P_1..P_24 (routes, frequencies,
 buses) for Mandl's Swiss network. It uses tabular Q-learning on the **complete raw
 state**: no compression, aggregation or discretisation. The point of the experiment

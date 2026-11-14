@@ -1,0 +1,65 @@
+{
+  "template_only": true,
+  "study_id": "EXP-NNN-study-name",
+  "run_id": "EXP-NNN-S1-A-seed2024-run01",
+  "stage": "replace-with-stage",
+  "treatment": "replace-with-treatment",
+  "status": "planned",
+  "failure_or_stop_reason": null,
+  "protocol_version": "replace-with-version",
+  "started_at": null,
+  "finished_at": null,
+  "code": {
+    "execution_commit": "replace-with-full-git-sha",
+    "working_tree_dirty": false,
+    "source_snapshot_or_patch": null
+  },
+  "execution": {
+    "working_directory": "repository-root",
+    "command": "replace-with-exact-command",
+    "python_version": "replace-with-version",
+    "dependency_record": "replace-with-relative-path",
+    "platform": "replace-with-platform",
+    "training_seed": 2024,
+    "evaluation_seeds": [6000, 6001, 6002],
+    "resolved_config": "replace-with-relative-path"
+  },
+  "inputs": [
+    {"path_or_reference": "replace-with-input", "sha256": null, "retrieval_instructions": "replace-me"}
+  ],
+  "resources": {
+    "cpu": "replace-with-model",
+    "ram_gib": null,
+    "gpu_used": false,
+    "gpu": null,
+    "concurrent_workers": 1,
+    "numerical_threads_per_worker": 1,
+    "power_scheme": null
+  },
+  "measurements": {
+    "episodes_completed": null,
+    "training_elapsed_seconds": null,
+    "training_cpu_seconds": null,
+    "evaluation_seconds": null,
+    "total_elapsed_seconds": null,
+    "timing_boundary_definition": "replace-me"
+  },
+  "evidence": {
+    "episode_metrics": "metrics.jsonl",
+    "final_evaluation": "evaluation.json",
+    "verification_notes": "verification.md"
+  },
+  "large_artifacts": [
+    {
+      "type": "trained-q-table",
+      "status": "not_saved",
+      "location": null,
+      "sha256": null,
+      "reason": "Optional large artifact; small numerical evidence is retained",
+      "regeneration_command": "replace-with-command; regeneration receives-a-new-run-id"
+    }
+  ],
+  "deviations": [],
+  "supersedes_run_id": null,
+  "backup_verified_at": null
+}
