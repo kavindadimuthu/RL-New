@@ -1,0 +1,27 @@
+{
+  "job": {
+    "phase": "timing",
+    "mode": "C_hour_end",
+    "seed": 2024,
+    "episodes": 100,
+    "seconds": 120,
+    "evaluation_seeds": [
+      6000,
+      6001,
+      6002
+    ],
+    "output": "transit_rl\\results\\evaluation_comparison_stage1\\timing\\C_hour_end_seed_2024"
+  },
+  "stop_reason": "completed",
+  "episodes": 100,
+  "training_seconds": 6.98597140000129,
+  "training_cpu_seconds": 6.984375,
+  "mean_episode_seconds": 0.0698597140000129,
+  "steps": 84212,
+  "evaluation_requests": 2400,
+  "cache_hits": 4,
+  "assignment_cache_misses": 2396,
+  "final_memory_mb": 164.7890625,
+  "process_wall_seconds_including_evaluation": 7.019118400003208,
+  "evaluations": []
+}

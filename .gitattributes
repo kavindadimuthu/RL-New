@@ -1,0 +1,2 @@
+# Preserve the legacy execution evidence byte-for-byte, including original patches.
+experiments/EXP-001-evaluation-frequency/legacy-evidence/** -text whitespace=-blank-at-eol

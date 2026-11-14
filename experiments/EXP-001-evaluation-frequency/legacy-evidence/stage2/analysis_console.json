@@ -1,0 +1,637 @@
+{
+  "summary": [
+    {
+      "mode": "A_dense",
+      "training_seeds": [
+        2024,
+        2025,
+        2026
+      ],
+      "reward": 5.654702927986514,
+      "served_demand_ratio": 0.2832444969901253,
+      "total_operator_penalty": 1.2067340067340067,
+      "total_transition_component": 2.385882635882636,
+      "unseen_fraction": 0.9582694191570559,
+      "steps": 864.6666666666666,
+      "training_seconds": 294.7169565333291,
+      "training_cpu_seconds": 292.2239583333333,
+      "assignments": 139204.33333333334,
+      "states": 218737.33333333334,
+      "reward_std_across_training_seeds": 0.4003503281145791,
+      "reward_min": 5.214304807571235,
+      "reward_max": 5.996629170337125,
+      "max_memory_mib": 488.7109375,
+      "reward_at_checkpoints": {
+        "100": 5.451558738697765,
+        "200": 5.468936663876238,
+        "300": 5.654702927986514
+      }
+    },
+    {
+      "mode": "B_committed",
+      "training_seeds": [
+        2024,
+        2025,
+        2026
+      ],
+      "reward": 5.376580978505291,
+      "served_demand_ratio": 0.24727712483087516,
+      "total_operator_penalty": 1.0774410774410774,
+      "total_transition_component": 2.2889286573215144,
+      "unseen_fraction": 0.9820510681793773,
+      "steps": 863.6666666666666,
+      "training_seconds": 190.23440153333772,
+      "training_cpu_seconds": 188.859375,
+      "assignments": 99282.66666666667,
+      "states": 220412.66666666666,
+      "reward_std_across_training_seeds": 0.38712979891887034,
+      "reward_min": 4.93530293955134,
+      "reward_max": 5.659064564952061,
+      "max_memory_mib": 471.95703125,
+      "reward_at_checkpoints": {
+        "100": 5.080630872367445,
+        "200": 5.511892181577622,
+        "300": 5.376580978505291
+      }
+    },
+    {
+      "mode": "C_hour_end",
+      "training_seeds": [
+        2024,
+        2025,
+        2026
+      ],
+      "reward": 4.364338500139444,
+      "served_demand_ratio": 0.17361495115021786,
+      "total_operator_penalty": 0.8175084175084175,
+      "total_transition_component": 2.029446278258778,
+      "unseen_fraction": 0.9836724236838071,
+      "steps": 657.0,
+      "training_seconds": 24.516402733304858,
+      "training_cpu_seconds": 24.328125,
+      "assignments": 6877.666666666667,
+      "states": 213444.66666666666,
+      "reward_std_across_training_seeds": 0.7954511082953076,
+      "reward_min": 3.575068948684433,
+      "reward_max": 5.165830311012881,
+      "max_memory_mib": 346.73046875,
+      "reward_at_checkpoints": {
+        "100": 4.596257138815877,
+        "200": 4.798861040106786,
+        "300": 4.364338500139444
+      }
+    }
+  ],
+  "per_training_seed": [
+    {
+      "mode": "A_dense",
+      "seed": 2024,
+      "episode": 300,
+      "reward": 5.753174806051182,
+      "served_demand_ratio": 0.2795791484844831,
+      "total_operator_penalty": 1.2252525252525253,
+      "total_transition_component": 2.48872594997595,
+      "unseen_fraction": 0.9601710093687494,
+      "steps": 855,
+      "training_seconds": 289.61140020001767,
+      "training_cpu_seconds": 287.0625,
+      "assignments": 140043,
+      "max_memory_mib": 488.5625,
+      "states": 220159,
+      "pairs": 237771,
+      "forced_finishes": 1672,
+      "evaluation_rewards": [
+        5.212618767080481,
+        4.774770177031575,
+        7.27213547404149
+      ]
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2024,
+      "episode": 300,
+      "reward": 4.93530293955134,
+      "served_demand_ratio": 0.22503884886278785,
+      "total_operator_penalty": 1.0242424242424242,
+      "total_transition_component": 2.308174603174603,
+      "unseen_fraction": 0.9826506675914721,
+      "steps": 866,
+      "training_seconds": 190.73003750000862,
+      "training_cpu_seconds": 189.328125,
+      "assignments": 100113,
+      "max_memory_mib": 465.8359375,
+      "states": 222226,
+      "pairs": 241175,
+      "forced_finishes": 1626,
+      "evaluation_rewards": [
+        4.8814578283306425,
+        4.008835630622212,
+        5.9156153597011665
+      ]
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2024,
+      "episode": 300,
+      "reward": 4.352116240721018,
+      "served_demand_ratio": 0.20202014086496742,
+      "total_operator_penalty": 0.896969696969697,
+      "total_transition_component": 2.27418768037518,
+      "unseen_fraction": 0.9887965397385469,
+      "steps": 725.3333333333334,
+      "training_seconds": 24.457627899992076,
+      "training_cpu_seconds": 24.203125,
+      "assignments": 7063,
+      "max_memory_mib": 346.73046875,
+      "states": 218127,
+      "pairs": 236621,
+      "forced_finishes": 1580,
+      "evaluation_rewards": [
+        3.4763477664488445,
+        3.0623911367959837,
+        6.517609818918226
+      ]
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2025,
+      "episode": 300,
+      "reward": 5.535375431012472,
+      "served_demand_ratio": 0.2660629742585232,
+      "total_operator_penalty": 1.1545454545454545,
+      "total_transition_component": 2.3030470951006663,
+      "unseen_fraction": 0.9830207655241218,
+      "steps": 887.3333333333334,
+      "training_seconds": 191.85568280001462,
+      "training_cpu_seconds": 190.34375,
+      "assignments": 99131,
+      "max_memory_mib": 471.921875,
+      "states": 219633,
+      "pairs": 238254,
+      "forced_finishes": 1595,
+      "evaluation_rewards": [
+        5.25794343947833,
+        5.345323821094659,
+        6.002859032464427
+      ]
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2025,
+      "episode": 300,
+      "reward": 5.165830311012881,
+      "served_demand_ratio": 0.22359555474830647,
+      "total_operator_penalty": 0.9363636363636363,
+      "total_transition_component": 2.2259108946608945,
+      "unseen_fraction": 0.9892374391057641,
+      "steps": 722,
+      "training_seconds": 25.488086399971507,
+      "training_cpu_seconds": 25.265625,
+      "assignments": 7019,
+      "max_memory_mib": 346.17578125,
+      "states": 217722,
+      "pairs": 236234,
+      "forced_finishes": 1615,
+      "evaluation_rewards": [
+        4.62649487073964,
+        4.527974323042107,
+        6.343021739256896
+      ]
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2025,
+      "episode": 300,
+      "reward": 5.214304807571235,
+      "served_demand_ratio": 0.26650992667400003,
+      "total_operator_penalty": 1.1090909090909091,
+      "total_transition_component": 2.3680815596440596,
+      "unseen_fraction": 0.9582056215764607,
+      "steps": 901.6666666666666,
+      "training_seconds": 292.0025258999849,
+      "training_cpu_seconds": 289.8125,
+      "assignments": 138337,
+      "max_memory_mib": 486.7734375,
+      "states": 217123,
+      "pairs": 234230,
+      "forced_finishes": 1699,
+      "evaluation_rewards": [
+        4.876473093307957,
+        4.8065292706593095,
+        5.959912058746439
+      ]
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2026,
+      "episode": 300,
+      "reward": 3.575068948684433,
+      "served_demand_ratio": 0.09522915783737967,
+      "total_operator_penalty": 0.6191919191919192,
+      "total_transition_component": 1.5882402597402596,
+      "unseen_fraction": 0.9729832922071103,
+      "steps": 523.6666666666666,
+      "training_seconds": 23.60349389995099,
+      "training_cpu_seconds": 23.515625,
+      "assignments": 6551,
+      "max_memory_mib": 330.9765625,
+      "states": 204485,
+      "pairs": 222017,
+      "forced_finishes": 1507,
+      "evaluation_rewards": [
+        3.3427349543759273,
+        3.07383982924922,
+        4.308632062428152
+      ]
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2026,
+      "episode": 300,
+      "reward": 5.996629170337125,
+      "served_demand_ratio": 0.30364441581189283,
+      "total_operator_penalty": 1.2858585858585858,
+      "total_transition_component": 2.3008403980278977,
+      "unseen_fraction": 0.9564316265259575,
+      "steps": 837.3333333333334,
+      "training_seconds": 302.5369434999848,
+      "training_cpu_seconds": 299.796875,
+      "assignments": 139233,
+      "max_memory_mib": 488.7109375,
+      "states": 218930,
+      "pairs": 236373,
+      "forced_finishes": 1697,
+      "evaluation_rewards": [
+        5.053904793701111,
+        5.4785624052101305,
+        7.457420312100133
+      ]
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2026,
+      "episode": 300,
+      "reward": 5.659064564952061,
+      "served_demand_ratio": 0.2507295513713144,
+      "total_operator_penalty": 1.0535353535353535,
+      "total_transition_component": 2.2555642736892736,
+      "unseen_fraction": 0.980481771422538,
+      "steps": 837.6666666666666,
+      "training_seconds": 188.11748429998988,
+      "training_cpu_seconds": 186.90625,
+      "assignments": 98604,
+      "max_memory_mib": 471.95703125,
+      "states": 219379,
+      "pairs": 237783,
+      "forced_finishes": 1595,
+      "evaluation_rewards": [
+        4.903938048348277,
+        5.278461233341495,
+        6.794794413166411
+      ]
+    }
+  ],
+  "paired_differences": [
+    {
+      "mode": "B_committed",
+      "seed": 2024,
+      "reward_difference_vs_A": -0.8178718664998419,
+      "served_ratio_difference_vs_A": -0.054540299621695265
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2024,
+      "reward_difference_vs_A": -1.401058565330164,
+      "served_ratio_difference_vs_A": -0.0775590076195157
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2025,
+      "reward_difference_vs_A": 0.32107062344123705,
+      "served_ratio_difference_vs_A": -0.0004469524154768201
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2025,
+      "reward_difference_vs_A": -0.04847449655835412,
+      "served_ratio_difference_vs_A": -0.042914371925693556
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2026,
+      "reward_difference_vs_A": -2.421560221652692,
+      "served_ratio_difference_vs_A": -0.20841525797451316
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2026,
+      "reward_difference_vs_A": -0.3375646053850643,
+      "served_ratio_difference_vs_A": -0.05291486444057841
+    }
+  ],
+  "checkpoints": [
+    {
+      "mode": "A_dense",
+      "seed": 2024,
+      "episode": 100,
+      "reward": 5.005741385198662,
+      "served_demand_ratio": 0.2470666225562696,
+      "total_operator_penalty": 1.0828282828282827,
+      "total_transition_component": 2.2922288359788356,
+      "unseen_fraction": 0.9861150661680314,
+      "steps": 796
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2024,
+      "episode": 200,
+      "reward": 5.600311768964126,
+      "served_demand_ratio": 0.25846266136573093,
+      "total_operator_penalty": 1.091919191919192,
+      "total_transition_component": 2.281418500481,
+      "unseen_fraction": 0.9784804873082052,
+      "steps": 842
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2024,
+      "episode": 300,
+      "reward": 5.753174806051182,
+      "served_demand_ratio": 0.2795791484844831,
+      "total_operator_penalty": 1.2252525252525253,
+      "total_transition_component": 2.48872594997595,
+      "unseen_fraction": 0.9601710093687494,
+      "steps": 855
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2024,
+      "episode": 100,
+      "reward": 5.208275079622233,
+      "served_demand_ratio": 0.25601556523031366,
+      "total_operator_penalty": 1.084848484848485,
+      "total_transition_component": 2.3719656084656084,
+      "unseen_fraction": 0.9922825512396102,
+      "steps": 863.6666666666666
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2024,
+      "episode": 200,
+      "reward": 5.603841266588774,
+      "served_demand_ratio": 0.25758578703423407,
+      "total_operator_penalty": 1.0626262626262626,
+      "total_transition_component": 2.3501160413660416,
+      "unseen_fraction": 0.9881322878958777,
+      "steps": 871.3333333333334
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2024,
+      "episode": 300,
+      "reward": 4.93530293955134,
+      "served_demand_ratio": 0.22503884886278785,
+      "total_operator_penalty": 1.0242424242424242,
+      "total_transition_component": 2.308174603174603,
+      "unseen_fraction": 0.9826506675914721,
+      "steps": 866
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2024,
+      "episode": 100,
+      "reward": 4.596257138815877,
+      "served_demand_ratio": 0.23978926634190909,
+      "total_operator_penalty": 1.0212121212121212,
+      "total_transition_component": 2.2937316017316016,
+      "unseen_fraction": 0.9957444710569181,
+      "steps": 798
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2024,
+      "episode": 200,
+      "reward": 4.596257138815877,
+      "served_demand_ratio": 0.23978926634190909,
+      "total_operator_penalty": 1.0212121212121212,
+      "total_transition_component": 2.2937316017316016,
+      "unseen_fraction": 0.9919266765296364,
+      "steps": 798
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2024,
+      "episode": 300,
+      "reward": 4.352116240721018,
+      "served_demand_ratio": 0.20202014086496742,
+      "total_operator_penalty": 0.896969696969697,
+      "total_transition_component": 2.27418768037518,
+      "unseen_fraction": 0.9887965397385469,
+      "steps": 725.3333333333334
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2025,
+      "episode": 100,
+      "reward": 4.825342457857869,
+      "served_demand_ratio": 0.2422245000748432,
+      "total_operator_penalty": 1.0323232323232323,
+      "total_transition_component": 2.3407180134680132,
+      "unseen_fraction": 0.9942810958054279,
+      "steps": 815.3333333333334
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2025,
+      "episode": 200,
+      "reward": 5.9500217667104405,
+      "served_demand_ratio": 0.26649623422253405,
+      "total_operator_penalty": 1.121212121212121,
+      "total_transition_component": 2.2714779169243453,
+      "unseen_fraction": 0.9875947144655061,
+      "steps": 865
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2025,
+      "episode": 300,
+      "reward": 5.535375431012472,
+      "served_demand_ratio": 0.2660629742585232,
+      "total_operator_penalty": 1.1545454545454545,
+      "total_transition_component": 2.3030470951006663,
+      "unseen_fraction": 0.9830207655241218,
+      "steps": 887.3333333333334
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2025,
+      "episode": 100,
+      "reward": 4.596257138815877,
+      "served_demand_ratio": 0.23978926634190909,
+      "total_operator_penalty": 1.0212121212121212,
+      "total_transition_component": 2.2937316017316016,
+      "unseen_fraction": 0.9962808193009511,
+      "steps": 798
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2025,
+      "episode": 200,
+      "reward": 5.500988343913509,
+      "served_demand_ratio": 0.24696199170135114,
+      "total_operator_penalty": 1.0171717171717172,
+      "total_transition_component": 2.4171724687349685,
+      "unseen_fraction": 0.9925393558069424,
+      "steps": 781
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2025,
+      "episode": 300,
+      "reward": 5.165830311012881,
+      "served_demand_ratio": 0.22359555474830647,
+      "total_operator_penalty": 0.9363636363636363,
+      "total_transition_component": 2.2259108946608945,
+      "unseen_fraction": 0.9892374391057641,
+      "steps": 722
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2025,
+      "episode": 100,
+      "reward": 5.5032117493569706,
+      "served_demand_ratio": 0.2761135472735642,
+      "total_operator_penalty": 1.11010101010101,
+      "total_transition_component": 2.241678932178932,
+      "unseen_fraction": 0.9780977776244453,
+      "steps": 815.6666666666666
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2025,
+      "episode": 200,
+      "reward": 5.382978380668298,
+      "served_demand_ratio": 0.3095404551050249,
+      "total_operator_penalty": 1.1838383838383837,
+      "total_transition_component": 2.3363940897065896,
+      "unseen_fraction": 0.9665628682697928,
+      "steps": 887
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2025,
+      "episode": 300,
+      "reward": 5.214304807571235,
+      "served_demand_ratio": 0.26650992667400003,
+      "total_operator_penalty": 1.1090909090909091,
+      "total_transition_component": 2.3680815596440596,
+      "unseen_fraction": 0.9582056215764607,
+      "steps": 901.6666666666666
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2026,
+      "episode": 100,
+      "reward": 4.596257138815877,
+      "served_demand_ratio": 0.23978926634190909,
+      "total_operator_penalty": 1.0212121212121212,
+      "total_transition_component": 2.2937316017316016,
+      "unseen_fraction": 0.9949715517196916,
+      "steps": 798
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2026,
+      "episode": 200,
+      "reward": 4.2993376375909715,
+      "served_demand_ratio": 0.19090734798490444,
+      "total_operator_penalty": 0.8686868686868686,
+      "total_transition_component": 2.2129062650312648,
+      "unseen_fraction": 0.988712546929715,
+      "steps": 710.3333333333334
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2026,
+      "episode": 300,
+      "reward": 3.575068948684433,
+      "served_demand_ratio": 0.09522915783737967,
+      "total_operator_penalty": 0.6191919191919192,
+      "total_transition_component": 1.5882402597402596,
+      "unseen_fraction": 0.9729832922071103,
+      "steps": 523.6666666666666
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2026,
+      "episode": 100,
+      "reward": 5.845723081537662,
+      "served_demand_ratio": 0.263227723048211,
+      "total_operator_penalty": 1.108080808080808,
+      "total_transition_component": 2.2944567529031814,
+      "unseen_fraction": 0.9861993613349079,
+      "steps": 871.3333333333334
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2026,
+      "episode": 200,
+      "reward": 5.4235198419962884,
+      "served_demand_ratio": 0.28333030614922,
+      "total_operator_penalty": 1.1262626262626263,
+      "total_transition_component": 2.4466246993746994,
+      "unseen_fraction": 0.9706879506048481,
+      "steps": 903.6666666666666
+    },
+    {
+      "mode": "A_dense",
+      "seed": 2026,
+      "episode": 300,
+      "reward": 5.996629170337125,
+      "served_demand_ratio": 0.30364441581189283,
+      "total_operator_penalty": 1.2858585858585858,
+      "total_transition_component": 2.3008403980278977,
+      "unseen_fraction": 0.9564316265259575,
+      "steps": 837.3333333333334
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2026,
+      "episode": 100,
+      "reward": 5.208275079622233,
+      "served_demand_ratio": 0.25601556523031366,
+      "total_operator_penalty": 1.084848484848485,
+      "total_transition_component": 2.3719656084656084,
+      "unseen_fraction": 0.9922825512396102,
+      "steps": 863.6666666666666
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2026,
+      "episode": 200,
+      "reward": 4.98181351143365,
+      "served_demand_ratio": 0.24148049484369638,
+      "total_operator_penalty": 1.0474747474747474,
+      "total_transition_component": 2.4891959475709475,
+      "unseen_fraction": 0.9892769675812375,
+      "steps": 887.6666666666666
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2026,
+      "episode": 300,
+      "reward": 5.659064564952061,
+      "served_demand_ratio": 0.2507295513713144,
+      "total_operator_penalty": 1.0535353535353535,
+      "total_transition_component": 2.2555642736892736,
+      "unseen_fraction": 0.980481771422538,
+      "steps": 837.6666666666666
+    }
+  ],
+  "untrained_diagnostic": {
+    "reward": 4.596257138815877,
+    "served_demand_ratio": 0.23978926634190909,
+    "note": "Post-hoc diagnostic only; empty Q-table, common evaluation seeds, no training."
+  }
+}
+Report: C:\Users\kavin\Desktop\automation\rl-repo\RL-New\transit_rl\results\evaluation_comparison_stage2\SUMMARY.md

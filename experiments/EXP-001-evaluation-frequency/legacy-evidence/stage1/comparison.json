@@ -1,0 +1,80 @@
+[
+  {
+    "mode": "A_dense",
+    "seconds": 80.12291409998579,
+    "speedup": 1.0,
+    "time_reduction_percent": 0.0,
+    "mean_episode_seconds": 0.8012291409998579,
+    "median_episode_seconds": 0.7731955999988713,
+    "cpu_seconds": 79.484375,
+    "steps": 82687,
+    "milliseconds_per_step": 0.9689904592013955,
+    "evaluations": 87487,
+    "actual_assignments": 46741,
+    "cache_hit_percent": 46.57377667539177,
+    "memory_mib": 336.92578125,
+    "max_memory_mib": 336.92578125,
+    "forced_finishes": 529,
+    "states": 73396,
+    "pairs": 79681,
+    "process_wall_seconds": 80.15670509999836,
+    "mean_seconds_by_25_episode_block": [
+      0.751284355999669,
+      0.7394133439999132,
+      0.830111743999878,
+      0.8841071199999715
+    ]
+  },
+  {
+    "mode": "B_committed",
+    "seconds": 59.20160830000532,
+    "speedup": 1.353390835160446,
+    "time_reduction_percent": 26.111513834697362,
+    "mean_episode_seconds": 0.5920160830000532,
+    "median_episode_seconds": 0.5816388499988534,
+    "cpu_seconds": 58.75,
+    "steps": 84378,
+    "milliseconds_per_step": 0.7016237443410049,
+    "evaluations": 37598,
+    "actual_assignments": 33623,
+    "cache_hit_percent": 10.572370870791,
+    "memory_mib": 329.20703125,
+    "max_memory_mib": 329.20703125,
+    "forced_finishes": 581,
+    "states": 75041,
+    "pairs": 81442,
+    "process_wall_seconds": 59.23740710000129,
+    "mean_seconds_by_25_episode_block": [
+      0.5830603999996674,
+      0.5553696600002876,
+      0.6201038680001512,
+      0.6095304040001065
+    ]
+  },
+  {
+    "mode": "C_hour_end",
+    "seconds": 6.98597140000129,
+    "speedup": 11.469115676593093,
+    "time_reduction_percent": 91.28093195501668,
+    "mean_episode_seconds": 0.0698597140000129,
+    "median_episode_seconds": 0.0673924500006251,
+    "cpu_seconds": 6.984375,
+    "steps": 84212,
+    "milliseconds_per_step": 0.08295695862823932,
+    "evaluations": 2400,
+    "actual_assignments": 2396,
+    "cache_hit_percent": 0.16666666666666666,
+    "memory_mib": 164.7890625,
+    "max_memory_mib": 164.7890625,
+    "forced_finishes": 576,
+    "states": 74612,
+    "pairs": 81113,
+    "process_wall_seconds": 7.019118400003208,
+    "mean_seconds_by_25_episode_block": [
+      0.0710326879999775,
+      0.07057940000013332,
+      0.07100305199972354,
+      0.06682371600021725
+    ]
+  }
+]

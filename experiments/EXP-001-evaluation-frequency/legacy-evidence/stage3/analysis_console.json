@@ -1,0 +1,127 @@
+{
+  "summary": [
+    {
+      "mode": "A_dense",
+      "reward": 5.457940293916562,
+      "served_demand_ratio": 0.25847290093612063,
+      "total_operator_penalty": 1.1131313131313132,
+      "total_transition_component": 2.2433713380975284,
+      "unseen_fraction": 0.9745785643022288,
+      "steps": 833.7777777777777,
+      "average_fleet_used": 15.305555555555555,
+      "forced_hour_finishes": 5.777777777777778,
+      "training_seconds": 120.63766226667212,
+      "training_cpu_seconds": 119.55208333333333,
+      "episodes": 109,
+      "training_steps": 92413,
+      "assignments": 51134,
+      "states": 80472.66666666667,
+      "reward_std": 0.158349399571006,
+      "reward_min": 5.275834087037877,
+      "reward_max": 5.563224680034964,
+      "episode_min": 105,
+      "episode_max": 115,
+      "max_memory_mib": 345.47265625,
+      "reward_at_checkpoints": {
+        "40": 4.926164563984879,
+        "80": 5.793498667428347,
+        "120": 5.457940293916562
+      }
+    },
+    {
+      "mode": "B_committed",
+      "reward": 4.790101626010474,
+      "served_demand_ratio": 0.21398781160642677,
+      "total_operator_penalty": 0.9471380471380471,
+      "total_transition_component": 2.2975880030463363,
+      "unseen_fraction": 0.9847372878387921,
+      "steps": 763.3333333333334,
+      "average_fleet_used": 13.023148148148149,
+      "forced_hour_finishes": 5.666666666666667,
+      "training_seconds": 120.53341283335492,
+      "training_cpu_seconds": 119.703125,
+      "episodes": 178.66666666666666,
+      "training_steps": 145097.66666666666,
+      "assignments": 57585,
+      "states": 128367.33333333333,
+      "reward_std": 0.9348482665585184,
+      "reward_min": 3.8649521216762577,
+      "reward_max": 5.734355812511333,
+      "episode_min": 170,
+      "episode_max": 187,
+      "max_memory_mib": 385.44921875,
+      "reward_at_checkpoints": {
+        "40": 5.022803920875228,
+        "80": 5.084282746803855,
+        "120": 4.790101626010474
+      }
+    },
+    {
+      "mode": "C_hour_end",
+      "reward": 1.0102470556372347,
+      "served_demand_ratio": 0.040923492966842244,
+      "total_operator_penalty": 0.1404040404040404,
+      "total_transition_component": 0.0,
+      "unseen_fraction": 0.0,
+      "steps": 29.666666666666668,
+      "average_fleet_used": 1.9305555555555556,
+      "forced_hour_finishes": 0,
+      "training_seconds": 120.02622883331424,
+      "training_cpu_seconds": 119.046875,
+      "episodes": 1942.6666666666667,
+      "training_steps": 1182062.3333333333,
+      "assignments": 33394,
+      "states": 1033321,
+      "reward_std": 0.07007852871447455,
+      "reward_min": 0.9321854281886311,
+      "reward_max": 1.0677382844934342,
+      "episode_min": 1860,
+      "episode_max": 2083,
+      "max_memory_mib": 1203.5546875,
+      "reward_at_checkpoints": {
+        "40": 4.76144868923468,
+        "80": 3.6621916329225717,
+        "120": 1.0102470556372347
+      }
+    }
+  ],
+  "paired_differences": [
+    {
+      "mode": "B_committed",
+      "seed": 2024,
+      "reward_difference_vs_A": -0.504837143194047,
+      "served_ratio_difference_vs_A": -0.029703066873860595
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2024,
+      "reward_difference_vs_A": -4.343648658849246,
+      "served_ratio_difference_vs_A": -0.20784242497628705
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2025,
+      "reward_difference_vs_A": 0.17113113247636846,
+      "served_ratio_difference_vs_A": -0.018211736633060138
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2025,
+      "reward_difference_vs_A": -4.49548639554153,
+      "served_ratio_difference_vs_A": -0.23346004741627435
+    },
+    {
+      "mode": "C_hour_end",
+      "seed": 2026,
+      "reward_difference_vs_A": -4.503944660447206,
+      "served_ratio_difference_vs_A": -0.21134575151527382
+    },
+    {
+      "mode": "B_committed",
+      "seed": 2026,
+      "reward_difference_vs_A": -1.669809993000587,
+      "served_ratio_difference_vs_A": -0.08554046448216093
+    }
+  ]
+}
+Report: C:\Users\kavin\Desktop\automation\rl-repo\RL-New\transit_rl\results\evaluation_comparison_stage3\SUMMARY.md

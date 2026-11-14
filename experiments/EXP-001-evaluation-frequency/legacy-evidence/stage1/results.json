@@ -1,0 +1,83 @@
+[
+  {
+    "job": {
+      "phase": "timing",
+      "mode": "A_dense",
+      "seed": 2024,
+      "episodes": 100,
+      "seconds": 120,
+      "evaluation_seeds": [
+        6000,
+        6001,
+        6002
+      ],
+      "output": "transit_rl\\results\\evaluation_comparison_stage1\\timing\\A_dense_seed_2024"
+    },
+    "stop_reason": "completed",
+    "episodes": 100,
+    "training_seconds": 80.12291409998579,
+    "training_cpu_seconds": 79.484375,
+    "mean_episode_seconds": 0.8012291409998579,
+    "steps": 82687,
+    "evaluation_requests": 87487,
+    "cache_hits": 40746,
+    "assignment_cache_misses": 46741,
+    "final_memory_mb": 336.92578125,
+    "process_wall_seconds_including_evaluation": 80.15670509999836,
+    "evaluations": []
+  },
+  {
+    "job": {
+      "phase": "timing",
+      "mode": "C_hour_end",
+      "seed": 2024,
+      "episodes": 100,
+      "seconds": 120,
+      "evaluation_seeds": [
+        6000,
+        6001,
+        6002
+      ],
+      "output": "transit_rl\\results\\evaluation_comparison_stage1\\timing\\C_hour_end_seed_2024"
+    },
+    "stop_reason": "completed",
+    "episodes": 100,
+    "training_seconds": 6.98597140000129,
+    "training_cpu_seconds": 6.984375,
+    "mean_episode_seconds": 0.0698597140000129,
+    "steps": 84212,
+    "evaluation_requests": 2400,
+    "cache_hits": 4,
+    "assignment_cache_misses": 2396,
+    "final_memory_mb": 164.7890625,
+    "process_wall_seconds_including_evaluation": 7.019118400003208,
+    "evaluations": []
+  },
+  {
+    "job": {
+      "phase": "timing",
+      "mode": "B_committed",
+      "seed": 2024,
+      "episodes": 100,
+      "seconds": 120,
+      "evaluation_seeds": [
+        6000,
+        6001,
+        6002
+      ],
+      "output": "transit_rl\\results\\evaluation_comparison_stage1\\timing\\B_committed_seed_2024"
+    },
+    "stop_reason": "completed",
+    "episodes": 100,
+    "training_seconds": 59.20160830000532,
+    "training_cpu_seconds": 58.75,
+    "mean_episode_seconds": 0.5920160830000532,
+    "steps": 84378,
+    "evaluation_requests": 37598,
+    "cache_hits": 3975,
+    "assignment_cache_misses": 33623,
+    "final_memory_mb": 329.20703125,
+    "process_wall_seconds_including_evaluation": 59.23740710000129,
+    "evaluations": []
+  }
+]

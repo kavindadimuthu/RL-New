@@ -1,0 +1,151 @@
+{
+  "plan": {
+    "version": 1,
+    "modes": {
+      "A_dense": "dense",
+      "B_committed": "committed",
+      "C_hour_end": "terminal"
+    },
+    "workers": 3,
+    "training_seeds": [
+      2024,
+      2025,
+      2026
+    ],
+    "evaluation_seeds": [
+      6000,
+      6001,
+      6002
+    ],
+    "timing_episodes": 100,
+    "learning_episodes": 300,
+    "equal_time_seconds": 120,
+    "numerical_threads_per_worker": 1,
+    "gpu": false,
+    "constraints": {
+      "worker_memory_mib": 1536,
+      "minimum_free_memory_mib": 4096,
+      "maximum_learning_episodes": 5000,
+      "maximum_training_seconds_per_job": 1200
+    },
+    "timing_order": [
+      "A_dense",
+      "C_hour_end",
+      "B_committed"
+    ],
+    "learning_waves": [
+      [
+        {
+          "mode": "A_dense",
+          "seed": 2024
+        },
+        {
+          "mode": "B_committed",
+          "seed": 2024
+        },
+        {
+          "mode": "C_hour_end",
+          "seed": 2024
+        }
+      ],
+      [
+        {
+          "mode": "B_committed",
+          "seed": 2025
+        },
+        {
+          "mode": "C_hour_end",
+          "seed": 2025
+        },
+        {
+          "mode": "A_dense",
+          "seed": 2025
+        }
+      ],
+      [
+        {
+          "mode": "C_hour_end",
+          "seed": 2026
+        },
+        {
+          "mode": "A_dense",
+          "seed": 2026
+        },
+        {
+          "mode": "B_committed",
+          "seed": 2026
+        }
+      ]
+    ],
+    "notes": [
+      "Timing jobs run serially, 100 episodes, original 10000-episode epsilon schedule.",
+      "Equal-episode learning: 300 episodes, shared decay reaching min epsilon at episode 240.",
+      "Equal-time learning: 120 training seconds, shared time-based decay reaching min at 96 seconds.",
+      "Time budgets include training only; stop at episode boundary and record overshoot.",
+      "Common greedy evaluator at thirds and endpoint, three independent tie-breaking seeds.",
+      "Fresh learner per job; no Q-table exports, plotting, or shared caches.",
+      "Three workers per wave, one mode each, same training seed; new processes each wave.",
+      "Preliminary learning comparison: three seeds and short horizon cannot establish convergence."
+    ]
+  },
+  "selected_stage": "equal_time",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu_count": 20,
+  "free_memory_mib": 14705.0390625,
+  "commit": "a06215d07b8f0ab94f3d151d7b000b0558582bc1",
+  "git_status": " M transit_rl/config.py\n M transit_rl/environment/transit_environment.py\n?? docs/\n?? tests/test_evaluation_comparison.py\n?? transit_rl/experiment/evaluation_comparison.py\n",
+  "source_and_input_sha256": {
+    "transit_rl\\config.py": "7183b62ec599bd1b8dd44e930c4a8ef15a483cdcf84eb724b9f28919d4c11e76",
+    "transit_rl\\main.py": "5f9be1410f062d6415dd8bb63c83dbc0955687d5330ce6094174ef7ededf68d3",
+    "transit_rl\\__init__.py": "195d775caf459cb5a27e90df96f17e266a6c694cc250061110ec044ee43d135e",
+    "transit_rl\\agent\\q_learning_agent.py": "d318e2017cd3863456d6d58da7fe423aade92adafec63acebfd717b21188fdb5",
+    "transit_rl\\agent\\__init__.py": "9f3c752ac8986a52ff62e5ca13a69c5bc0e3e5f966320d3e8b883260ed20579e",
+    "transit_rl\\data\\network.py": "ce51a213abc1c85a21977f296ce22451de4e2e2b4a7249ded97e9c6f72d5afe3",
+    "transit_rl\\data\\od_loader.py": "7109919b9fe474e8a14db973101358c752bac37427250cfbcd0edcf5a9cda8c8",
+    "transit_rl\\data\\__init__.py": "9f3c752ac8986a52ff62e5ca13a69c5bc0e3e5f966320d3e8b883260ed20579e",
+    "transit_rl\\environment\\actions.py": "e2e1630dfbd21dc74f2898baf4f386af5d2ed554151c3d572df61eed1ee78e88",
+    "transit_rl\\environment\\frequency.py": "9c310a4546bccfe1670d7344dd5e7b0fdcd372934f7e77a5fdfef2c07567df06",
+    "transit_rl\\environment\\passenger_assignment.py": "df8e36a8b66a4246661304b68cb58beef137d5562e8fb1f408138c72185899f8",
+    "transit_rl\\environment\\reward.py": "ed5004394c6ee35208d03e54272a34ac0e2de9ceadd89a4c46aa09693d38c8fc",
+    "transit_rl\\environment\\service_plan.py": "3a4dd9a6cf2c7d6be1a484e8737360cc27087048ad381e78ffa0d05757077bc0",
+    "transit_rl\\environment\\state.py": "a06040fad11c4f0bcc4ffa0178369f9396d5eca4dcf0f33ebe96d409db2e5025",
+    "transit_rl\\environment\\transition_cost.py": "d4facc31b7cd7ae3d9087b0e7abf00afc9024a41aa98be9174a6a47546b85ef5",
+    "transit_rl\\environment\\transit_environment.py": "5f9c51a16b9c3c4314d4a92d23ac06df293010fa82bc155c6079f15d7450df61",
+    "transit_rl\\environment\\__init__.py": "9f3c752ac8986a52ff62e5ca13a69c5bc0e3e5f966320d3e8b883260ed20579e",
+    "transit_rl\\experiment\\evaluation_comparison.py": "7889fed72c10a114cabde168c8d831df707c2d3b1d3765882703163c9e0b53a3",
+    "transit_rl\\experiment\\trainer.py": "4ee4c1abaf7e58616a00383b425c1232c3e5f7e7f610e1ea54b99e3fe0dff4d0",
+    "transit_rl\\experiment\\__init__.py": "9f3c752ac8986a52ff62e5ca13a69c5bc0e3e5f966320d3e8b883260ed20579e",
+    "transit_rl\\utils\\metrics.py": "9028e94a35df7573133a2161d46033f4bd1d9b177f0e4f63a5e9044d9eab884f",
+    "transit_rl\\utils\\plotting.py": "254a17fde0fd82c69ef8e887d12fde0cf52e71c6944d7a8fcb423d37e20e8d18",
+    "transit_rl\\utils\\qtable_io.py": "6636697b8c6650af2832df71bcf5affcfa3eb8beae7780a99650cb3d8ad91f96",
+    "transit_rl\\utils\\__init__.py": "9f3c752ac8986a52ff62e5ca13a69c5bc0e3e5f966320d3e8b883260ed20579e",
+    "transit_rl\\data\\input\\mandl_links.csv": "cffb1845ddccfb93030b6030fb635bd172ab68760ffe428d35e7c26693a3abbd",
+    "transit_rl\\data\\input\\od\\od_hour_00.csv": "8b3610a2bb271bd9c49bee76206e4755987804d28bab18e20dbe48c49b64a188",
+    "transit_rl\\data\\input\\od\\od_hour_01.csv": "ee142effbacada5912818474875f30d6a8a994e12986c6ce088184e0fcfcbd71",
+    "transit_rl\\data\\input\\od\\od_hour_02.csv": "10322a41454911905c3012523a2086ccf31e8ea755f8265c9d3462c7112c80f8",
+    "transit_rl\\data\\input\\od\\od_hour_03.csv": "e64bb12b960ae83e6af32321bb9866eaf43bd49be76e0a4409fa13a5dd8c4a1d",
+    "transit_rl\\data\\input\\od\\od_hour_04.csv": "e8c095528e805e9abe3b0e85c9e15b288766cabb69ce073bd701bc68320cdcc2",
+    "transit_rl\\data\\input\\od\\od_hour_05.csv": "d7899d126fc953b9d38c79a31fe73c488dfc5780a91c6662d2aec1434245cd1d",
+    "transit_rl\\data\\input\\od\\od_hour_06.csv": "9ad560070141456b304ffc0b0424b33c7752792448064da1881545e4a511eacb",
+    "transit_rl\\data\\input\\od\\od_hour_07.csv": "0162684b3b65958619cf4ad6d5d20540899b305cbce08a69e284ca3a44c351cc",
+    "transit_rl\\data\\input\\od\\od_hour_08.csv": "89035eef9127b9f572c2623cc190e87318443b27f4509ee76fa60e060250695d",
+    "transit_rl\\data\\input\\od\\od_hour_09.csv": "70a71e305e21c1e7b835cb539cc8ab4432ea6f6b8449fa57c59bcb54b13f5dc9",
+    "transit_rl\\data\\input\\od\\od_hour_10.csv": "34c98724252725d086962fa297693c75bba6bc218f07d17cb41cd5bb97f7d8e1",
+    "transit_rl\\data\\input\\od\\od_hour_11.csv": "a7a46c27fde5e44e8b8949e33abefb955fba8728ef54ac8718ec27580113f1f9",
+    "transit_rl\\data\\input\\od\\od_hour_12.csv": "d8bcb2f9c5575b1b1b3057b752e23d8cf7fd4b143b3503c6ccb5048de77846bb",
+    "transit_rl\\data\\input\\od\\od_hour_13.csv": "21aaaab75307c1c563ba2505a32189c80840a4d46c540706234cebdaa37402da",
+    "transit_rl\\data\\input\\od\\od_hour_14.csv": "42770b3a3e8ff630360644a6c9041088b0338fb209cea71c65f4bb883ed09686",
+    "transit_rl\\data\\input\\od\\od_hour_15.csv": "92fd79ed825e1a646bf343c9ffde4444ec68f90f574ef6f7220e2c0ede984ab8",
+    "transit_rl\\data\\input\\od\\od_hour_16.csv": "959db4be75f435389c6add0d0de718d3fca5ff055461db22809c68e4ba6a84c1",
+    "transit_rl\\data\\input\\od\\od_hour_17.csv": "f4dc842841ab919b3defc795ab24c19b3f636d0d4cd7805962603fede9b274e9",
+    "transit_rl\\data\\input\\od\\od_hour_18.csv": "b117423995d29fa7194ddf9f3f47f8d19259cdf57349aaee94898f62c95ec3b4",
+    "transit_rl\\data\\input\\od\\od_hour_19.csv": "4a05219f04cc83959f906c05b937dc972b04a8bc5b2266914af9f0104853b393",
+    "transit_rl\\data\\input\\od\\od_hour_20.csv": "9fe66ec68d85c159a5a4503d89d00dbfa15a981b3fb83ff42d86e63314271279",
+    "transit_rl\\data\\input\\od\\od_hour_21.csv": "1c2b5116f144be953c33675bf89aa52479e85b663afbbfcaf6ea389476474cab",
+    "transit_rl\\data\\input\\od\\od_hour_22.csv": "a07533a2ab756a03f309001678200d0e827238156d31eadffb1c64f93d1da407",
+    "transit_rl\\data\\input\\od\\od_hour_23.csv": "13ded882badd3c1d19375228e236e937e15faeee3fe2d6f8c6d127f30c848b2d"
+  }
+}
