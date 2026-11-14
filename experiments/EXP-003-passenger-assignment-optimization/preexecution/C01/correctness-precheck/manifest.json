@@ -1,0 +1,27 @@
+{
+  "study_id": "EXP-003",
+  "run_id": "EXP-003-C01-precheck-run01",
+  "status": "completed",
+  "started_at": "2026-11-14T16:49:49.702456+00:00",
+  "git_status": " M experiments/EXP-003-passenger-assignment-optimization/candidate-C01-plan.md\n?? tests/test_assignment_c01.py\n?? transit_rl/experiment/assignment_c01_trial.py\n?? transit_rl/experiment/assignment_candidate_c01.py\n",
+  "mode": "correctness_only",
+  "execution_commit": "e4f1141d35ed67495e15f803d3aeb67ebffc299a",
+  "candidate_sha256": "e9c153f9694d44659985adcc48b1ee2ae915861e93d6c9661ce387a0a71ffbe3",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "command": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe -m transit_rl.experiment.assignment_c01_trial --verify --output transit_rl/results/EXP-003-C01-precheck-run01",
+  "numerical_threads": 1,
+  "production_default": "frozen-equivalent unchanged assignment",
+  "large_artifacts": "not_saved",
+  "sleep_request": {
+    "requested": true,
+    "previous_flags": 2147483648,
+    "flags": 2147483649
+  },
+  "workload_sha256": "3ad52a27bb1dcc0d378fbb974a51f7ee73d1898c9dffce68fc6cf8727a45c960",
+  "sleep_request_restored": true,
+  "finished_at": "2026-11-14T16:50:09.798838+00:00",
+  "process_elapsed_seconds": 20.096330400003353,
+  "utc_span_seconds": 20.096382,
+  "timing_qualified": false
+}

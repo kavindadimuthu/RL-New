@@ -1,6 +1,25 @@
 # EXP-003-C01: Specialized small-segment capacity maximum
 
-Date: 2026-11-14 (Asia/Colombo). Status: candidate selected after the registered baseline profile; not implemented or timed yet. This is a prospective candidate plan informed by baseline results, not a claim that candidate selection preceded baseline profiling.
+Date: 2026-11-14 (Asia/Colombo). Candidate selected after the registered baseline profile. Implementation revision 1 is prepared below; its correctness checks precede the registered timing trial. No candidate timings were used to choose this implementation.
+
+## Implementation revision 1 and execution
+
+`C01PassengerAssignment` is a separate experimental backend. The production PassengerAssignment remains unchanged. C01 copies the frozen assignment method with only the local segment-peak expression changed; an AST check verifies no other method-body differences. The new helper bypasses the general NumPy reduction for one- and two-element native float64 segments, preserves tie/signed-zero behavior, and falls back for NaNs, other dtypes, larger segments, empty and unusual arrays. No capacity value is cached across load updates.
+
+A development-only test of revision 1 found dtype-specific float16 signed-zero behavior. Before any timing trial, revision 2 restricted the fast path to native float64 (the actual model load dtype); other types use the original reduction. The failed test log/source are retained in preexecution/. No speed measurements were taken on the failing revision, and reference expectations were not relaxed.
+
+Before timing, run unit tests and a correctness precheck (which is permitted to record uncommitted candidate development, but is not speed evidence). Then commit the exact candidate, this plan and timing/analysis code and use a clean worktree. The timed trial repeats the entire correctness precheck from that committed version.
+
+```powershell
+.\.venv-visualizer\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv-visualizer\Scripts\python.exe -m transit_rl.experiment.assignment_c01_trial --verify --output transit_rl/results/EXP-003-C01-precheck-run01
+# After committing the verified candidate/analysis:
+.\.venv-visualizer\Scripts\python.exe -u -m transit_rl.experiment.assignment_c01_trial --run --output transit_rl/results/EXP-003-C01-paired-run01
+```
+
+The driver creates a fresh process per backend/repetition for all 30 timed blocks, serially, to measure an independent per-process peak working set. Peak memory includes imports, setup, warm-up and prefill, not only assignment allocation. The parent sleep-prevention scope covers correctness and timings; raw power events and UTC/counter checks qualify any interrupted run. No profilers run during the paired trial. A 240-second total active-stage guard is checked between blocks. All samples and failed/incomplete records remain available.
+
+The preceding code/plan commit is the execution version; a later evidence commit is distinct. Unique output directories refuse overwriting. No production adoption or end-to-end speed claim is implied by implementing C01.
 
 ## Evidence and scope
 

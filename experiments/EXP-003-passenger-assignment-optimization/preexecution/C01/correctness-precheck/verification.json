@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "started_at": "2026-11-14T16:49:52.970126+00:00",
+  "finished_at": "2026-11-14T16:50:09.795200+00:00",
+  "fixture_comparisons": 67,
+  "real_output_hashes_verified": 6119,
+  "training_seed_episodes": [
+    {
+      "seed": 2032,
+      "episode": 1,
+      "reward": 5.121242551286874,
+      "steps": 752,
+      "cumulative_actions": 752,
+      "action_reward_sha256": "379fe4f9588811f5950ad03faf6787cdd58c13413972b6574dbb9b5c668371dd",
+      "states": 673,
+      "pairs": 730,
+      "q_visits_rng_equal": true
+    },
+    {
+      "seed": 2032,
+      "episode": 2,
+      "reward": 4.295093291842182,
+      "steps": 787,
+      "cumulative_actions": 1539,
+      "action_reward_sha256": "6c070e8aabe1b515cffdb1d6e76f1a233868175b921db0af4095f5f12eb37af0",
+      "states": 1364,
+      "pairs": 1484,
+      "q_visits_rng_equal": true
+    },
+    {
+      "seed": 2032,
+      "episode": 3,
+      "reward": 6.766574543497267,
+      "steps": 958,
+      "cumulative_actions": 2497,
+      "action_reward_sha256": "96ef6bf19f7b907e750b4d4766d6033f63367fc2e84be8ae28053fd97ff57298",
+      "states": 2223,
+      "pairs": 2414,
+      "q_visits_rng_equal": true
+    },
+    {
+      "seed": 2033,
+      "episode": 1,
+      "reward": 6.948162105195032,
+      "steps": 805,
+      "cumulative_actions": 805,
+      "action_reward_sha256": "0a63294fd56342c86cc1a87030dac0fa36c34859da335410b37eb81d29a9b5d3",
+      "states": 726,
+      "pairs": 786,
+      "q_visits_rng_equal": true
+    },
+    {
+      "seed": 2033,
+      "episode": 2,
+      "reward": 5.848444327214591,
+      "steps": 896,
+      "cumulative_actions": 1701,
+      "action_reward_sha256": "5b06aa3202fd4a5dd7af690f04942a5a5ee4c576c1ada913bdee7ab6e4838d3f",
+      "states": 1518,
+      "pairs": 1631,
+      "q_visits_rng_equal": true
+    },
+    {
+      "seed": 2033,
+      "episode": 3,
+      "reward": 3.8701994582833215,
+      "steps": 912,
+      "cumulative_actions": 2613,
+      "action_reward_sha256": "c09b61eaef131aec6c1f12b3df2b4cd0fbe41a21a1fee11ea4c385b99956dce5",
+      "states": 2325,
+      "pairs": 2512,
+      "q_visits_rng_equal": true
+    }
+  ],
+  "workload_sha256": "3ad52a27bb1dcc0d378fbb974a51f7ee73d1898c9dffce68fc6cf8727a45c960",
+  "tolerance": "none",
+  "large_q_tables": "not_saved"
+}
