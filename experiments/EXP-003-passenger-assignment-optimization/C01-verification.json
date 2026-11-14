@@ -1,0 +1,15 @@
+{
+  "verified_at_utc": "2026-11-14T16:56:29.750232+00:00",
+  "execution_commit": "19b92840fd14cd587b28e67b7a7afaad82cd622f",
+  "exact_archive_hashes_verified": true,
+  "source_snapshot_matches_recorded_hash": true,
+  "completed_timed_blocks": 30,
+  "fresh_worker_processes": 30,
+  "strict_real_replay_outputs": 6119,
+  "matching_seed_episode_pairs": 6,
+  "report_and_comparison_regenerated_identically": true,
+  "timing_qualified": false,
+  "advance_to_training_speed_trial": false,
+  "primary_analysis_version": "committed before timing",
+  "archive_validator_version": "post-execution verification"
+}

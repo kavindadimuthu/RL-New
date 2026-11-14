@@ -21,3 +21,11 @@ The run completed with the scoped sleep request restored, no recorded standby ev
 The archive/replay helper is post-execution verification; primary capture/timing/report code was committed before measurements. No original outputs were altered. No performance improvement or candidate training-equivalence result exists yet. See [stage1-results.md](stage1-results.md) for observations and limitations.
 
 Next action is implementation and strict differential validation of registered C01, then commit its exact candidate/analysis before paired timing. Off-machine backup remains pending; no files are deleted automatically.
+
+## C01 implementation and trial
+
+Completed from clean execution commit `19b9284` after 58 passing tests, 67 fixture comparisons, 6,119 exact real-output hashes and six matching training-episode pairs. Development initially found a float16 signed-zero discrepancy, corrected by limiting the fast path to native float64 before any timing. The failed development version/log and corrected precheck are retained.
+
+All 30 registered serial timing blocks completed in fresh worker processes. Sleep request restoration, clock agreement and empty standby-event record were verified. Raw samples and strict trajectory checks are preserved. C01 did not meet its 10% miss/mixed advancement targets and is not adopted or advanced to training-speed measurement. See [C01-results.md](C01-results.md), `C01-checksums.json` and `C01-verification.json`.
+
+No performance threshold or original numerical output was changed after seeing the result. Archive-only verification regenerates the paired comparison/report byte-for-byte without learning. A future C02 requires its own prospective plan. Off-machine backup is pending.

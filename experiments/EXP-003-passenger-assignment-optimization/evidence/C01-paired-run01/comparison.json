@@ -1,0 +1,58 @@
+{
+  "scenarios": [
+    {
+      "scenario": "miss_stream",
+      "calls": 512,
+      "baseline_median_seconds": 0.7808416000043508,
+      "candidate_median_seconds": 0.7617901999983587,
+      "reduction_fraction": 0.024398546396459775,
+      "speedup": 1.0250087228820128,
+      "baseline_range": [
+        0.7631873000063933,
+        0.8577376000030199
+      ],
+      "candidate_range": [
+        0.7166612000000896,
+        0.7758634999991045
+      ]
+    },
+    {
+      "scenario": "training_stream",
+      "calls": 3559,
+      "baseline_median_seconds": 3.059698600001866,
+      "candidate_median_seconds": 2.838010299994494,
+      "reduction_fraction": 0.072454293376229,
+      "speedup": 1.078113987115481,
+      "baseline_range": [
+        2.9856048000001465,
+        3.1955909000025713
+      ],
+      "candidate_range": [
+        2.776123199997528,
+        2.9080973000018275
+      ]
+    },
+    {
+      "scenario": "warm_hits",
+      "calls": 2048,
+      "baseline_median_seconds": 0.003666299999167677,
+      "candidate_median_seconds": 0.0037445999987539835,
+      "reduction_fraction": -0.021356681014669254,
+      "speedup": 0.9790898895443143,
+      "baseline_range": [
+        0.0034958000032929704,
+        0.003792300005443394
+      ],
+      "candidate_range": [
+        0.0033486999964225106,
+        0.004290400000172667
+      ]
+    }
+  ],
+  "baseline_peak_worker_mib": 97.9765625,
+  "candidate_peak_worker_mib": 98.0703125,
+  "peak_memory_increase_mib": 0.09375,
+  "advance_to_training_speed_trial": false,
+  "production_default_changed": false,
+  "timing_qualified": false
+}

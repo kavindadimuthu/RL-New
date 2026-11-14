@@ -1,0 +1,11 @@
+{
+  "candidate_source.py": "e9c153f9694d44659985adcc48b1ee2ae915861e93d6c9661ce387a0a71ffbe3",
+  "comparison.json": "522c87502893b2a26b772fa6bd9778c459d624ef04952d105133ae1fdf10e244",
+  "machine.json": "059d16dfeff0dabac068bfbaf3ed95a9b61052599b036abd3f06113adbe3c5fb",
+  "manifest.json": "0d79204ca926d5fe7be4bda1ae56e8e3dcbbc1dd6301c5069edcceb8e5cdb87d",
+  "measurements.json": "c2bec99a3b30a14c98ecf66d799da2f3c8c7f6acb1524ee2b2811f3abc689e86",
+  "power_events.json": "4b8fc65bd6b88f4e958a7023a1546afaff95cb7ca8b9ac68d1e3366a306b8605",
+  "REPORT.md": "38a74661fcdf239d3cc2c41087d0ff32fa6bd118ad3a14a4b26b5f789905d36f",
+  "requirements-lock.txt": "86b761d905078d5fb4d269543a92a6e956d6a0b7d137963cf5e3fe7f5da5d526",
+  "verification.json": "6808191a8d0732f6df85c8bf64bed730e45b7b1d3307b0f9436988692abcc675"
+}

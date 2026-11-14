@@ -1,0 +1,20 @@
+{
+  "cpu": [
+    {
+      "Name": "12th Gen Intel(R) Core(TM) i7-12700H",
+      "NumberOfCores": 14,
+      "NumberOfLogicalProcessors": 20
+    }
+  ],
+  "memory": {
+    "FreePhysicalMemory": 12029220,
+    "TotalVisibleMemorySize": 24777256
+  },
+  "battery": [
+    {
+      "BatteryStatus": 2,
+      "EstimatedChargeRemaining": 100
+    }
+  ],
+  "power_scheme": "Power Scheme GUID: 27fa6203-3987-4dcc-918d-748559d549ec  (Performance)"
+}

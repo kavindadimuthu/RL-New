@@ -6,7 +6,7 @@ Follow the [project research standard](../docs/RESEARCH_EXPERIMENT_STANDARD.md).
 |---|---|---|---|
 | EXP-001-evaluation-frequency | Original evaluation-frequency study | Legacy archive | Commit `6de521d` on `archive/evaluation-frequency-legacy`; do not combine with the repeat |
 | [EXP-002-evaluation-frequency-repeat](EXP-002-evaluation-frequency-repeat/README.md) | Prospective repeat with recorded provenance | Closed; standby diagnosis and timing qualification retained; off-machine backup pending | [Report](EXP-002-evaluation-frequency-repeat/report.md), [closeout](EXP-002-evaluation-frequency-repeat/closeout.md), and verified compact evidence |
-| [EXP-003-passenger-assignment-optimization](EXP-003-passenger-assignment-optimization/README.md) | Faster assignment implementation with unchanged evaluation outputs | Real-data baseline profiling complete; C01 registered, not implemented; no speedup claim | [Stage-1 results](EXP-003-passenger-assignment-optimization/stage1-results.md), [C01 plan](EXP-003-passenger-assignment-optimization/candidate-C01-plan.md), [verification](EXP-003-passenger-assignment-optimization/verification.md) |
+| [EXP-003-passenger-assignment-optimization](EXP-003-passenger-assignment-optimization/README.md) | Faster assignment implementation with unchanged evaluation outputs | C01 exact checks passed; modest gain below registered targets; production unchanged | [C01 result/decision](EXP-003-passenger-assignment-optimization/C01-results.md), [baseline profile](EXP-003-passenger-assignment-optimization/stage1-results.md), [verification](EXP-003-passenger-assignment-optimization/verification.md) |
 
 Add study records in their own experiment changes. Distinguish a local inventory from a tracked, backed-up evidence archive.
 

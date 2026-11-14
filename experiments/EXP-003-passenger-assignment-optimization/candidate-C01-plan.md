@@ -2,6 +2,8 @@
 
 Date: 2026-11-14 (Asia/Colombo). Candidate selected after the registered baseline profile. Implementation revision 1 is prepared below; its correctness checks precede the registered timing trial. No candidate timings were used to choose this implementation.
 
+Execution status: completed from commit `19b9284`; see [results and decision](C01-results.md). The registered gates below were retained. Revision 2 passed correctness but did not meet the primary timing thresholds, so it is not promoted.
+
 ## Implementation revision 1 and execution
 
 `C01PassengerAssignment` is a separate experimental backend. The production PassengerAssignment remains unchanged. C01 copies the frozen assignment method with only the local segment-peak expression changed; an AST check verifies no other method-body differences. The new helper bypasses the general NumPy reduction for one- and two-element native float64 segments, preserves tie/signed-zero behavior, and falls back for NaNs, other dtypes, larger segments, empty and unusual arrays. No capacity value is cached across load updates.

@@ -1,0 +1,27 @@
+{
+  "study_id": "EXP-003",
+  "run_id": "EXP-003-C01-paired-run01",
+  "status": "completed",
+  "started_at": "2026-11-14T16:51:26.608969+00:00",
+  "git_status": "",
+  "mode": "paired_timing",
+  "execution_commit": "19b92840fd14cd587b28e67b7a7afaad82cd622f",
+  "candidate_sha256": "e9c153f9694d44659985adcc48b1ee2ae915861e93d6c9661ce387a0a71ffbe3",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "command": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe -m transit_rl.experiment.assignment_c01_trial --run --output transit_rl/results/EXP-003-C01-paired-run01",
+  "numerical_threads": 1,
+  "production_default": "frozen-equivalent unchanged assignment",
+  "large_artifacts": "not_saved",
+  "sleep_request": {
+    "requested": true,
+    "previous_flags": 2147483648,
+    "flags": 2147483649
+  },
+  "workload_sha256": "3ad52a27bb1dcc0d378fbb974a51f7ee73d1898c9dffce68fc6cf8727a45c960",
+  "sleep_request_restored": true,
+  "finished_at": "2026-11-14T16:52:58.331743+00:00",
+  "process_elapsed_seconds": 91.72254200000316,
+  "utc_span_seconds": 91.722774,
+  "timing_qualified": false
+}
