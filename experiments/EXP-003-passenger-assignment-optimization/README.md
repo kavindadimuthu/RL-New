@@ -20,4 +20,6 @@ The second command performs strict correctness comparisons only. It is not a tim
 
 Next step: define/profile representative real-data workloads, prerecord a specific candidate and timing protocol, then implement and differentially verify it. Candidate timings must not be reported from this foundation check.
 
+[Stage-1 protocol](stage1-protocol.md) now registers fixed real-data workload capture and baseline profiling. It uses separate ordinary timings and profiler runs, and does not execute an optimization candidate.
+
 No large model files are needed. Local records are not an off-machine backup; backup remains pending until explicitly verified. No remote publication or automatic deletion is implied.
