@@ -1,0 +1,11 @@
+{
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": [
+    "numpy==2.5.4",
+    "pip==25.0.1",
+    "scipy==1.18.1"
+  ],
+  "numerical_threads": 1
+}

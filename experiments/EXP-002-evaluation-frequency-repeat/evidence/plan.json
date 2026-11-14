@@ -1,0 +1,89 @@
+{
+  "version": 2,
+  "modes": {
+    "A_dense": "dense",
+    "B_committed": "committed",
+    "C_hour_end": "terminal"
+  },
+  "workers": 3,
+  "training_seeds": [
+    2027,
+    2028,
+    2029
+  ],
+  "evaluation_seeds": [
+    7000,
+    7001,
+    7002
+  ],
+  "timing_episodes": 100,
+  "learning_episodes": 300,
+  "equal_time_seconds": 120,
+  "numerical_threads_per_worker": 1,
+  "gpu": false,
+  "constraints": {
+    "worker_memory_mib": 1536,
+    "minimum_free_memory_mib": 4096,
+    "maximum_learning_episodes": 5000,
+    "maximum_training_seconds_per_job": 1200
+  },
+  "timing_order": [
+    "A_dense",
+    "C_hour_end",
+    "B_committed"
+  ],
+  "learning_waves": [
+    [
+      {
+        "mode": "A_dense",
+        "seed": 2027
+      },
+      {
+        "mode": "B_committed",
+        "seed": 2027
+      },
+      {
+        "mode": "C_hour_end",
+        "seed": 2027
+      }
+    ],
+    [
+      {
+        "mode": "B_committed",
+        "seed": 2028
+      },
+      {
+        "mode": "C_hour_end",
+        "seed": 2028
+      },
+      {
+        "mode": "A_dense",
+        "seed": 2028
+      }
+    ],
+    [
+      {
+        "mode": "C_hour_end",
+        "seed": 2029
+      },
+      {
+        "mode": "A_dense",
+        "seed": 2029
+      },
+      {
+        "mode": "B_committed",
+        "seed": 2029
+      }
+    ]
+  ],
+  "notes": [
+    "Timing jobs run serially, 100 episodes, original 10000-episode epsilon schedule.",
+    "Equal-episode learning: 300 episodes, shared decay reaching min epsilon at episode 240.",
+    "Equal-time learning: 120 training seconds, shared time-based decay reaching min at 96 seconds.",
+    "Time budgets include training only; stop at episode boundary and record overshoot.",
+    "Common greedy evaluator at thirds and endpoint, three independent tie-breaking seeds.",
+    "Fresh learner per job; no Q-table exports, plotting, or shared caches.",
+    "Three workers per wave, one mode each, same training seed; new processes each wave.",
+    "Preliminary learning comparison: three seeds and short horizon cannot establish convergence."
+  ]
+}

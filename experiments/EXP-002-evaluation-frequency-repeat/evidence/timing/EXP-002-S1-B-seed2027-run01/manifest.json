@@ -1,0 +1,30 @@
+{
+  "study_id": "EXP-002",
+  "run_id": "EXP-002-S1-B-seed2027-run01",
+  "stage": "timing",
+  "treatment": "B_committed",
+  "training_seed": 2027,
+  "evaluation_seeds": [
+    7000,
+    7001,
+    7002
+  ],
+  "status": "completed",
+  "started_at": "2026-11-14T10:19:24.373673+00:00",
+  "timezone": "UTC",
+  "code_commit": "d8885c7f15f21e421fe13934dca7987acdfb5469",
+  "working_tree_dirty": false,
+  "command": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe -m transit_rl.experiment.evaluation_comparison --run --stage all --study-id EXP-002 --output transit_rl/results/EXP-002-repeat",
+  "environment_reference": "../../environment.json",
+  "hardware_reference": "../../machine.json",
+  "resolved_config": "config.json",
+  "large_artifacts": {
+    "q_table": "not_saved",
+    "checkpoint": "not_saved"
+  },
+  "artifact_reason": "Compact metrics/evaluations retained; regeneration is a new run.",
+  "finished_at": "2026-11-14T10:20:28.961375+00:00",
+  "episodes_completed": 100,
+  "training_seconds": 64.46949749999112,
+  "evaluation_seconds": 0.0
+}

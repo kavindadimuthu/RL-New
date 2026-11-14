@@ -1,0 +1,18 @@
+{
+  "verified_at_utc": "2026-11-14T18:15:06.2543281+05:30",
+  "code_commit": "d8885c7f15f21e421fe13934dca7987acdfb5469",
+  "trained_runs": 21,
+  "untrained_diagnostics": 1,
+  "completed": "completed",
+  "archive_files": 159,
+  "archive_bytes": 5246715.0,
+  "archive_copy_sha256_verified": true,
+  "source_input_sha256_verified": true,
+  "regenerated_without_training": true,
+  "comparison_json_sha256": "A050C0DC3095C299D627AFBB5F98F36F14FB8D761D3899B7F5C2F946926F834C",
+  "identical_regenerated_table_bytes": true,
+  "backup_status": "local_git_only_off_machine_not_verified",
+  "large_artifacts": "not_saved",
+  "timestamp_anomaly_runs": 3,
+  "qualification": "Stage 3 first wave has a disclosed UTC/performance-counter discrepancy; original observations retained; no wall-calendar continuity claim"
+}

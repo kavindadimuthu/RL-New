@@ -1,0 +1,4 @@
+phase,mode,independent_training_seeds,training_seconds,cpu_seconds,evaluation_seconds,episodes,training_steps,assignments,evaluation_requests,max_memory_mib
+timing,A_dense,1,86.0012224000493,85.078125,0.0,100,82889,46735,87689,336.74609375
+timing,B_committed,1,64.46949749999112,63.78125,0.0,100,83288,33366,37312,328.1171875
+timing,C_hour_end,1,7.909180100006779,7.859375,0.0,100,83321,2396,2400,165.1171875
