@@ -10,3 +10,5 @@ Follow the [project research standard](../docs/RESEARCH_EXPERIMENT_STANDARD.md).
 Add study records in their own experiment changes. Distinguish a local inventory from a tracked, backed-up evidence archive.
 
 For each new study add a row linking its tracked protocol and report. Record repeated runs under unique IDs. Keep failed/incomplete runs visible and document corrections instead of overwriting observations.
+
+Current direction from [EXP-002-D01](EXP-002-evaluation-frequency-repeat/decision.md): retain A (every-action evaluation) as the default baseline, retain B (committed changes) for further investigation, and deprioritize C (hour-end evaluation) under the tested settings. Future experiments receive their own IDs and prospectively committed protocols.

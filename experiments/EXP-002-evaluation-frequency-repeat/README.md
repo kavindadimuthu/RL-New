@@ -6,6 +6,7 @@
 
 - [Prespecified protocol](protocol.md): prior knowledge, fresh seeds, budgets, evaluation, stopping and retention.
 - [Results and interpretation](report.md): primary numerical tables, per-seed results and limits.
+- [Research decision EXP-002-D01](decision.md): retain A as default, B as a candidate, and deprioritize C under the tested conditions; procedure for subsequent studies.
 - [Verification and deviations](verification.md): tests, independent archive checks and timing qualification.
 - [Original compact evidence](evidence/): timestamps, source/input hashes, environment, hardware, settings, metrics and evaluations.
 - [Analysis scripts](analysis/): regenerate primary summaries without training; separate post-hoc timestamp diagnostic.
