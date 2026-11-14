@@ -1,2 +1,2 @@
 # Preserve archived observations, raw source snapshots and checksums exactly.
-experiments/EXP-002-evaluation-frequency-repeat/evidence/** -text
+experiments/EXP-002-evaluation-frequency-repeat/evidence/** -text whitespace=cr-at-eol

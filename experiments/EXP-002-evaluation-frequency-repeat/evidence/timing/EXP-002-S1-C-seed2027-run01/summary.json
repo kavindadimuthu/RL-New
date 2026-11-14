@@ -1,0 +1,32 @@
+{
+  "job": {
+    "study_id": "EXP-002",
+    "run_id": "EXP-002-S1-C-seed2027-run01",
+    "code_commit": "d8885c7f15f21e421fe13934dca7987acdfb5469",
+    "command": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe -m transit_rl.experiment.evaluation_comparison --run --stage all --study-id EXP-002 --output transit_rl/results/EXP-002-repeat",
+    "phase": "timing",
+    "mode": "C_hour_end",
+    "seed": 2027,
+    "episodes": 100,
+    "seconds": 120,
+    "evaluation_seeds": [
+      7000,
+      7001,
+      7002
+    ],
+    "output": "transit_rl\\results\\EXP-002-repeat\\timing\\EXP-002-S1-C-seed2027-run01"
+  },
+  "stop_reason": "completed",
+  "episodes": 100,
+  "evaluation_seconds": 0.0,
+  "training_seconds": 7.909180100006779,
+  "training_cpu_seconds": 7.859375,
+  "mean_episode_seconds": 0.0790918010000678,
+  "steps": 83321,
+  "evaluation_requests": 2400,
+  "cache_hits": 4,
+  "assignment_cache_misses": 2396,
+  "final_memory_mb": 165.1171875,
+  "process_wall_seconds_including_evaluation": 7.9453536000000895,
+  "evaluations": []
+}

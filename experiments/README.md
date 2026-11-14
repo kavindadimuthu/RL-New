@@ -5,7 +5,7 @@ Follow the [project research standard](../docs/RESEARCH_EXPERIMENT_STANDARD.md).
 | Study ID | Question | Status | Evidence location |
 |---|---|---|---|
 | EXP-001-evaluation-frequency | Original evaluation-frequency study | Legacy archive | Commit `6de521d` on `archive/evaluation-frequency-legacy`; do not combine with the repeat |
-| [EXP-002-evaluation-frequency-repeat](EXP-002-evaluation-frequency-repeat/protocol.md) | Prospective repeat with complete provenance | Planned; protocol committed before execution | Fresh observations will be archived separately |
+| [EXP-002-evaluation-frequency-repeat](EXP-002-evaluation-frequency-repeat/README.md) | Prospective repeat with recorded provenance | Completed; Stage 3 timing anomaly disclosed; off-machine backup pending | [Report](EXP-002-evaluation-frequency-repeat/report.md), [timing review](EXP-002-evaluation-frequency-repeat/timing_review.md), and verified compact evidence |
 
 Add study records in their own experiment changes. Distinguish a local inventory from a tracked, backed-up evidence archive.
 

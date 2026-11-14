@@ -1,0 +1,238 @@
+{
+  "post_hoc": true,
+  "threshold_seconds": 5,
+  "note": "Diagnostic threshold chosen after observing a large discrepancy; not a prespecified exclusion rule. Start/end UTC also include setup. Cause is unknown. No observations excluded.",
+  "records": [
+    {
+      "run_id": "EXP-002-S1-A-seed2027-run01",
+      "phase": "timing",
+      "training_seed": 2027,
+      "utc_span_seconds": 86.121071,
+      "recorded_process_elapsed_seconds": 86.04316130000007,
+      "training_seconds": 86.0012224000493,
+      "training_cpu_seconds": 85.078125,
+      "span_minus_elapsed_seconds": 0.07790969999993536,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S1-C-seed2027-run01",
+      "phase": "timing",
+      "training_seed": 2027,
+      "utc_span_seconds": 7.981212,
+      "recorded_process_elapsed_seconds": 7.9453536000000895,
+      "training_seconds": 7.909180100006779,
+      "training_cpu_seconds": 7.859375,
+      "span_minus_elapsed_seconds": 0.035858399999910695,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S1-B-seed2027-run01",
+      "phase": "timing",
+      "training_seed": 2027,
+      "utc_span_seconds": 64.587702,
+      "recorded_process_elapsed_seconds": 64.51212309999755,
+      "training_seconds": 64.46949749999112,
+      "training_cpu_seconds": 63.78125,
+      "span_minus_elapsed_seconds": 0.07557890000244072,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S2-A-seed2027-run01",
+      "phase": "equal_episodes",
+      "training_seed": 2027,
+      "utc_span_seconds": 325.58069,
+      "recorded_process_elapsed_seconds": 325.41533379999964,
+      "training_seconds": 324.43726179996884,
+      "training_cpu_seconds": 320.609375,
+      "span_minus_elapsed_seconds": 0.16535620000036033,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S2-B-seed2027-run01",
+      "phase": "equal_episodes",
+      "training_seed": 2027,
+      "utc_span_seconds": 214.253788,
+      "recorded_process_elapsed_seconds": 214.08494839999912,
+      "training_seconds": 213.04809329999625,
+      "training_cpu_seconds": 210.859375,
+      "span_minus_elapsed_seconds": 0.16883960000086518,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S2-C-seed2027-run01",
+      "phase": "equal_episodes",
+      "training_seed": 2027,
+      "utc_span_seconds": 26.653506,
+      "recorded_process_elapsed_seconds": 26.56303990000015,
+      "training_seconds": 25.630374300035328,
+      "training_cpu_seconds": 25.421875,
+      "span_minus_elapsed_seconds": 0.09046609999985122,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S2-B-seed2028-run01",
+      "phase": "equal_episodes",
+      "training_seed": 2028,
+      "utc_span_seconds": 215.84831,
+      "recorded_process_elapsed_seconds": 215.69354459999886,
+      "training_seconds": 214.74371660001998,
+      "training_cpu_seconds": 212.703125,
+      "span_minus_elapsed_seconds": 0.15476540000113914,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S2-C-seed2028-run01",
+      "phase": "equal_episodes",
+      "training_seed": 2028,
+      "utc_span_seconds": 28.363912,
+      "recorded_process_elapsed_seconds": 28.264704600002005,
+      "training_seconds": 27.294227399979718,
+      "training_cpu_seconds": 27.03125,
+      "span_minus_elapsed_seconds": 0.09920739999799366,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S2-A-seed2028-run01",
+      "phase": "equal_episodes",
+      "training_seed": 2028,
+      "utc_span_seconds": 328.707221,
+      "recorded_process_elapsed_seconds": 328.5445150000014,
+      "training_seconds": 327.5868467000073,
+      "training_cpu_seconds": 325.109375,
+      "span_minus_elapsed_seconds": 0.16270599999859314,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S2-C-seed2029-run01",
+      "phase": "equal_episodes",
+      "training_seed": 2029,
+      "utc_span_seconds": 26.783607,
+      "recorded_process_elapsed_seconds": 26.691525599999295,
+      "training_seconds": 25.837257400049566,
+      "training_cpu_seconds": 25.75,
+      "span_minus_elapsed_seconds": 0.09208140000070486,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S2-A-seed2029-run01",
+      "phase": "equal_episodes",
+      "training_seed": 2029,
+      "utc_span_seconds": 305.975139,
+      "recorded_process_elapsed_seconds": 305.81436419999955,
+      "training_seconds": 302.26957559999937,
+      "training_cpu_seconds": 300.953125,
+      "span_minus_elapsed_seconds": 0.16077480000046762,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S2-B-seed2029-run01",
+      "phase": "equal_episodes",
+      "training_seed": 2029,
+      "utc_span_seconds": 192.549978,
+      "recorded_process_elapsed_seconds": 192.39962989999913,
+      "training_seconds": 191.52603870000166,
+      "training_cpu_seconds": 190.890625,
+      "span_minus_elapsed_seconds": 0.15034810000088328,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S3-A-seed2027-run01",
+      "phase": "equal_time",
+      "training_seed": 2027,
+      "utc_span_seconds": 7393.054057,
+      "recorded_process_elapsed_seconds": 121.96178900000086,
+      "training_seconds": 120.84852469998441,
+      "training_cpu_seconds": 120.015625,
+      "span_minus_elapsed_seconds": 7271.092267999999,
+      "flagged": true
+    },
+    {
+      "run_id": "EXP-002-S3-B-seed2027-run01",
+      "phase": "equal_time",
+      "training_seed": 2027,
+      "utc_span_seconds": 7393.046721,
+      "recorded_process_elapsed_seconds": 121.94051649999892,
+      "training_seconds": 120.41772979995949,
+      "training_cpu_seconds": 119.640625,
+      "span_minus_elapsed_seconds": 7271.106204500001,
+      "flagged": true
+    },
+    {
+      "run_id": "EXP-002-S3-C-seed2027-run01",
+      "phase": "equal_time",
+      "training_seed": 2027,
+      "utc_span_seconds": 7392.536381,
+      "recorded_process_elapsed_seconds": 121.2557020000022,
+      "training_seconds": 120.06411759984985,
+      "training_cpu_seconds": 119.28125,
+      "span_minus_elapsed_seconds": 7271.280678999998,
+      "flagged": true
+    },
+    {
+      "run_id": "EXP-002-S3-B-seed2028-run01",
+      "phase": "equal_time",
+      "training_seed": 2028,
+      "utc_span_seconds": 121.71145,
+      "recorded_process_elapsed_seconds": 121.60763800000132,
+      "training_seconds": 120.47092509999129,
+      "training_cpu_seconds": 120.078125,
+      "span_minus_elapsed_seconds": 0.10381199999868329,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S3-C-seed2028-run01",
+      "phase": "equal_time",
+      "training_seed": 2028,
+      "utc_span_seconds": 121.485891,
+      "recorded_process_elapsed_seconds": 121.15504389999842,
+      "training_seconds": 120.0067864000157,
+      "training_cpu_seconds": 119.578125,
+      "span_minus_elapsed_seconds": 0.33084710000157713,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S3-A-seed2028-run01",
+      "phase": "equal_time",
+      "training_seed": 2028,
+      "utc_span_seconds": 121.067315,
+      "recorded_process_elapsed_seconds": 120.9672376999988,
+      "training_seconds": 120.02069210000627,
+      "training_cpu_seconds": 119.375,
+      "span_minus_elapsed_seconds": 0.10007730000118897,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S3-C-seed2029-run01",
+      "phase": "equal_time",
+      "training_seed": 2029,
+      "utc_span_seconds": 121.56886,
+      "recorded_process_elapsed_seconds": 121.21298070000194,
+      "training_seconds": 120.06404890009071,
+      "training_cpu_seconds": 119.671875,
+      "span_minus_elapsed_seconds": 0.35587929999806533,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S3-A-seed2029-run01",
+      "phase": "equal_time",
+      "training_seed": 2029,
+      "utc_span_seconds": 122.286771,
+      "recorded_process_elapsed_seconds": 122.19322040000043,
+      "training_seconds": 121.24589880000713,
+      "training_cpu_seconds": 120.8125,
+      "span_minus_elapsed_seconds": 0.09355059999957405,
+      "flagged": false
+    },
+    {
+      "run_id": "EXP-002-S3-B-seed2029-run01",
+      "phase": "equal_time",
+      "training_seed": 2029,
+      "utc_span_seconds": 121.347619,
+      "recorded_process_elapsed_seconds": 121.23069100000066,
+      "training_seconds": 120.31563109999843,
+      "training_cpu_seconds": 119.875,
+      "span_minus_elapsed_seconds": 0.11692799999933357,
+      "flagged": false
+    }
+  ]
+}
