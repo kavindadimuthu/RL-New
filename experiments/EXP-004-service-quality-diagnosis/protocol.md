@@ -1,6 +1,6 @@
 # EXP-004: Low-service diagnosis and controlled improvement
 
-Protocol v0.1 with recorded amendments, 2026-11-17, Asia/Colombo. Status: stage 0, preflight and full stage-1 baseline completed; reference pending. Owner: project research team.
+Protocol v0.1 with recorded amendments, 2026-11-17, Asia/Colombo. Status: full stage-1 baseline and stage-2 reference completed; further controls pending. Owner: project research team.
 
 ## Question and prior knowledge
 
@@ -26,7 +26,9 @@ Full baseline amendment: [stage1-baseline.md](stage1-baseline.md), source/protoc
 
 Planned baseline budget: 300 episodes per fresh learner, training seeds 2034, 2035, 2036; evaluate at 0, 100 and 300 episodes using independent ties 7100, 7101, 7102. Same fixed demand as training; no held-out generalization claim. Dense baseline, inherited learning rate/gamma, epsilon 1 to .05 by episode 240, then .05. No model export. These budgets are provisional until the runnable stage amendment is committed; no stage-1 execution authorized by the audit command.
 
-## Stage 2: feasible reference (implementation pending)
+## Stage 2: feasible reference
+
+Registered implementation/protocol/analysis at `e87f633` before execution: [stage2-reference.md](stage2-reference.md). Completed results and action-budget qualification: [stage2-results.md](stage2-results.md). The following foundation requirements are retained; no retrospective changes to the tested algorithm.
 
 Register a deterministic demand-guided route construction and frequency-improvement algorithm before measuring it. Same network, assignment, route/frequency/fleet constraints, and transition objective as baseline. Report quality and evaluation count/runtime; do not call an unconstrained or unlimited-search reference a fair equal-compute competitor. Check whether reference plans are reachable within the baseline's 60 actions, or label them feasibility references outside its action budget. A reference is a demonstrated achievable result, not an upper bound or optimality certificate.
 

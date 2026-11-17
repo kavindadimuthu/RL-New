@@ -1,6 +1,6 @@
 # EXP-004 status and findings
 
-Foundation created 2026-11-17. Stage-1 instrumentation, preflight and full three-seed baseline completed. No improvement treatment executed. See [full stage-1 results](stage1-results.md): 31.99% served;35.70%no eligible path;32.31%capacity-constrained unmet demand. Feasible reference is next.
+Foundation created 2026-11-17. Full three-seed baseline and deterministic feasible reference completed. [Stage1](stage1-results.md):31.99%served. [Stage2](stage2-results.md):81.51%served, but first-hour trace uses105actions versus original60. No RL improvement treatment/default change executed. Action-budget-matched reference control is next.
 
 Code inspection identifies exact-state random fallback, no service-acceptance condition on FINISH_PLAN, hidden remaining action budget, and equal-hour service weighting versus demand-weighted reporting. These are mechanisms/risks, not measured causal attribution. Assignment uses ordered greedy passenger allocation; no globally maximal throughput guarantee.
 
@@ -51,3 +51,5 @@ Raw compact evidence is in `evidence/EXP-004-S1-preflight-seed2034-run01/`. `pre
 Next: finalize and commit the three-seed 300-episode baseline execution amendment, including standalone evaluation checkpoints and runtime guards, then run it. The demand-guided feasible reference follows. Do not introduce a 70% finish restriction before feasibility assessment. Full baseline and reference remain pending. Nothing merged to master or pushed; off-machine backup pending.
 
 Subsequent status: the full baseline above is completed and archived under source `578086b`; that earlier next-task statement records preflight closeout. [Stage-1 results](stage1-results.md) is the current detailed result/decision. All900training episodes and27evaluation days completed;22,248hourly records verified. Reference and controlled fixes remain pending.
+
+Stage2subsequently completed under source `e87f633`: see [stage2-results.md](stage2-results.md) for current reference findings/qualification and next decision. Retain the earlier stage closeout statements as historical context. No claim that the81.51%plan satisfies the original60action first-hour budget.
