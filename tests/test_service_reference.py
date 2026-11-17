@@ -73,6 +73,29 @@ class ReferenceTests(unittest.TestCase):
         self.assertEqual(result['plan'], ())
         self.assertTrue(result['evaluation_budget_reached'])
 
+    def test_action_budget_reserves_finish_and_never_commits_partial_edit(self):
+        cfg, net, od = self.fixture()
+        candidates = shortest_path_candidates(net, cfg)
+        with self.assertRaises(ValueError):
+            ReferencePlanner(TransitEnvironment(net, od, cfg), candidates, action_limit=0)
+        for limit in (1, 2, 3, 4, 6, 60):
+            settings = replace(cfg, max_steps_per_hour=limit)
+            planning = TransitEnvironment(net, od, settings)
+            planner = ReferencePlanner(planning, candidates, max_evaluations=150, action_limit=limit)
+            replay = TransitEnvironment(net, od, settings)
+            previous = ()
+            for hour in (1, 2):
+                result = planner.plan_hour(hour, previous)
+                self.assertLessEqual(len(result['actions']), limit)
+                self.assertEqual(result['actions'][-1].type, 'FINISH_PLAN')
+                for action in result['actions']:
+                    step = replay.step(action)
+                self.assertFalse(replay.hourly_records[-1]['forced_finish'])
+                self.assertEqual(replay.hourly_plans[hour], result['plan'])
+                self.assertFalse(replay.current_route)
+                previous = result['plan']
+            self.assertTrue(replay.done)
+
 
 if __name__ == '__main__':
     unittest.main()

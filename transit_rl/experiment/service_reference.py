@@ -33,14 +33,18 @@ def direct_mass(route, residual, bidirectional):
 
 
 class ReferencePlanner:
-    def __init__(self, env, candidates, max_evaluations=2000, max_edits=120):
+    def __init__(self, env, candidates, max_evaluations=2000, max_edits=120, action_limit=None):
         self.env, self.cfg, self.candidates = env, env.cfg, candidates
         self.max_evaluations, self.max_edits = max_evaluations, max_edits
+        if action_limit is not None and action_limit < 1:
+            raise ValueError('Action budget must reserve FINISH_PLAN')
+        self.action_limit = action_limit
 
     def plan_hour(self, hour, previous):
         self.env.hour, self.env.previous_plan = hour, previous
         plan = reset_kept_flags(previous)
         requests, edits, actions, accepted = 0, 0, [], []
+        skipped_action_budget = 0
 
         def evaluate(candidate):
             nonlocal requests
@@ -50,7 +54,8 @@ class ReferencePlanner:
         current = evaluate(plan)
 
         def remaining():
-            return requests < self.max_evaluations and edits < self.max_edits
+            return (requests < self.max_evaluations and edits < self.max_edits
+                    and (self.action_limit is None or len(actions) + 1 < self.action_limit))
 
         def rank(count):
             residual = current.assignment.unserved_demand
@@ -71,11 +76,15 @@ class ReferencePlanner:
             return [Action(ADD_STOP, stop) for stop in route] + [Action(END_ROUTE)]
 
         def select(options):
+            nonlocal skipped_action_budget
             best = None
             score = current.reward['total_reward']
             for candidate, trace, label in options:
                 if not remaining():
                     break
+                if self.action_limit is not None and len(actions) + len(trace) + 1 > self.action_limit:
+                    skipped_action_budget += 1
+                    continue
                 result = evaluate(candidate)
                 if result.reward['total_reward'] > score + 1e-12:
                     score = result.reward['total_reward']
@@ -87,6 +96,7 @@ class ReferencePlanner:
             if best is None:
                 return False
             plan, current, trace, label = best
+            assert self.action_limit is None or len(actions) + len(trace) + 1 <= self.action_limit
             actions.extend(trace)
             edits += 1
             accepted.append(dict(edit=edits, type=label, score=current.reward['total_reward'],
@@ -136,7 +146,10 @@ class ReferencePlanner:
                 break
             improve_frequencies()
         actions.append(Action(FINISH_PLAN))
+        assert self.action_limit is None or len(actions) <= self.action_limit
         return dict(plan=plan, evaluation=current, actions=actions, accepted=accepted,
                     requests=requests, edits=edits,
                     evaluation_budget_reached=requests >= self.max_evaluations,
-                    edit_budget_reached=edits >= self.max_edits)
+                    edit_budget_reached=edits >= self.max_edits,
+                    skipped_action_budget=skipped_action_budget,
+                    action_budget_exhausted=self.action_limit is not None and len(actions) == self.action_limit)

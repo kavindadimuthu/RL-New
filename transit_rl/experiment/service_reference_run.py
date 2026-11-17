@@ -35,6 +35,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run', action='store_true')
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--action-limit', type=int, choices=(60,), default=None,
+                        help='Stage3: budget includes FINISH_PLAN; no extended replay')
     args = parser.parse_args()
     if not args.run:
         parser.error('--run required')
@@ -44,7 +46,7 @@ def main():
     commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     args.output.mkdir(parents=True, exist_ok=False)
     start, cpu = time.perf_counter(), time.process_time()
-    manifest = dict(study='EXP-004', stage='S2-reference', status='running', code_commit=commit,
+    manifest = dict(study='EXP-004', stage='S3-reference60' if args.action_limit else 'S2-reference', status='running', code_commit=commit,
         working_tree_status=status, started_at=datetime.now(timezone.utc).isoformat(),
         command=sys.argv, cwd=str(ROOT), python=sys.version, executable=sys.executable,
         numpy=np.__version__, scipy=scipy.__version__, platform=platform.platform(),
@@ -52,6 +54,7 @@ def main():
         deterministic=True, rng='not_used', max_search_requests_per_hour=2000,
         max_accepted_edits_per_hour=120, replacement_rounds=3,
         qtable='not_applicable', checkpoint='not_applicable', completed_hours=0)
+    manifest['accepted_action_limit'] = args.action_limit
     write(args.output / 'manifest.json', manifest)
     try:
         cfg = replace(ExperimentConfig(), num_episodes=300, reward_mode='dense',
@@ -81,7 +84,7 @@ def main():
             candidates = shortest_path_candidates(net, cfg)
             write(args.output / 'route-candidates.json', candidates)
             manifest['candidate_generation_seconds'] = time.perf_counter()-tick
-            planner = ReferencePlanner(env, candidates)
+            planner = ReferencePlanner(env, candidates, action_limit=args.action_limit)
             previous, planned, queries = env.initial_plan, [], 0
             tick, proc = time.perf_counter(), time.process_time()
             with (args.output / 'search-hours.jsonl').open('w', encoding='utf-8') as file:
@@ -101,6 +104,7 @@ def main():
                         actions=[dict(type=a.type, arg=a.arg) for a in result['actions']],
                         action_count=len(result['actions']), within_original_60_actions=len(result['actions']) <= cfg.max_steps_per_hour,
                         evaluation_budget_reached=result['evaluation_budget_reached'], edit_budget_reached=result['edit_budget_reached'],
+                        skipped_action_budget=result['skipped_action_budget'], action_budget_exhausted=result['action_budget_exhausted'],
                         elapsed_seconds=time.perf_counter()-ht, working_mb=working, free_mb=free)
                     file.write(json.dumps(value, separators=(',', ':'))+'\n')
                     file.flush()
@@ -114,6 +118,8 @@ def main():
             # Replay all accepted moves through the original action masks and reward
             # implementation. Raise deadline only if trace exceeds original60steps.
             replay_limit = max(cfg.max_steps_per_hour, max(len(r['actions']) for r in planned))
+            if args.action_limit is not None:
+                assert replay_limit == cfg.max_steps_per_hour == args.action_limit
             replay = DiagnosticEnvironment(net, od, replace(cfg, max_steps_per_hour=replay_limit))
             total_reward, tick = 0.0, time.perf_counter()
             for hour, result in enumerate(planned, 1):
