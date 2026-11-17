@@ -56,13 +56,17 @@ class DiagnosticEnvironment(TransitEnvironment):
         self._unseen = 0
         self._rare = 0
 
+    def learning_key(self, state):
+        """Default observation, overridable only by explicit experiment subclasses."""
+        return state_to_key(state)
+
     def step(self, action):
         if action not in self.valid_actions():
             return super().step(action)
         self._actions[action.type] += 1
         if self.observer_agent is not None:
             agent = self.observer_agent
-            key = state_to_key(self.state)
+            key = self.learning_key(self.state)
             visits = agent.visits.get(key, {})
             total = sum(visits.values())
             self._state_visits.append(total)

@@ -27,6 +27,7 @@ from .evaluation_comparison import memory_mb
 from .service_diagnostics import DiagnosticEnvironment
 from .service_preflight import write
 from .trainer import run_episode, summarise_day
+from .remaining_action_state import RemainingActionEnvironment, keyed_episode
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -65,16 +66,16 @@ def diagnostic_summary(rows):
     return summary
 
 
-def evaluate(agent, cfg, net, od, episode, directory):
+def evaluate(agent, cfg, net, od, episode, directory, env_type=DiagnosticEnvironment):
     before = learner_digest(agent)
     results = []
     for seed in (7100, 7101, 7102):
         observer = QLearningAgent(cfg, seed)
         observer.q, observer.visits = agent.q, agent.visits
-        env = DiagnosticEnvironment(net, od, cfg)
+        env = env_type(net, od, cfg)
         env.observer_agent = observer
         tick, cpu = time.perf_counter(), time.process_time()
-        reward, records, steps, unseen = run_episode(env, observer, False)
+        reward, records, steps, unseen = keyed_episode(env, observer, False)
         results.append(dict(seed=seed, reward=reward, steps=steps, unseen=unseen,
                             elapsed_seconds=time.perf_counter()-tick,
                             cpu_seconds=time.process_time()-cpu,
@@ -91,6 +92,8 @@ def main():
     parser.add_argument('--run', action='store_true')
     parser.add_argument('--seed', type=int, choices=(2034, 2035, 2036), required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--method', choices=('A', 'B'), default=None,
+                        help='S4 A: original state; B: append remaining hourly actions')
     args = parser.parse_args()
     if not args.run:
         parser.error('--run required')
@@ -108,6 +111,9 @@ def main():
         executable=sys.executable, numpy=np.__version__, scipy=scipy.__version__,
         platform=platform.platform(), logical_cpus=os.cpu_count(), workers=1, numeric_threads=1,
         gpu=False, training_budget_seconds=600, qtable='not_saved', checkpoint='not_saved')
+    if args.method:
+        manifest.update(stage='S4-remaining-actions', method=args.method, paired_workers=2,
+            observation='original_six_fields' if args.method == 'A' else 'original_six_fields_plus_remaining_actions')
     write(args.output / 'manifest.json', manifest)
     training_time = training_cpu = 0.0
     try:
@@ -140,14 +146,15 @@ def main():
         with keep_awake() as awake:
             manifest['sleep_prevention'] = awake
             agent = QLearningAgent(cfg, args.seed)
-            env = DiagnosticEnvironment(net, od, cfg)
+            env_type = RemainingActionEnvironment if args.method == 'B' else DiagnosticEnvironment
+            env = env_type(net, od, cfg)
             env.observer_agent = agent
-            evaluate(agent, cfg, net, od, 0, args.output)
+            evaluate(agent, cfg, net, od, 0, args.output, env_type)
             with (args.output / 'episodes.jsonl').open('w', encoding='utf-8') as metrics, \
                  gzip.open(args.output / 'training-hours.jsonl.gz', 'wt', encoding='utf-8') as hours:
                 for episode in range(1, 301):
                     tick, proc = time.perf_counter(), time.process_time()
-                    reward, records, steps, unseen = run_episode(env, agent, True)
+                    reward, records, steps, unseen = keyed_episode(env, agent, True)
                     elapsed, cpu = time.perf_counter()-tick, time.process_time()-proc
                     training_time += elapsed
                     training_cpu += cpu
@@ -164,13 +171,13 @@ def main():
                     hours.flush()
                     manifest['episodes_completed'] = episode
                     if episode % 25 == 0:
-                        print(f'seed {args.seed}: {episode}/300, training {training_time:.1f}s, RAM {working:.0f}MiB', flush=True)
+                        print(f'method {args.method or "baseline"} seed {args.seed}: {episode}/300, training {training_time:.1f}s, RAM {working:.0f}MiB', flush=True)
                         write(args.output / 'manifest.json', manifest)
                     if (working is not None and working > 1536) or (free is not None and free < 4096) or training_time > 600:
                         manifest['status'] = 'resource_guard_incomplete'
                         break
                     if episode in (100, 300):
-                        evaluate(agent, cfg, net, od, episode, args.output)
+                        evaluate(agent, cfg, net, od, episode, args.output, env_type)
             if manifest['status'] == 'running':
                 manifest['status'] = 'completed'
         manifest['sleep_scope_exited'] = True
