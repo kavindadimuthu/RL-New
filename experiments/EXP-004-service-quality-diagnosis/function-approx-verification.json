@@ -1,0 +1,194 @@
+{
+  "status": "incomplete",
+  "execution_commit": "89ebd99fcce170e410df80f6fd0fa2b580d675a2",
+  "study": {
+    "stage": "S5",
+    "target_episodes": 300,
+    "status": "failed",
+    "workers": 2,
+    "code_commit": "89ebd99fcce170e410df80f6fd0fa2b580d675a2",
+    "started_at": "2026-11-17T16:27:05.737255+00:00",
+    "waves": [
+      {
+        "seed": 2034,
+        "started_at": "2026-11-17T16:27:05.739763+00:00"
+      }
+    ],
+    "command": [
+      "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S5-execution\\transit_rl\\experiment\\function_approx_comparison.py",
+      "--run",
+      "--output",
+      "C:/Users/kavin/.codex/worktrees/807a/RL-New/transit_rl/results/EXP-004-S5-function-approx-run01"
+    ],
+    "error": "CalledProcessError(1, ['C:\\\\Users\\\\kavin\\\\Desktop\\\\automation\\\\rl-repo\\\\RL-New\\\\.venv-visualizer\\\\Scripts\\\\python.exe', '-m', 'transit_rl.experiment.service_baseline', '--run', '--method', 'L', '--episodes', '300', '--seed', '2034', '--output', 'C:\\\\Users\\\\kavin\\\\.codex\\\\worktrees\\\\807a\\\\RL-New\\\\transit_rl\\\\results\\\\EXP-004-S5-function-approx-run01\\\\EXP-004-S5-L-seed2034-run01'])",
+    "finished_at": "2026-11-17T16:33:01.705586+00:00",
+    "total_elapsed_seconds": 355.9922501999972
+  },
+  "run_statuses": {
+    "EXP-004-S5-E-seed2034-run01": {
+      "study": "EXP-004",
+      "stage": "S5-function-approx",
+      "status": "completed",
+      "training_seed": 2034,
+      "evaluation_seeds": [
+        7100,
+        7101,
+        7102
+      ],
+      "checkpoints": [
+        0,
+        100,
+        300
+      ],
+      "target_episodes": 300,
+      "episodes_completed": 300,
+      "code_commit": "89ebd99fcce170e410df80f6fd0fa2b580d675a2",
+      "working_tree_status": "",
+      "command": [
+        "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S5-execution\\transit_rl\\experiment\\service_baseline.py",
+        "--run",
+        "--method",
+        "E",
+        "--episodes",
+        "300",
+        "--seed",
+        "2034",
+        "--output",
+        "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S5-function-approx-run01\\EXP-004-S5-E-seed2034-run01"
+      ],
+      "cwd": "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S5-execution",
+      "started_at": "2026-11-17T16:27:06.801904+00:00",
+      "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+      "executable": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "logical_cpus": 20,
+      "workers": 1,
+      "numeric_threads": 1,
+      "gpu": false,
+      "training_budget_seconds": 900,
+      "qtable": "not_saved",
+      "checkpoint": "not_saved",
+      "method": "E",
+      "paired_workers": 2,
+      "observation": "original_six_fields_plus_remaining_actions",
+      "algorithm": "exact_tabular_q",
+      "feature_count": 32,
+      "feature_normalization": "L2_unit_per_action_for_L_only",
+      "stability_guards": null,
+      "power": "Power Scheme GUID: 27fa6203-3987-4dcc-918d-748559d549ec  (Performance)",
+      "battery": "{\n    \"BatteryStatus\":  2,\n    \"EstimatedChargeRemaining\":  100\n}",
+      "initial_memory_mb": {
+        "working": 68.4296875,
+        "free": 12666.54296875
+      },
+      "sleep_prevention": {
+        "requested": true,
+        "previous_flags": 2147483648,
+        "flags": 2147483649
+      },
+      "sleep_scope_exited": true,
+      "finished_at": "2026-11-17T16:33:01.420949+00:00",
+      "total_elapsed_seconds": 354.61907169999904,
+      "total_cpu_seconds": 349.109375,
+      "training_seconds": 325.78890199993475,
+      "training_cpu_seconds": 321.46875
+    },
+    "EXP-004-S5-L-seed2034-run01": {
+      "study": "EXP-004",
+      "stage": "S5-function-approx",
+      "status": "failed",
+      "training_seed": 2034,
+      "evaluation_seeds": [
+        7100,
+        7101,
+        7102
+      ],
+      "checkpoints": [
+        0,
+        100,
+        300
+      ],
+      "target_episodes": 300,
+      "episodes_completed": 48,
+      "code_commit": "89ebd99fcce170e410df80f6fd0fa2b580d675a2",
+      "working_tree_status": "",
+      "command": [
+        "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S5-execution\\transit_rl\\experiment\\service_baseline.py",
+        "--run",
+        "--method",
+        "L",
+        "--episodes",
+        "300",
+        "--seed",
+        "2034",
+        "--output",
+        "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S5-function-approx-run01\\EXP-004-S5-L-seed2034-run01"
+      ],
+      "cwd": "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S5-execution",
+      "started_at": "2026-11-17T16:27:06.786371+00:00",
+      "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+      "executable": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "logical_cpus": 20,
+      "workers": 1,
+      "numeric_threads": 1,
+      "gpu": false,
+      "training_budget_seconds": 900,
+      "qtable": "not_saved",
+      "checkpoint": "not_saved",
+      "method": "L",
+      "paired_workers": 2,
+      "observation": "original_six_fields_plus_remaining_actions",
+      "algorithm": "unit_feature_linear_semigradient_q",
+      "feature_count": 32,
+      "feature_normalization": "L2_unit_per_action_for_L_only",
+      "stability_guards": {
+        "max_abs_q": 1000,
+        "max_weight_row_norm": 10000
+      },
+      "power": "Power Scheme GUID: 27fa6203-3987-4dcc-918d-748559d549ec  (Performance)",
+      "battery": "{\n    \"BatteryStatus\":  2,\n    \"EstimatedChargeRemaining\":  100\n}",
+      "initial_memory_mb": {
+        "working": 68.8984375,
+        "free": 12672.79296875
+      },
+      "sleep_prevention": {
+        "requested": true,
+        "previous_flags": 2147483648,
+        "flags": 2147483649
+      },
+      "error": "FloatingPointError('Registered linear Q stability guard exceeded')",
+      "finished_at": "2026-11-17T16:28:47.622520+00:00",
+      "total_elapsed_seconds": 100.83617679999952,
+      "total_cpu_seconds": 98.703125,
+      "training_seconds": 93.71303679999619,
+      "training_cpu_seconds": 92.5625
+    }
+  },
+  "checksums": {
+    "EXP-004-S5-E-seed2034-run01/config.json": "509d550a94b28b3ad2c30bf2e00093f847672765d8e4c560505a0cc8c497f552",
+    "EXP-004-S5-E-seed2034-run01/episodes.jsonl": "37897fb4a047dc275a52f29ebd6125feed8c3ebcad799aabb9a06bee0ff3b9f8",
+    "EXP-004-S5-E-seed2034-run01/evaluation-000.json": "7e8c19260d343944931c8c9f8327f19d425d75d289ae25b11c4aa11d0be82a20",
+    "EXP-004-S5-E-seed2034-run01/evaluation-100.json": "cf49e09dd553fb54698c6c41c1ed291b8ae25ba621c11db91a01102a83f65906",
+    "EXP-004-S5-E-seed2034-run01/evaluation-300.json": "0f4384be30f2e4e3c78b9eb8f591e38775ee9eb6e2f8ba04ed51b14914391e01",
+    "EXP-004-S5-E-seed2034-run01/manifest.json": "3609e183d141e3504b9cd790b713be4ea8fb1d618d9998132d14347f21a314b2",
+    "EXP-004-S5-E-seed2034-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S5-E-seed2034-run01/source-input-sha256.json": "d16e187844afd70cda5821c8f236ac0f52d999a72c4db5570ef45d32dec22bc3",
+    "EXP-004-S5-E-seed2034-run01/training-hours.jsonl.gz": "6e74e2b2757d93e1b89af54717c837efbbb299f15376da5bf7f6196fe00caa07",
+    "EXP-004-S5-L-seed2034-run01/config.json": "509d550a94b28b3ad2c30bf2e00093f847672765d8e4c560505a0cc8c497f552",
+    "EXP-004-S5-L-seed2034-run01/episodes.jsonl": "70988a352c2eccdba9351565a7f4de998ff49e94ab4af40ce112338e6e593e15",
+    "EXP-004-S5-L-seed2034-run01/evaluation-000.json": "cc271be3a003409c1175053ceac49a01ba888b38844d232ebd74bfc39205f126",
+    "EXP-004-S5-L-seed2034-run01/manifest.json": "669d1d5818077054aad3c3093e35ff27a10de9ee41327cbe354afaf08de9ad77",
+    "EXP-004-S5-L-seed2034-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S5-L-seed2034-run01/source-input-sha256.json": "d16e187844afd70cda5821c8f236ac0f52d999a72c4db5570ef45d32dec22bc3",
+    "EXP-004-S5-L-seed2034-run01/training-hours.jsonl.gz": "4bd0476f42469219c7ea9f298ffae63854af3fb3dba06fc8e41a6889ddbda7bc",
+    "EXP-004-S5-L-seed2034-run01/weights-000.json": "eeffca85b37115a4204eec601d36aa80390d445b6dad0da86dffce49121c7c1c",
+    "EXP-004-S5-L-seed2034-run01/weights-final.json": "4529b00b5a2ae3c6d54b6a22fb238ac3ffe38aa69c5551b3e592cd046c98a890",
+    "study-manifest.json": "e45859181430f0346264d94fc21172346a6ab0b88ded7cf0cd7d655e6eebc369"
+  },
+  "decision": "No normal final comparison: retain failure without automatic rerun."
+}

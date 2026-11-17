@@ -9,3 +9,13 @@ Keep the tested B implementation/results for inspection. A's hidden remaining-ac
 Keep the verified 60-action reference as a quality baseline. Next direction: a separately registered knowledge-reuse/generalization study with matched deadline handling between arms; exact method/resources require prospective design. No automatic experiment continuation, heuristic imitation, reward redesign or 70% finish requirement is authorized by this decision record alone.
 
 All raw evidence and negative/uncertain findings retained locally. No off-machine backup/push verified, no outputs deleted. Execution commit and subsequent evidence commit serve distinct roles.
+
+## EXP-004-D02: linear-Q stability stop, 2026-11-17
+
+Basis: [Stage-5 results](stage5-results.md), prospective sources `a84499b` and `89ebd99`.
+
+Do not advance or deploy this linear semi-gradient Q variant. Its seed-2034 run completed 48 episodes, then exceeded the registered Q bound during 49. Stop later seed waves as registered; full three-pair quality comparison is incomplete, not a computed failure of the service-improvement criterion. No algorithm/feature/learning-rate rescue tuning or rerun was performed.
+
+Keep preflight, failed-run metrics/manifests, final stored finite weights and completed exact control. Parameters at failure are not certified stable. This finding does not establish that knowledge sharing or DQN is ineffective. Original production/default remains unchanged.
+
+Next design a separately preregistered stability-focused update revision with fixed features and transport settings before another quality comparison. Candidate stabilizers/alternative updates need prospective choice and tests; no automatic larger neural run, reward change or service threshold is implied.

@@ -1,0 +1,23 @@
+{
+  "stage": "S5",
+  "target_episodes": 300,
+  "status": "failed",
+  "workers": 2,
+  "code_commit": "89ebd99fcce170e410df80f6fd0fa2b580d675a2",
+  "started_at": "2026-11-17T16:27:05.737255+00:00",
+  "waves": [
+    {
+      "seed": 2034,
+      "started_at": "2026-11-17T16:27:05.739763+00:00"
+    }
+  ],
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S5-execution\\transit_rl\\experiment\\function_approx_comparison.py",
+    "--run",
+    "--output",
+    "C:/Users/kavin/.codex/worktrees/807a/RL-New/transit_rl/results/EXP-004-S5-function-approx-run01"
+  ],
+  "error": "CalledProcessError(1, ['C:\\\\Users\\\\kavin\\\\Desktop\\\\automation\\\\rl-repo\\\\RL-New\\\\.venv-visualizer\\\\Scripts\\\\python.exe', '-m', 'transit_rl.experiment.service_baseline', '--run', '--method', 'L', '--episodes', '300', '--seed', '2034', '--output', 'C:\\\\Users\\\\kavin\\\\.codex\\\\worktrees\\\\807a\\\\RL-New\\\\transit_rl\\\\results\\\\EXP-004-S5-function-approx-run01\\\\EXP-004-S5-L-seed2034-run01'])",
+  "finished_at": "2026-11-17T16:33:01.705586+00:00",
+  "total_elapsed_seconds": 355.9922501999972
+}

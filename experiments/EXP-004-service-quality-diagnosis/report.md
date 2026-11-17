@@ -1,5 +1,7 @@
 # EXP-004 status and findings
 
+Latest Stage-5 status: [linear-Q trial stopped on its numerical guard](stage5-results.md) after 48 complete episodes (failure during 49). E control finished; remaining seed waves not started. Full quality comparison is incomplete, not a negative service score or DQN result. Failed evidence preserved; default unchanged. Next revision must address stability under a separate protocol. Earlier stage closeouts below remain historical context.
+
 Current status, 2026-11-17: baseline, references and remaining-action RL screen completed. [Stage 1](stage1-results.md): **31.99% served**. [Stage 2](stage2-results.md): **81.51%**, with 105 first-hour actions. [Stage 3](stage3-results.md): **90.73%**, original 60-action limit. [Stage 4](stage4-results.md): fresh A 31.99% versus B 31.78%; practical-advancement screen failed. [Decision](decision.md): default unchanged; separately investigate knowledge reuse next.
 
 Stage 3 establishes achievable daily service under the original transport and accepted-action constraints. Search/compute access still differs from RL. It does not isolate learning causes or justify a universal 70% finish rule: its first hour served only 52.37%. Detailed Stage-3 findings supersede earlier next-stage statements below, retained as stage-closeout context.
