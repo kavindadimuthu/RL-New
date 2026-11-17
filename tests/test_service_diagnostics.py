@@ -13,9 +13,22 @@ from transit_rl.environment.service_plan import RouteService
 from transit_rl.environment.transit_environment import TransitEnvironment
 from transit_rl.experiment.service_diagnostics import DiagnosticEnvironment, unmet_breakdown
 from transit_rl.experiment.trainer import run_episode
+from transit_rl.experiment.service_baseline import learner_digest, diagnostic_summary
 
 
 class DiagnosticTests(unittest.TestCase):
+    def test_learner_digest_detects_mutation(self):
+        agent = QLearningAgent(ExperimentConfig(), 99)
+        before = learner_digest(agent)
+        agent.q[('state',)] = {Action(ADD_STOP, 1): 3.0}
+        self.assertNotEqual(before, learner_digest(agent))
+        before = learner_digest(agent)
+        agent.visits[('state',)] = {Action(ADD_STOP, 1): 1}
+        self.assertNotEqual(before, learner_digest(agent))
+        before = learner_digest(agent)
+        agent.rng.random()
+        self.assertNotEqual(before, learner_digest(agent))
+
     def fixture(self):
         cfg = replace(ExperimentConfig(), num_stops=4, num_hours=1)
         net = build_network([(1, 2, 5), (2, 3, 5), (3, 4, 5)], 4, True)
@@ -53,6 +66,11 @@ class DiagnosticTests(unittest.TestCase):
         self.assertEqual(row['discarded_tentative_served_delta'], 150)
         self.assertEqual(sum(row['action_counts'].values()), 2)
         self.assertNotIn('_finish_state', row)
+        summary = diagnostic_summary(env.diagnostics)
+        self.assertAlmostEqual(summary['served_ratio'] + summary['no_path_demand_share']
+                               + summary['capacity_demand_share'], 1)
+        self.assertEqual(summary['forced_finishes'], 1)
+        self.assertIsNone(summary['voluntary_served_ratio'])
 
     def test_real_two_episode_learning_is_unchanged(self):
         cfg = replace(ExperimentConfig(), num_episodes=300)
