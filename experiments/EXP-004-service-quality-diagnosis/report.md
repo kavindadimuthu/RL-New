@@ -1,6 +1,6 @@
 # EXP-004 status and findings
 
-Foundation created 2026-11-17. No new training or improvement treatment executed.
+Foundation created 2026-11-17. Stage-1 instrumentation and two-episode preflight completed; no improvement treatment or full baseline stage executed.
 
 Code inspection identifies exact-state random fallback, no service-acceptance condition on FINISH_PLAN, hidden remaining action budget, and equal-hour service weighting versus demand-weighted reporting. These are mechanisms/risks, not measured causal attribution. Assignment uses ordered greedy passenger allocation; no globally maximal throughput guarantee.
 
@@ -28,4 +28,24 @@ python experiments/EXP-004-service-quality-diagnosis/analysis/audit_existing.py 
 
 Source compile and CLI smoke checks passed. Audit execution took approximately one second of command runtime; this is not a training estimate. No dependency installation or model export was required. Off-machine backup remains pending.
 
-Next: implement and equivalence-check stage-1 instrumentation, then commit its exact procedure before new model runs. Stage-1 training runtime is not yet measured; the 30-minute training guard is a budget ceiling, not an estimated completion time.
+At stage-0 closeout, the next task was to implement and equivalence-check instrumentation. That task is completed below. The 30-minute full-stage training guard is a budget ceiling, not an estimated completion time.
+
+## Stage-1 preflight completed
+
+Registered in [stage1-preflight.md](stage1-preflight.md); execution source `da64b823193811036565055707997f031969d5cd`. Run `EXP-004-S1-preflight-seed2034-run01` completed two training episodes and three evaluation ties. All **120 hourly records** passed accounting/count checks; evaluation left learner Q/visits/RNG unchanged. Scoped sleep prevention exited successfully. Full unit gate: 62 passing tests, including exact two-episode per-action trajectory, learning and operational-cache equality.
+
+| Preflight evaluation metric | Mean of three ties, one learner |
+|---|---:|
+| Served / total demand | 28.4649% |
+| No eligible path: unserved / total demand | 40.7354% |
+| Capacity-constrained: unserved / total demand | 30.7997% |
+| Unseen state decisions | 99.8412% |
+| Mean fleet | 16.4028 / 99 |
+
+The first three percentages partition total demand. These are only a two-episode operational demonstration, not a comparison against the 300-episode EXP-002 result. No claim that these proportions explain mature models. Capacity-constrained includes the effects of ordered greedy allocation; it is not a proof of physically unavoidable shortage. No eligible path retains all configured transfer, direction and trip-time rules. Remaining unused buses do not prove an attainable coverage target.
+
+Measured instrumented training total 2.0057s; whole runner 5.4318s (CPU 5.2813s). Working set after training episodes 75.98/82.86 MiB; initial free RAM 13,944 MiB. Includes observation overhead, not an uninstrumented speed comparison or reliable extrapolation to 300 episodes, where state/cache growth matters. No GPU, dependency installation or model exports. No failed preflight. Existing documentation edits were explicitly recorded and excluded under the preregistered narrow exception.
+
+Raw compact evidence is in `evidence/EXP-004-S1-preflight-seed2034-run01/`. `preflight-verification.json` contains all file SHA-256s, five per-day diagnostic summaries and checks. Post-execution `analysis/summarise_preflight.py` regenerates this verification without training; labelled post-execution because its implementation followed the run. No numerical outcomes or thresholds were selected by this analysis.
+
+Next: finalize and commit the three-seed 300-episode baseline execution amendment, including standalone evaluation checkpoints and runtime guards, then run it. The demand-guided feasible reference follows. Do not introduce a 70% finish restriction before feasibility assessment. Full baseline and reference remain pending. Nothing merged to master or pushed; off-machine backup pending.

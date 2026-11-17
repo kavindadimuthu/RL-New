@@ -1,0 +1,45 @@
+{
+  "study": "EXP-004",
+  "stage": "S1-preflight",
+  "status": "completed",
+  "started_at": "2026-11-17T11:39:16.943400+00:00",
+  "code_commit": "da64b823193811036565055707997f031969d5cd",
+  "working_tree_status": " M README.md\n?? docs/RL_TRAINING_AND_USE_GUIDE.md\n",
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\experiment\\service_preflight.py",
+    "--run",
+    "--output",
+    "experiments/EXP-004-service-quality-diagnosis/evidence/EXP-004-S1-preflight-seed2034-run01"
+  ],
+  "training_seed": 2034,
+  "evaluation_seeds": [
+    7100,
+    7101,
+    7102
+  ],
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "cpu_count": 20,
+  "numerical_threads": 1,
+  "workers": 1,
+  "gpu_used": false,
+  "qtable": "not_saved",
+  "checkpoint": "not_saved",
+  "initial_memory_mb": {
+    "working": 69.19140625,
+    "free": 13944.04296875
+  },
+  "sleep_prevention": {
+    "requested": true,
+    "previous_flags": 2147483648,
+    "flags": 2147483649
+  },
+  "evaluation_learner_unchanged": true,
+  "sleep_scope_exited": true,
+  "finished_at": "2026-11-17T11:39:22.375213+00:00",
+  "elapsed_seconds": 5.431824500001312,
+  "cpu_seconds": 5.28125
+}

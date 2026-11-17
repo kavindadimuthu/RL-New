@@ -1,0 +1,83 @@
+{
+  "status": "verified",
+  "hourly_records": 120,
+  "summaries": [
+    {
+      "file": "training-1-hours.json",
+      "served_ratio": 0.24843134202279327,
+      "no_path_share_of_total_demand": 0.4478476720954168,
+      "capacity_share_of_total_demand": 0.3037209858817899,
+      "unseen_fraction": 0.8805803571428571,
+      "average_fleet": 14.916666666666666,
+      "forced_finishes": 8,
+      "discarded_routes": 6
+    },
+    {
+      "file": "training-2-hours.json",
+      "served_ratio": 0.2510504328873282,
+      "no_path_share_of_total_demand": 0.3362475025731065,
+      "capacity_share_of_total_demand": 0.4127020645395653,
+      "unseen_fraction": 0.8944099378881988,
+      "average_fleet": 14.833333333333334,
+      "forced_finishes": 6,
+      "discarded_routes": 3
+    },
+    {
+      "file": "evaluation-7100-hours.json",
+      "served_ratio": 0.2596287999569467,
+      "no_path_share_of_total_demand": 0.5257007931222377,
+      "capacity_share_of_total_demand": 0.21467040692081557,
+      "unseen_fraction": 0.9987951807228915,
+      "average_fleet": 16.083333333333332,
+      "forced_finishes": 6,
+      "discarded_routes": 2
+    },
+    {
+      "file": "evaluation-7101-hours.json",
+      "served_ratio": 0.267736920402356,
+      "no_path_share_of_total_demand": 0.3405037234364594,
+      "capacity_share_of_total_demand": 0.39175935616118457,
+      "unseen_fraction": 0.9990393852065321,
+      "average_fleet": 15.291666666666666,
+      "forced_finishes": 8,
+      "discarded_routes": 2
+    },
+    {
+      "file": "evaluation-7102-hours.json",
+      "served_ratio": 0.326580406334599,
+      "no_path_share_of_total_demand": 0.3558576012593086,
+      "capacity_share_of_total_demand": 0.3175619924060924,
+      "unseen_fraction": 0.9974025974025974,
+      "average_fleet": 17.833333333333332,
+      "forced_finishes": 3,
+      "discarded_routes": 2
+    }
+  ],
+  "mean_of_three_evaluation_ties": {
+    "served_ratio": 0.28464870889796723,
+    "no_path_share_of_total_demand": 0.40735403927266856,
+    "capacity_share_of_total_demand": 0.30799725182936416,
+    "unseen_fraction": 0.9984123877773403,
+    "average_fleet": 16.40277777777778
+  },
+  "measured_instrumented_training_seconds": 2.005705100000341,
+  "measured_total_seconds": 5.431824500001312,
+  "limitations": [
+    "Only two training episodes and one learner; no quality or causal claim.",
+    "Capacity category includes greedy allocation effects.",
+    "Instrumentation overhead included; not baseline speed.",
+    "Analysis added after execution; protocol metrics unchanged."
+  ],
+  "checksums": {
+    "config.json": "44c7b49ee6855996291945fda51903665504b74fd453111888fcf2a4b493870c",
+    "episodes.jsonl": "ec2a3ff4f01815a6ff2983ecc20ee973f85e19afd8411eee6a0f25331ea75c8e",
+    "evaluation-7100-hours.json": "27b0257deb32d34d5db2e24e65c686cc4a0b9803ec84d16f9bb91b467065d3a3",
+    "evaluation-7101-hours.json": "703c154e743fa51dd90f28a5f0d4286763b1fd4b13bee903c5a6212e349281d3",
+    "evaluation-7102-hours.json": "1e04363ccdce1d3956f162a764ae73efc210706e647b5fcd5e1e78361e37b195",
+    "evaluations.json": "eae0bbe0a6c00ecfd136add265151cec290e5196f3c5ecaf830d946de60b8541",
+    "input_source_sha256.json": "5080c16cfafecd0be8a539f3115f50163ca0cdf0f8d2665dcd5d92efbb6e07be",
+    "manifest.json": "0ed77182409f24d57dc8634ffddb13fe4d3171df44214f7c74084f5239f769dc",
+    "training-1-hours.json": "6f63f9cc753122e03b687d1a9fdc85aafedd30c746ae498efe0f5165552e339f",
+    "training-2-hours.json": "5efbd80390d4e9de46864ec59dbdedd6c5c0cb0d8609aa1d88b8921fa66812da"
+  }
+}

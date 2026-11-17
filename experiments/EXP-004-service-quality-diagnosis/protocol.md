@@ -1,6 +1,6 @@
 # EXP-004: Low-service diagnosis and controlled improvement
 
-Protocol v0.1, 2026-11-17, Asia/Colombo. Status: foundation; stage 0 analysis specified. Owner: project research team.
+Protocol v0.1 with recorded amendments, 2026-11-17, Asia/Colombo. Status: stage 0 and separately registered stage-1 preflight completed; full baseline pending. Owner: project research team.
 
 ## Question and prior knowledge
 
@@ -14,11 +14,13 @@ Recompute all nine final A_dense evaluations from EXP-002's three independent tr
 
 The audit may run in a worktree with unrelated documentation edits: it reads only committed evidence and input CSVs and records Git status explicitly. This is an analysis-only exception, not permission for dirty model execution. Source and protocol must be committed before executing the audit. Use a unique evidence directory; never overwrite it.
 
-## Stage 1: instrument and diagnose (implementation pending)
+## Stage 1: instrument and diagnose
 
 Stage-0 revision 0.1a: run01 failed input validation because the CSV checkout uses CRLF while Git stores LF (`git ls-files --eol` confirmed). Preserve the failure. For CSVs only, compare after CRLF-to-LF conversion and retain both raw-file and Git-content SHA-256. Archived JSON evidence remains byte-exact. Commit the correction before run02; no model outputs or scientific thresholds changed.
 
 Before running, commit runnable instrumentation, analysis and a stage-specific protocol amendment. Separate diagnostic categories using explicit counterfactuals: no allowed path with capacities removed, versus capacity-constrained unserved demand. These are assignment-model categories, not proven real-world causes. Record hourly demand, coverage, fleet, route count/length/frequency, peak segment utilization, action types, voluntary/forced finish, discarded tentative route, and exact-state and selected-action visit counts. Verify accounting and that instrumentation leaves actions, rewards, Q updates and RNG unchanged on matched trajectories.
+
+Implementation/preflight amendment: [stage1-preflight.md](stage1-preflight.md), committed at `da64b82`; see report for completed checks and run. Full baseline procedure still requires its execution amendment.
 
 Planned baseline budget: 300 episodes per fresh learner, training seeds 2034, 2035, 2036; evaluate at 0, 100 and 300 episodes using independent ties 7100, 7101, 7102. Same fixed demand as training; no held-out generalization claim. Dense baseline, inherited learning rate/gamma, epsilon 1 to .05 by episode 240, then .05. No model export. These budgets are provisional until the runnable stage amendment is committed; no stage-1 execution authorized by the audit command.
 
