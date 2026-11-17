@@ -28,6 +28,7 @@ from .service_diagnostics import DiagnosticEnvironment
 from .service_preflight import write
 from .trainer import run_episode, summarise_day
 from .remaining_action_state import RemainingActionEnvironment, keyed_episode
+from .linear_q import LinearQAgent, FEATURE_NAMES
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -38,6 +39,8 @@ def learner_digest(agent):
         digest.update(repr((key, row, agent.visits.get(key))).encode())
     digest.update(repr((len(agent.visits), agent.num_state_action_pairs,
                         agent.epsilon, agent.rng.getstate())).encode())
+    if isinstance(agent, LinearQAgent):
+        digest.update(agent.weights.tobytes())
     return digest.hexdigest()
 
 
@@ -70,7 +73,9 @@ def evaluate(agent, cfg, net, od, episode, directory, env_type=DiagnosticEnviron
     before = learner_digest(agent)
     results = []
     for seed in (7100, 7101, 7102):
-        observer = QLearningAgent(cfg, seed)
+        observer = LinearQAgent(cfg, seed, net) if isinstance(agent, LinearQAgent) else QLearningAgent(cfg, seed)
+        if isinstance(agent, LinearQAgent):
+            observer.weights = agent.weights  # read-only use; digest verifies unchanged
         observer.q, observer.visits = agent.q, agent.visits
         env = env_type(net, od, cfg)
         env.observer_agent = observer
@@ -81,9 +86,15 @@ def evaluate(agent, cfg, net, od, episode, directory, env_type=DiagnosticEnviron
                             cpu_seconds=time.process_time()-cpu,
                             daily=summarise_day(records), diagnostics=diagnostic_summary(env.diagnostics),
                             hours=env.diagnostics))
+        if isinstance(observer, LinearQAgent):
+            assert observer.greedy_audit['decisions'] == steps
+            assert observer.greedy_audit['unseen_exact_key'] == unseen
+            results[-1]['generalization_audit'] = dict(observer.greedy_audit)
     assert learner_digest(agent) == before, 'Evaluation mutated learner'
     value = dict(episode=episode, learner_unchanged=True, evaluations=results)
     write(directory / f'evaluation-{episode:03d}.json', value)
+    if isinstance(agent, LinearQAgent):
+        write(directory / f'weights-{episode:03d}.json', agent.snapshot())
     return value
 
 
@@ -92,11 +103,15 @@ def main():
     parser.add_argument('--run', action='store_true')
     parser.add_argument('--seed', type=int, choices=(2034, 2035, 2036), required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--method', choices=('A', 'B'), default=None,
-                        help='S4 A: original state; B: append remaining hourly actions')
+    parser.add_argument('--method', choices=('A', 'B', 'E', 'L'), default=None,
+                        help='A/B: S4; S5 E: deadline-aware exact table, L: normalized linear Q')
+    parser.add_argument('--episodes', type=int, choices=(2, 300), default=300,
+                        help='2 only for registered S5 preflight; epsilon schedule remains300')
     args = parser.parse_args()
     if not args.run:
         parser.error('--run required')
+    if args.episodes != 300 and args.method not in ('E', 'L'):
+        parser.error('Short run allowed only for S5 preflight')
     status = subprocess.check_output(['git', 'status', '--porcelain'], cwd=ROOT, text=True)
     if status.strip():
         raise RuntimeError('Full baseline requires a clean isolated execution worktree')
@@ -114,8 +129,17 @@ def main():
     if args.method:
         manifest.update(stage='S4-remaining-actions', method=args.method, paired_workers=2,
             observation='original_six_fields' if args.method == 'A' else 'original_six_fields_plus_remaining_actions')
+    checkpoints = (0, 2) if args.episodes == 2 else (0, 100, 300)
+    if args.method in ('E', 'L'):
+        manifest.update(stage='S5-feature-preflight' if args.episodes == 2 else 'S5-function-approx',
+            target_episodes=args.episodes, checkpoints=list(checkpoints),
+            algorithm='exact_tabular_q' if args.method == 'E' else 'unit_feature_linear_semigradient_q',
+            feature_count=len(FEATURE_NAMES), feature_normalization='L2_unit_per_action_for_L_only',
+            stability_guards=dict(max_abs_q=1000, max_weight_row_norm=10000) if args.method == 'L' else None,
+            training_budget_seconds=120 if args.episodes == 2 else 900)
     write(args.output / 'manifest.json', manifest)
     training_time = training_cpu = 0.0
+    agent = None
     try:
         cfg = replace(ExperimentConfig(), num_episodes=300, reward_mode='dense',
                       make_plots=False, copy_best_qtable=False)
@@ -145,14 +169,14 @@ def main():
                              cfg.num_stops, cfg.od_file_numbers())
         with keep_awake() as awake:
             manifest['sleep_prevention'] = awake
-            agent = QLearningAgent(cfg, args.seed)
-            env_type = RemainingActionEnvironment if args.method == 'B' else DiagnosticEnvironment
+            agent = LinearQAgent(cfg, args.seed, net) if args.method == 'L' else QLearningAgent(cfg, args.seed)
+            env_type = RemainingActionEnvironment if args.method in ('B', 'E', 'L') else DiagnosticEnvironment
             env = env_type(net, od, cfg)
             env.observer_agent = agent
             evaluate(agent, cfg, net, od, 0, args.output, env_type)
             with (args.output / 'episodes.jsonl').open('w', encoding='utf-8') as metrics, \
                  gzip.open(args.output / 'training-hours.jsonl.gz', 'wt', encoding='utf-8') as hours:
-                for episode in range(1, 301):
+                for episode in range(1, args.episodes+1):
                     tick, proc = time.perf_counter(), time.process_time()
                     reward, records, steps, unseen = keyed_episode(env, agent, True)
                     elapsed, cpu = time.perf_counter()-tick, time.process_time()-proc
@@ -165,18 +189,21 @@ def main():
                         epsilon_next=agent.epsilon, working_mb=working, free_mb=free,
                         q_states=agent.num_states, q_pairs=agent.num_state_action_pairs,
                         **summarise_day(records), diagnostics=diagnostic_summary(env.diagnostics))
+                    if isinstance(agent, LinearQAgent):
+                        row.update(weight_norm=float(np.linalg.norm(agent.weights)),
+                                   parameter_count=int(agent.weights.size))
                     metrics.write(json.dumps(row, separators=(',', ':')) + '\n')
                     metrics.flush()
                     hours.write(json.dumps(dict(episode=episode, hours=env.diagnostics), separators=(',', ':'))+'\n')
                     hours.flush()
                     manifest['episodes_completed'] = episode
                     if episode % 25 == 0:
-                        print(f'method {args.method or "baseline"} seed {args.seed}: {episode}/300, training {training_time:.1f}s, RAM {working:.0f}MiB', flush=True)
+                        print(f'method {args.method or "baseline"} seed {args.seed}: {episode}/{args.episodes}, training {training_time:.1f}s, RAM {working:.0f}MiB', flush=True)
                         write(args.output / 'manifest.json', manifest)
-                    if (working is not None and working > 1536) or (free is not None and free < 4096) or training_time > 600:
+                    if (working is not None and working > 1536) or (free is not None and free < 4096) or training_time > manifest['training_budget_seconds']:
                         manifest['status'] = 'resource_guard_incomplete'
                         break
-                    if episode in (100, 300):
+                    if episode in checkpoints:
                         evaluate(agent, cfg, net, od, episode, args.output, env_type)
             if manifest['status'] == 'running':
                 manifest['status'] = 'completed'
@@ -185,6 +212,8 @@ def main():
         manifest.update(status='failed', error=repr(error))
         raise
     finally:
+        if isinstance(agent, LinearQAgent):
+            write(args.output / 'weights-final.json', agent.snapshot())
         manifest.update(finished_at=datetime.now(timezone.utc).isoformat(),
                         total_elapsed_seconds=time.perf_counter()-start,
                         total_cpu_seconds=time.process_time()-proc_start,
