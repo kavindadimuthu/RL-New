@@ -1,6 +1,6 @@
 # EXP-004: Low-service diagnosis and controlled improvement
 
-Protocol v0.1 with recorded amendments, 2026-11-17, Asia/Colombo. Status: stage 0 and separately registered stage-1 preflight completed; full baseline pending. Owner: project research team.
+Protocol v0.1 with recorded amendments, 2026-11-17, Asia/Colombo. Status: stage 0, preflight and full stage-1 baseline completed; reference pending. Owner: project research team.
 
 ## Question and prior knowledge
 
@@ -21,6 +21,8 @@ Stage-0 revision 0.1a: run01 failed input validation because the CSV checkout us
 Before running, commit runnable instrumentation, analysis and a stage-specific protocol amendment. Separate diagnostic categories using explicit counterfactuals: no allowed path with capacities removed, versus capacity-constrained unserved demand. These are assignment-model categories, not proven real-world causes. Record hourly demand, coverage, fleet, route count/length/frequency, peak segment utilization, action types, voluntary/forced finish, discarded tentative route, and exact-state and selected-action visit counts. Verify accounting and that instrumentation leaves actions, rewards, Q updates and RNG unchanged on matched trajectories.
 
 Implementation/preflight amendment: [stage1-preflight.md](stage1-preflight.md), committed at `da64b82`; see report for completed checks and run. Full baseline procedure still requires its execution amendment.
+
+Full baseline amendment: [stage1-baseline.md](stage1-baseline.md), source/protocol/analysis committed at `578086b` before execution. All three runs completed; see [stage1-results.md](stage1-results.md). This amendment finalized the following originally provisional budget; it does not retrospectively change it.
 
 Planned baseline budget: 300 episodes per fresh learner, training seeds 2034, 2035, 2036; evaluate at 0, 100 and 300 episodes using independent ties 7100, 7101, 7102. Same fixed demand as training; no held-out generalization claim. Dense baseline, inherited learning rate/gamma, epsilon 1 to .05 by episode 240, then .05. No model export. These budgets are provisional until the runnable stage amendment is committed; no stage-1 execution authorized by the audit command.
 

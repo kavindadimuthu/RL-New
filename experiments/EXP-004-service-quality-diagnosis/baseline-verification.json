@@ -1,0 +1,366 @@
+{
+  "status": "verified",
+  "execution_commit": "578086ba1f37a1e82536870cebb743062f2e4d63",
+  "models": [
+    {
+      "seed": 2034,
+      "checkpoints": [
+        {
+          "episode": 0,
+          "means": {
+            "served_ratio": 0.26301183837207326,
+            "no_path_demand_share": 0.4402575124619079,
+            "capacity_demand_share": 0.29673064916601877,
+            "unseen_fraction": 1.0,
+            "rare_state_fraction": 1.0,
+            "average_fleet": 15.61111111111111,
+            "mean_route_count": 7.430555555555555,
+            "forced_finishes": 5.666666666666667,
+            "voluntary_finishes": 18.333333333333332,
+            "discarded_routes": 1.6666666666666667,
+            "total_demand": 165170.0,
+            "actions": 884.6666666666666,
+            "forced_served_ratio": 0.2959455379513227,
+            "voluntary_served_ratio": 0.25946245549296937,
+            "peak_served_ratio": 0.1910853730754885,
+            "other_served_ratio": 0.2999542116616427,
+            "reward": 5.9326655611453205
+          }
+        },
+        {
+          "episode": 100,
+          "means": {
+            "served_ratio": 0.28362317612157173,
+            "no_path_demand_share": 0.3833101249217977,
+            "capacity_demand_share": 0.33306669895663055,
+            "unseen_fraction": 0.9826094693076675,
+            "rare_state_fraction": 0.9857320298072771,
+            "average_fleet": 16.166666666666664,
+            "mean_route_count": 7.416666666666667,
+            "forced_finishes": 4,
+            "voluntary_finishes": 20,
+            "discarded_routes": 1.6666666666666667,
+            "total_demand": 165170.0,
+            "actions": 780.3333333333334,
+            "forced_served_ratio": 0.26203698140551857,
+            "voluntary_served_ratio": 0.28668257427306754,
+            "peak_served_ratio": 0.2253703736744756,
+            "other_served_ratio": 0.31354257733627805,
+            "reward": 6.335233229224453
+          }
+        },
+        {
+          "episode": 300,
+          "means": {
+            "served_ratio": 0.32415144037412,
+            "no_path_demand_share": 0.342202982785413,
+            "capacity_demand_share": 0.3336455768404669,
+            "unseen_fraction": 0.9556308489367856,
+            "rare_state_fraction": 0.9568633253552082,
+            "average_fleet": 17.180555555555557,
+            "mean_route_count": 7.458333333333333,
+            "forced_finishes": 4.333333333333333,
+            "voluntary_finishes": 19.666666666666668,
+            "discarded_routes": 3,
+            "total_demand": 165170.0,
+            "actions": 814,
+            "forced_served_ratio": 0.30704789769978935,
+            "voluntary_served_ratio": 0.3289705851566256,
+            "peak_served_ratio": 0.281559576731486,
+            "other_served_ratio": 0.3460271785922657,
+            "reward": 7.576739457513181
+          }
+        }
+      ],
+      "training_seconds": 352.12993119999555,
+      "total_elapsed_seconds": 382.15817889999926,
+      "utc_span_seconds": 382.158538,
+      "clock_gap_seconds": 0.00035910000076455617,
+      "max_recorded_working_mb": 568.0390625,
+      "final_q_states": 218876,
+      "final_q_pairs": 235998
+    },
+    {
+      "seed": 2035,
+      "checkpoints": [
+        {
+          "episode": 0,
+          "means": {
+            "served_ratio": 0.26301183837207326,
+            "no_path_demand_share": 0.4402575124619079,
+            "capacity_demand_share": 0.29673064916601877,
+            "unseen_fraction": 1.0,
+            "rare_state_fraction": 1.0,
+            "average_fleet": 15.61111111111111,
+            "mean_route_count": 7.430555555555555,
+            "forced_finishes": 5.666666666666667,
+            "voluntary_finishes": 18.333333333333332,
+            "discarded_routes": 1.6666666666666667,
+            "total_demand": 165170.0,
+            "actions": 884.6666666666666,
+            "forced_served_ratio": 0.2959455379513227,
+            "voluntary_served_ratio": 0.25946245549296937,
+            "peak_served_ratio": 0.1910853730754885,
+            "other_served_ratio": 0.2999542116616427,
+            "reward": 5.9326655611453205
+          }
+        },
+        {
+          "episode": 100,
+          "means": {
+            "served_ratio": 0.28603066504017044,
+            "no_path_demand_share": 0.43067344755908055,
+            "capacity_demand_share": 0.28329588740074907,
+            "unseen_fraction": 0.9871408059748811,
+            "rare_state_fraction": 0.9900216443936554,
+            "average_fleet": 15.916666666666666,
+            "mean_route_count": 7.458333333333333,
+            "forced_finishes": 4,
+            "voluntary_finishes": 20,
+            "discarded_routes": 2.3333333333333335,
+            "total_demand": 165170.0,
+            "actions": 806.6666666666666,
+            "forced_served_ratio": 0.2527855052540993,
+            "voluntary_served_ratio": 0.2910304041071116,
+            "peak_served_ratio": 0.2499503161269179,
+            "other_served_ratio": 0.30456200413038115,
+            "reward": 6.370952822582965
+          }
+        },
+        {
+          "episode": 300,
+          "means": {
+            "served_ratio": 0.312441341461442,
+            "no_path_demand_share": 0.3997013178341507,
+            "capacity_demand_share": 0.2878573407044074,
+            "unseen_fraction": 0.964095323159409,
+            "rare_state_fraction": 0.9656547773504421,
+            "average_fleet": 17.02777777777778,
+            "mean_route_count": 7.444444444444445,
+            "forced_finishes": 4.666666666666667,
+            "voluntary_finishes": 19.333333333333332,
+            "discarded_routes": 2.6666666666666665,
+            "total_demand": 165170.0,
+            "actions": 819.6666666666666,
+            "forced_served_ratio": 0.2935296254525292,
+            "voluntary_served_ratio": 0.3181634723741931,
+            "peak_served_ratio": 0.28907482214528085,
+            "other_served_ratio": 0.32444269138870646,
+            "reward": 6.672069679822585
+          }
+        }
+      ],
+      "training_seconds": 344.9337866000096,
+      "total_elapsed_seconds": 374.27359400000205,
+      "utc_span_seconds": 374.273922,
+      "clock_gap_seconds": 0.0003279999979781678,
+      "max_recorded_working_mb": 568.265625,
+      "final_q_states": 219747,
+      "final_q_pairs": 237198
+    },
+    {
+      "seed": 2036,
+      "checkpoints": [
+        {
+          "episode": 0,
+          "means": {
+            "served_ratio": 0.26301183837207326,
+            "no_path_demand_share": 0.4402575124619079,
+            "capacity_demand_share": 0.29673064916601877,
+            "unseen_fraction": 1.0,
+            "rare_state_fraction": 1.0,
+            "average_fleet": 15.61111111111111,
+            "mean_route_count": 7.430555555555555,
+            "forced_finishes": 5.666666666666667,
+            "voluntary_finishes": 18.333333333333332,
+            "discarded_routes": 1.6666666666666667,
+            "total_demand": 165170.0,
+            "actions": 884.6666666666666,
+            "forced_served_ratio": 0.2959455379513227,
+            "voluntary_served_ratio": 0.25946245549296937,
+            "peak_served_ratio": 0.1910853730754885,
+            "other_served_ratio": 0.2999542116616427,
+            "reward": 5.9326655611453205
+          }
+        },
+        {
+          "episode": 100,
+          "means": {
+            "served_ratio": 0.27840436837082716,
+            "no_path_demand_share": 0.3506044277612964,
+            "capacity_demand_share": 0.3709912038678764,
+            "unseen_fraction": 0.9826010628757595,
+            "rare_state_fraction": 0.9875721877683997,
+            "average_fleet": 15.555555555555555,
+            "mean_route_count": 7.375,
+            "forced_finishes": 5.666666666666667,
+            "voluntary_finishes": 18.333333333333332,
+            "discarded_routes": 2.6666666666666665,
+            "total_demand": 165170.0,
+            "actions": 833,
+            "forced_served_ratio": 0.29065834062754503,
+            "voluntary_served_ratio": 0.263644729136421,
+            "peak_served_ratio": 0.20157147020315433,
+            "other_served_ratio": 0.31786674975333645,
+            "reward": 6.230624009363747
+          }
+        },
+        {
+          "episode": 300,
+          "means": {
+            "served_ratio": 0.3232109519643575,
+            "no_path_demand_share": 0.32902060503319813,
+            "capacity_demand_share": 0.34776844300244436,
+            "unseen_fraction": 0.9618306567203058,
+            "rare_state_fraction": 0.9630234486977962,
+            "average_fleet": 17.319444444444443,
+            "mean_route_count": 7.5,
+            "forced_finishes": 4.333333333333333,
+            "voluntary_finishes": 19.666666666666668,
+            "discarded_routes": 2,
+            "total_demand": 165170.0,
+            "actions": 846,
+            "forced_served_ratio": 0.27939897685051557,
+            "voluntary_served_ratio": 0.3308344556389566,
+            "peak_served_ratio": 0.29077732920043836,
+            "other_served_ratio": 0.33986928480939826,
+            "reward": 6.800683014680423
+          }
+        }
+      ],
+      "training_seconds": 345.57915279997906,
+      "total_elapsed_seconds": 373.96595309999975,
+      "utc_span_seconds": 373.966192,
+      "clock_gap_seconds": 0.0002389000002267494,
+      "max_recorded_working_mb": 567.8671875,
+      "final_q_states": 219737,
+      "final_q_pairs": 237236
+    }
+  ],
+  "final_three_model_summary": {
+    "served_ratio": {
+      "mean": 0.3199345779333065,
+      "minimum": 0.312441341461442,
+      "maximum": 0.32415144037412
+    },
+    "no_path_demand_share": {
+      "mean": 0.3569749685509206,
+      "minimum": 0.32902060503319813,
+      "maximum": 0.3997013178341507
+    },
+    "capacity_demand_share": {
+      "mean": 0.32309045351577287,
+      "minimum": 0.2878573407044074,
+      "maximum": 0.34776844300244436
+    },
+    "unseen_fraction": {
+      "mean": 0.9605189429388334,
+      "minimum": 0.9556308489367856,
+      "maximum": 0.964095323159409
+    },
+    "rare_state_fraction": {
+      "mean": 0.9618471838011489,
+      "minimum": 0.9568633253552082,
+      "maximum": 0.9656547773504421
+    },
+    "average_fleet": {
+      "mean": 17.175925925925927,
+      "minimum": 17.02777777777778,
+      "maximum": 17.319444444444443
+    },
+    "mean_route_count": {
+      "mean": 7.467592592592593,
+      "minimum": 7.444444444444445,
+      "maximum": 7.5
+    },
+    "forced_finishes": {
+      "mean": 4.444444444444445,
+      "minimum": 4.333333333333333,
+      "maximum": 4.666666666666667
+    },
+    "voluntary_finishes": {
+      "mean": 19.555555555555557,
+      "minimum": 19.333333333333332,
+      "maximum": 19.666666666666668
+    },
+    "discarded_routes": {
+      "mean": 2.5555555555555554,
+      "minimum": 2,
+      "maximum": 3
+    },
+    "total_demand": {
+      "mean": 165170.0,
+      "minimum": 165170.0,
+      "maximum": 165170.0
+    },
+    "actions": {
+      "mean": 826.5555555555555,
+      "minimum": 814,
+      "maximum": 846
+    },
+    "forced_served_ratio": {
+      "mean": 0.2933255000009447,
+      "minimum": 0.27939897685051557,
+      "maximum": 0.30704789769978935
+    },
+    "voluntary_served_ratio": {
+      "mean": 0.3259895043899251,
+      "minimum": 0.3181634723741931,
+      "maximum": 0.3308344556389566
+    },
+    "peak_served_ratio": {
+      "mean": 0.28713724269240176,
+      "minimum": 0.281559576731486,
+      "maximum": 0.29077732920043836
+    },
+    "other_served_ratio": {
+      "mean": 0.3367797182634568,
+      "minimum": 0.32444269138870646,
+      "maximum": 0.3460271785922657
+    },
+    "reward": {
+      "mean": 7.016497384005397,
+      "minimum": 6.672069679822585,
+      "maximum": 7.576739457513181
+    }
+  },
+  "hourly_records_verified": 22248,
+  "total_training_seconds": 1042.6428705999842,
+  "summed_process_elapsed_seconds": 1130.397726000001,
+  "checksums": {
+    "EXP-004-S1-baseline-seed2034-run01/config.json": "00be316c796507a5dbe8c4bd9678fb71a2afacbfac1e728b098d58d2ebd18f8c",
+    "EXP-004-S1-baseline-seed2034-run01/episodes.jsonl": "a0205aec9b2a18c0d6ff8db789006c425a37ff7131d9c67eda35d3ab37400993",
+    "EXP-004-S1-baseline-seed2034-run01/evaluation-000.json": "e42bc43cd81449efb61f7abe8098f789571a38d3285dc5773f379d7e61a1fe05",
+    "EXP-004-S1-baseline-seed2034-run01/evaluation-100.json": "f3429845e211632166929f1101bf0a29105952fdddb2ad047b6d35e10bdddc04",
+    "EXP-004-S1-baseline-seed2034-run01/evaluation-300.json": "6b018723c0f45c463795d9ec3db9e3d1ac08b52f603f8c32f01aad115252788a",
+    "EXP-004-S1-baseline-seed2034-run01/manifest.json": "3f6f488828b2f0d4b4f06023d10cc0b2c8b7f351d619e8aad172298db3651926",
+    "EXP-004-S1-baseline-seed2034-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S1-baseline-seed2034-run01/source-input-sha256.json": "691a2468d1360dc2f58b79bc6fcfbe21de61403db27eec6a0d5d2d29c4dd826b",
+    "EXP-004-S1-baseline-seed2034-run01/training-hours.jsonl.gz": "4ad32a71c32570cc8347ef17f0766b5fb8b3e3b5aa813f104585be1b19be8ff2",
+    "EXP-004-S1-baseline-seed2035-run01/config.json": "00be316c796507a5dbe8c4bd9678fb71a2afacbfac1e728b098d58d2ebd18f8c",
+    "EXP-004-S1-baseline-seed2035-run01/episodes.jsonl": "57385413e30c57496d1c6246ba147a2a70e776621e9eaa305b8c15029956feed",
+    "EXP-004-S1-baseline-seed2035-run01/evaluation-000.json": "f7875c9d19a831c9fbc920657e036a518a4a5c70e8bc8c68bddc869d4edbd2ec",
+    "EXP-004-S1-baseline-seed2035-run01/evaluation-100.json": "ca379324407d96db8b11cd647acbb30a43242ba27c461b17047264d5ab3689a7",
+    "EXP-004-S1-baseline-seed2035-run01/evaluation-300.json": "5cc0ce31bb6ff125fe4bf139bac2b70d282ba56ac69fb59ab353ef20e764ae18",
+    "EXP-004-S1-baseline-seed2035-run01/manifest.json": "51d265147afb8686785af41f5dac02193806553ecf9894720f7c12de010eaa85",
+    "EXP-004-S1-baseline-seed2035-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S1-baseline-seed2035-run01/source-input-sha256.json": "691a2468d1360dc2f58b79bc6fcfbe21de61403db27eec6a0d5d2d29c4dd826b",
+    "EXP-004-S1-baseline-seed2035-run01/training-hours.jsonl.gz": "4e82ec2f67fc232af3902012ee97fd63ddf5a261411573391e37804aee5c3227",
+    "EXP-004-S1-baseline-seed2036-run01/config.json": "00be316c796507a5dbe8c4bd9678fb71a2afacbfac1e728b098d58d2ebd18f8c",
+    "EXP-004-S1-baseline-seed2036-run01/episodes.jsonl": "4a59b580b9cae9a0953fbeabce22b01c0605e93008a0fdf006de479158882927",
+    "EXP-004-S1-baseline-seed2036-run01/evaluation-000.json": "55ab8c5caaf3a19a02e912adf2e88e2cfaa94789251f23901e3764c7211d3a2d",
+    "EXP-004-S1-baseline-seed2036-run01/evaluation-100.json": "0c2e4570d4d72cacf833f13c4772cb9274fca50d416f76e38aef946dd0ee09d6",
+    "EXP-004-S1-baseline-seed2036-run01/evaluation-300.json": "2fc704a69f38936a6f13210a45cda1fc8ba2ebc4b8bef110919a4e11cd0eba8c",
+    "EXP-004-S1-baseline-seed2036-run01/manifest.json": "020bb7fb984935f69a6d96e33701282406b262dc3797706cfd4cddcf909ef1a3",
+    "EXP-004-S1-baseline-seed2036-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S1-baseline-seed2036-run01/source-input-sha256.json": "691a2468d1360dc2f58b79bc6fcfbe21de61403db27eec6a0d5d2d29c4dd826b",
+    "EXP-004-S1-baseline-seed2036-run01/training-hours.jsonl.gz": "923dfe8c0ffc554ff26777cf5e2e739f6e883aaca8912d12e1bb14da7b2b4728"
+  },
+  "limitations": [
+    "Three training seeds; evaluation ties averaged within models.",
+    "Same fixed demand used for training and evaluation.",
+    "Diagnostic associations are not causal effects or a feasibility ceiling.",
+    "All runtime includes diagnostic overhead; serial CPU execution.",
+    "Ranges describe model means, not confidence intervals."
+  ]
+}
