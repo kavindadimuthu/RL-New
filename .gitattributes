@@ -5,3 +5,4 @@ experiments/EXP-003-passenger-assignment-optimization/preexecution/** -text whit
 experiments/EXP-003-passenger-assignment-optimization/evidence/** -text whitespace=cr-at-eol
 # Keep the original cProfile report's intentional final blank lines.
 experiments/EXP-003-passenger-assignment-optimization/evidence/stage1/*_profile.txt whitespace=cr-at-eol,-blank-at-eof
+experiments/EXP-004-service-quality-diagnosis/evidence/** -text whitespace=cr-at-eol
