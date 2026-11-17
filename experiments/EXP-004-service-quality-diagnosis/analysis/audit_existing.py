@@ -27,8 +27,12 @@ def audit():
         relative = path.relative_to(ROOT).as_posix()
         hashes[relative] = hashlib.sha256(raw).hexdigest()
         blob = subprocess.check_output(['git', 'show', 'HEAD:' + relative], cwd=ROOT)
-        if blob != raw:
+        # Input CSVs use Git's Windows checkout conversion; archived evidence
+        # is -text and must still agree byte for byte.
+        checked = raw.replace(b'\r\n', b'\n') if path.suffix == '.csv' else raw
+        if blob != checked:
             raise ValueError('Input differs from committed bytes: ' + relative)
+        hashes[relative + ':git_blob_content'] = hashlib.sha256(blob).hexdigest()
         return raw.decode('utf-8-sig')
 
     fields = ['served_demand_ratio', 'unseen_fraction', 'average_fleet_used',
