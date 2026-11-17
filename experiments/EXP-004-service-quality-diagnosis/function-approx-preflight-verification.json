@@ -1,0 +1,207 @@
+{
+  "status": "verified",
+  "preflight": true,
+  "execution_commit": "a84499ba686965c08a1a034c42ad925d148124de",
+  "models": [
+    {
+      "seed": 2034,
+      "method": "E",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "means": {
+            "served_ratio": 0.26301183837207326,
+            "no_path_demand_share": 0.4402575124619079,
+            "capacity_demand_share": 0.29673064916601877,
+            "unseen_fraction": 1.0,
+            "rare_state_fraction": 1.0,
+            "average_fleet": 15.61111111111111,
+            "mean_route_count": 7.430555555555555,
+            "forced_finishes": 5.666666666666667,
+            "voluntary_finishes": 18.333333333333332,
+            "discarded_routes": 1.6666666666666667,
+            "total_demand": 165170.0,
+            "actions": 884.6666666666666,
+            "forced_served_ratio": 0.2959455379513227,
+            "voluntary_served_ratio": 0.25946245549296937,
+            "peak_served_ratio": 0.1910853730754885,
+            "other_served_ratio": 0.2999542116616427,
+            "reward": 5.9326655611453205
+          }
+        },
+        {
+          "episode": 2,
+          "means": {
+            "served_ratio": 0.28464870889796723,
+            "no_path_demand_share": 0.40735403927266856,
+            "capacity_demand_share": 0.30799725182936416,
+            "unseen_fraction": 0.9984123877773403,
+            "rare_state_fraction": 1.0,
+            "average_fleet": 16.40277777777778,
+            "mean_route_count": 7.361111111111112,
+            "forced_finishes": 5.666666666666667,
+            "voluntary_finishes": 18.333333333333332,
+            "discarded_routes": 2,
+            "total_demand": 165170.0,
+            "actions": 880.3333333333334,
+            "forced_served_ratio": 0.251540111139604,
+            "voluntary_served_ratio": 0.29294402932090874,
+            "peak_served_ratio": 0.2069649027559353,
+            "other_served_ratio": 0.324548127744979,
+            "reward": 6.658692414837143
+          }
+        }
+      ],
+      "training_seconds": 2.3330755999959365,
+      "process_seconds": 10.362625499998103,
+      "cpu_seconds": 9.390625,
+      "clock_gap_seconds": -2.449999810316683e-05,
+      "maximum_recorded_working_mb": 83.71875,
+      "final_audit_states": 1861,
+      "final_audit_pairs": 1862,
+      "parameter_count": null
+    },
+    {
+      "seed": 2034,
+      "method": "L",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "means": {
+            "served_ratio": 0.26301183837207326,
+            "no_path_demand_share": 0.4402575124619079,
+            "capacity_demand_share": 0.29673064916601877,
+            "unseen_fraction": 1.0,
+            "rare_state_fraction": 1.0,
+            "average_fleet": 15.61111111111111,
+            "mean_route_count": 7.430555555555555,
+            "forced_finishes": 5.666666666666667,
+            "voluntary_finishes": 18.333333333333332,
+            "discarded_routes": 1.6666666666666667,
+            "total_demand": 165170.0,
+            "actions": 884.6666666666666,
+            "forced_served_ratio": 0.2959455379513227,
+            "voluntary_served_ratio": 0.25946245549296937,
+            "peak_served_ratio": 0.1910853730754885,
+            "other_served_ratio": 0.2999542116616427,
+            "reward": 5.9326655611453205,
+            "unseen_choice_unique_best_fraction": 0.0
+          }
+        },
+        {
+          "episode": 2,
+          "means": {
+            "served_ratio": 0.2785614821093419,
+            "no_path_demand_share": 0.6148937458376218,
+            "capacity_demand_share": 0.10654477205303627,
+            "unseen_fraction": 0.998960498960499,
+            "rare_state_fraction": 1.0,
+            "average_fleet": 24.416666666666668,
+            "mean_route_count": 7.25,
+            "forced_finishes": 15,
+            "voluntary_finishes": 9,
+            "discarded_routes": 5,
+            "total_demand": 165170.0,
+            "actions": 962,
+            "forced_served_ratio": 0.2590752606932337,
+            "voluntary_served_ratio": 0.38848458043504486,
+            "peak_served_ratio": 0.21321390975431334,
+            "other_served_ratio": 0.31212484993997597,
+            "reward": 5.585049546668751,
+            "unseen_choice_unique_best_fraction": 1.0
+          }
+        }
+      ],
+      "training_seconds": 3.0345393999996304,
+      "process_seconds": 12.250254299997323,
+      "cpu_seconds": 11.15625,
+      "clock_gap_seconds": -2.5299997323813272e-05,
+      "maximum_recorded_working_mb": 82.04296875,
+      "final_audit_states": 1619,
+      "final_audit_pairs": 1620,
+      "parameter_count": 256
+    }
+  ],
+  "final_method_means": {
+    "E": {
+      "served_ratio": 0.28464870889796723,
+      "no_path_demand_share": 0.40735403927266856,
+      "capacity_demand_share": 0.30799725182936416,
+      "unseen_fraction": 0.9984123877773403,
+      "rare_state_fraction": 1.0,
+      "average_fleet": 16.40277777777778,
+      "mean_route_count": 7.361111111111112,
+      "forced_finishes": 5.666666666666667,
+      "voluntary_finishes": 18.333333333333332,
+      "discarded_routes": 2,
+      "total_demand": 165170.0,
+      "actions": 880.3333333333334,
+      "forced_served_ratio": 0.251540111139604,
+      "voluntary_served_ratio": 0.29294402932090874,
+      "peak_served_ratio": 0.2069649027559353,
+      "other_served_ratio": 0.324548127744979,
+      "reward": 6.658692414837143
+    },
+    "L": {
+      "served_ratio": 0.2785614821093419,
+      "no_path_demand_share": 0.6148937458376218,
+      "capacity_demand_share": 0.10654477205303627,
+      "unseen_fraction": 0.998960498960499,
+      "rare_state_fraction": 1.0,
+      "average_fleet": 24.416666666666668,
+      "mean_route_count": 7.25,
+      "forced_finishes": 15,
+      "voluntary_finishes": 9,
+      "discarded_routes": 5,
+      "total_demand": 165170.0,
+      "actions": 962,
+      "forced_served_ratio": 0.2590752606932337,
+      "voluntary_served_ratio": 0.38848458043504486,
+      "peak_served_ratio": 0.21321390975431334,
+      "other_served_ratio": 0.31212484993997597,
+      "reward": 5.585049546668751,
+      "unseen_choice_unique_best_fraction": 1.0
+    }
+  },
+  "paired_differences": [
+    {
+      "seed": 2034,
+      "service_difference_percentage_points": -0.6087226788625333,
+      "reward_difference": -1.0736428681683918
+    }
+  ],
+  "mean_service_difference_percentage_points": -0.6087226788625333,
+  "screening_advance": false,
+  "historical_E_reproduced": true,
+  "empty_models_and_first_random_physics_match": true,
+  "hourly_records_verified": 384,
+  "critical_path_seconds": 13.390742599996884,
+  "checksums": {
+    "EXP-004-S5P-E-seed2034-run01/config.json": "5a810d790c7f507e0be3fb070aa62d81349fca65f0a6579aaa5203da9f9f246f",
+    "EXP-004-S5P-E-seed2034-run01/episodes.jsonl": "474040dc071a0a1d05bcbcbb9e0b7dc9fef0a827f2640cc3714aaffc4a921b36",
+    "EXP-004-S5P-E-seed2034-run01/evaluation-000.json": "a68133fa92569826ad9103d6386c134a06f5e6fecfe75e06f6559b115d3c13dd",
+    "EXP-004-S5P-E-seed2034-run01/evaluation-002.json": "d43508293ff630a9cae9143cc246b9c13e3d12186a12fafe41db9ca5042eadc8",
+    "EXP-004-S5P-E-seed2034-run01/manifest.json": "56e135b95a6cf9987b5ebb87d2954d8e9259056de8dbd0a2ab5ea9743d517e63",
+    "EXP-004-S5P-E-seed2034-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S5P-E-seed2034-run01/source-input-sha256.json": "d16e187844afd70cda5821c8f236ac0f52d999a72c4db5570ef45d32dec22bc3",
+    "EXP-004-S5P-E-seed2034-run01/training-hours.jsonl.gz": "f21f211d941e7fa1bba4d1b97052d40861cbe202519fc699e10b547c69e8c1fc",
+    "EXP-004-S5P-L-seed2034-run01/config.json": "5a810d790c7f507e0be3fb070aa62d81349fca65f0a6579aaa5203da9f9f246f",
+    "EXP-004-S5P-L-seed2034-run01/episodes.jsonl": "e90768637a0560d113b7bea14c9f2142f15e90b24f17823f50a05cecd3a77b53",
+    "EXP-004-S5P-L-seed2034-run01/evaluation-000.json": "f34b0204197e42cbd3a3c092c136862691c3e6bc9c64c1ad379df3ae0e1a335e",
+    "EXP-004-S5P-L-seed2034-run01/evaluation-002.json": "2a191ba7658bc53fd77868f6bb1e436e569f6e93b8522f0563d427d4eaa7221b",
+    "EXP-004-S5P-L-seed2034-run01/manifest.json": "4f716c74165659f208d0bd1f98b1b6e48fb8930f6a2802a999d844f6e670d297",
+    "EXP-004-S5P-L-seed2034-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S5P-L-seed2034-run01/source-input-sha256.json": "d16e187844afd70cda5821c8f236ac0f52d999a72c4db5570ef45d32dec22bc3",
+    "EXP-004-S5P-L-seed2034-run01/training-hours.jsonl.gz": "243e7aaeb7b5d6887e0bbc1d8b585efab4356ffacad6e8bef80870140ef90cce",
+    "EXP-004-S5P-L-seed2034-run01/weights-000.json": "eeffca85b37115a4204eec601d36aa80390d445b6dad0da86dffce49121c7c1c",
+    "EXP-004-S5P-L-seed2034-run01/weights-002.json": "30541d790a5e81fa747bec0982abfba9ed79d98cc0fb9e08bea8a5a0c55cac1c",
+    "EXP-004-S5P-L-seed2034-run01/weights-final.json": "30541d790a5e81fa747bec0982abfba9ed79d98cc0fb9e08bea8a5a0c55cac1c",
+    "study-manifest.json": "6005edc847171346f81fdedf33d74058fc60f8b12ea6824ceb55ad4be6d6d0bc"
+  },
+  "limitations": [
+    "Feature engineering and linear approximation are bundled; not isolated sharing causality.",
+    "Exact-key novelty is not lack of learned guidance for L.",
+    "Same fixed demand, short budget, no held-out/convergence/significance claim.",
+    "Single preflight seed is operational only."
+  ]
+}

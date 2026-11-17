@@ -1,0 +1,36 @@
+{
+  "stage": "S5P",
+  "target_episodes": 2,
+  "status": "completed",
+  "workers": 2,
+  "code_commit": "a84499ba686965c08a1a034c42ad925d148124de",
+  "started_at": "2026-11-17T16:22:43.898048+00:00",
+  "waves": [
+    {
+      "seed": 2034,
+      "started_at": "2026-11-17T16:22:43.898692+00:00",
+      "results": [
+        {
+          "method": "E",
+          "seed": 2034,
+          "status": "completed"
+        },
+        {
+          "method": "L",
+          "seed": 2034,
+          "status": "completed"
+        }
+      ],
+      "finished_at": "2026-11-17T16:22:57.264383+00:00"
+    }
+  ],
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S5P-execution\\transit_rl\\experiment\\function_approx_comparison.py",
+    "--run",
+    "--preflight",
+    "--output",
+    "C:/Users/kavin/.codex/worktrees/807a/RL-New/transit_rl/results/EXP-004-S5P-function-approx-run01"
+  ],
+  "finished_at": "2026-11-17T16:22:57.264838+00:00",
+  "total_elapsed_seconds": 13.390742599996884
+}
