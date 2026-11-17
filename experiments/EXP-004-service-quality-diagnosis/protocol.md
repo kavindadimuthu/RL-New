@@ -1,6 +1,6 @@
 # EXP-004: Low-service diagnosis and controlled improvement
 
-Protocol v0.1 with recorded amendments, 2026-11-17, Asia/Colombo. Status: full baseline and strict-action reference completed; RL treatments pending. Owner: project research team.
+Protocol v0.1 with recorded amendments, 2026-11-17, Asia/Colombo. Status: baseline, references and remaining-action RL screen completed; next treatment pending design. Owner: project research team.
 
 ## Question and prior knowledge
 
@@ -33,6 +33,8 @@ Registered implementation/protocol/analysis at `e87f633` before execution: [stag
 Register a deterministic demand-guided route construction and frequency-improvement algorithm before measuring it. Same network, assignment, route/frequency/fleet constraints, and transition objective as baseline. Report quality and evaluation count/runtime; do not call an unconstrained or unlimited-search reference a fair equal-compute competitor. Check whether reference plans are reachable within the baseline's 60 actions, or label them feasibility references outside its action budget. A reference is a demonstrated achievable result, not an upper bound or optimality certificate.
 
 ## Later stages: separate changes, not a combined fix
+
+Stage4remaining-action observation registered at `f274f24` before execution: [stage4-remaining-actions.md](stage4-remaining-actions.md). Six fresh runs completed; [results](stage4-results.md) and [decision](decision.md) retain failed practical-advancement screen. No default adoption. Later knowledge-reuse comparison must fix deadline handling across arms.
 
 Stage 3 action-budget control registered at `adc8955` before execution: [stage3-reference60.md](stage3-reference60.md). Whole day recomputed from empty; original 60-step production replay passed. See [stage3-results.md](stage3-results.md). No retrospective change to Stage 2 or RL treatment adoption.
 

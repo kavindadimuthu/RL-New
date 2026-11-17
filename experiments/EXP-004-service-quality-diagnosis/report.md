@@ -1,6 +1,6 @@
 # EXP-004 status and findings
 
-Current status, 2026-11-17: full baseline and strict-action reference completed. [Stage 1](stage1-results.md): **31.99% served**. [Stage 2](stage2-results.md): **81.51%**, with 105 first-hour actions. [Stage 3](stage3-results.md): **90.73%**, all hourly traces within original 60-action limit. No RL improvement treatment/default adopted. Separate RL formulation/learning treatments are next.
+Current status, 2026-11-17: baseline, references and remaining-action RL screen completed. [Stage 1](stage1-results.md): **31.99% served**. [Stage 2](stage2-results.md): **81.51%**, with 105 first-hour actions. [Stage 3](stage3-results.md): **90.73%**, original 60-action limit. [Stage 4](stage4-results.md): fresh A 31.99% versus B 31.78%; practical-advancement screen failed. [Decision](decision.md): default unchanged; separately investigate knowledge reuse next.
 
 Stage 3 establishes achievable daily service under the original transport and accepted-action constraints. Search/compute access still differs from RL. It does not isolate learning causes or justify a universal 70% finish rule: its first hour served only 52.37%. Detailed Stage-3 findings supersede earlier next-stage statements below, retained as stage-closeout context.
 
@@ -54,4 +54,4 @@ Next: finalize and commit the three-seed 300-episode baseline execution amendmen
 
 Subsequent status: the full baseline above is completed and archived under source `578086b`; that earlier next-task statement records preflight closeout. [Stage-1 results](stage1-results.md) is the current detailed result/decision. All900training episodes and27evaluation days completed;22,248hourly records verified. Reference and controlled fixes remain pending.
 
-Stage2subsequently completed under source `e87f633`: see [stage2-results.md](stage2-results.md) for current reference findings/qualification and next decision. Retain the earlier stage closeout statements as historical context. No claim that the81.51%plan satisfies the original60action first-hour budget.
+Stage2subsequently completed under source `e87f633`: see [stage2-results.md](stage2-results.md) for current reference findings/qualification and next decision. Retain the earlier stage closeout statements as historical context. No claim that the81.51%plan satisfies the original 60-action first-hour budget.

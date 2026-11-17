@@ -1,0 +1,68 @@
+{
+  "stage": "S4-remaining-actions",
+  "status": "completed",
+  "code_commit": "f274f24eda3bd3f66b57ac30a31e06cc1d27f3ff",
+  "started_at": "2026-11-17T15:23:48.984854+00:00",
+  "waves": [
+    {
+      "seed": 2034,
+      "started_at": "2026-11-17T15:23:48.985509+00:00",
+      "results": [
+        {
+          "method": "A",
+          "seed": 2034,
+          "status": "completed"
+        },
+        {
+          "method": "B",
+          "seed": 2034,
+          "status": "completed"
+        }
+      ],
+      "finished_at": "2026-11-17T15:30:47.923669+00:00"
+    },
+    {
+      "seed": 2035,
+      "started_at": "2026-11-17T15:30:47.924124+00:00",
+      "results": [
+        {
+          "method": "A",
+          "seed": 2035,
+          "status": "completed"
+        },
+        {
+          "method": "B",
+          "seed": 2035,
+          "status": "completed"
+        }
+      ],
+      "finished_at": "2026-11-17T15:37:35.876270+00:00"
+    },
+    {
+      "seed": 2036,
+      "started_at": "2026-11-17T15:37:35.876792+00:00",
+      "results": [
+        {
+          "method": "A",
+          "seed": 2036,
+          "status": "completed"
+        },
+        {
+          "method": "B",
+          "seed": 2036,
+          "status": "completed"
+        }
+      ],
+      "finished_at": "2026-11-17T15:44:29.890800+00:00"
+    }
+  ],
+  "workers": 2,
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S4-execution\\transit_rl\\experiment\\remaining_action_comparison.py",
+    "--run",
+    "--output",
+    "C:/Users/kavin/.codex/worktrees/807a/RL-New/transit_rl/results/EXP-004-S4-remaining-actions-run01"
+  ],
+  "finished_at": "2026-11-17T15:44:29.891534+00:00",
+  "total_elapsed_seconds": 1240.9321880999996
+}

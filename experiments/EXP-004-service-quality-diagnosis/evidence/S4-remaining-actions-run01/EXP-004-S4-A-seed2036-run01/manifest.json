@@ -1,0 +1,64 @@
+{
+  "study": "EXP-004",
+  "stage": "S4-remaining-actions",
+  "status": "completed",
+  "training_seed": 2036,
+  "evaluation_seeds": [
+    7100,
+    7101,
+    7102
+  ],
+  "checkpoints": [
+    0,
+    100,
+    300
+  ],
+  "target_episodes": 300,
+  "episodes_completed": 300,
+  "code_commit": "f274f24eda3bd3f66b57ac30a31e06cc1d27f3ff",
+  "working_tree_status": "",
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S4-execution\\transit_rl\\experiment\\service_baseline.py",
+    "--run",
+    "--method",
+    "A",
+    "--seed",
+    "2036",
+    "--output",
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S4-remaining-actions-run01\\EXP-004-S4-A-seed2036-run01"
+  ],
+  "cwd": "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S4-execution",
+  "started_at": "2026-11-17T15:37:36.828870+00:00",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpus": 20,
+  "workers": 1,
+  "numeric_threads": 1,
+  "gpu": false,
+  "training_budget_seconds": 600,
+  "qtable": "not_saved",
+  "checkpoint": "not_saved",
+  "method": "A",
+  "paired_workers": 2,
+  "observation": "original_six_fields",
+  "power": "Power Scheme GUID: 27fa6203-3987-4dcc-918d-748559d549ec  (Performance)",
+  "battery": "{\n    \"BatteryStatus\":  2,\n    \"EstimatedChargeRemaining\":  100\n}",
+  "initial_memory_mb": {
+    "working": 68.03515625,
+    "free": 12957.42578125
+  },
+  "sleep_prevention": {
+    "requested": true,
+    "previous_flags": 2147483648,
+    "flags": 2147483649
+  },
+  "sleep_scope_exited": true,
+  "finished_at": "2026-11-17T15:44:29.606442+00:00",
+  "total_elapsed_seconds": 412.777600100002,
+  "total_cpu_seconds": 407.375,
+  "training_seconds": 383.65384800000174,
+  "training_cpu_seconds": 379.40625
+}
