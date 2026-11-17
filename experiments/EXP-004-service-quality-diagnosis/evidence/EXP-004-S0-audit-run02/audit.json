@@ -1,0 +1,276 @@
+{
+  "status": "completed",
+  "study_id": "EXP-004-service-quality-diagnosis",
+  "analysis_type": "retrospective; not a new model run",
+  "timestamp": "2026-11-17T11:09:25.089866+00:00",
+  "execution_commit": "d6b40dfab69dc8730aa979fc2d65e7a3de60c4ae",
+  "working_tree_status": "M README.md\n?? docs/RL_TRAINING_AND_USE_GUIDE.md",
+  "command": [
+    "experiments/EXP-004-service-quality-diagnosis/analysis/audit_existing.py",
+    "--output",
+    "experiments/EXP-004-service-quality-diagnosis/evidence/EXP-004-S0-audit-run02"
+  ],
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "models": [
+    {
+      "training_seed": 2027,
+      "evaluation_seeds": [
+        7000,
+        7001,
+        7002
+      ],
+      "means": {
+        "served_demand_ratio": 0.31968102128542886,
+        "unseen_fraction": 0.9640747742659371,
+        "average_fleet_used": 16.958333333333332,
+        "forced_hour_finishes": 6,
+        "steps": 844.6666666666666
+      }
+    },
+    {
+      "training_seed": 2028,
+      "evaluation_seeds": [
+        7000,
+        7001,
+        7002
+      ],
+      "means": {
+        "served_demand_ratio": 0.3683726701275288,
+        "unseen_fraction": 0.9470830242715064,
+        "average_fleet_used": 18.333333333333336,
+        "forced_hour_finishes": 4.666666666666667,
+        "steps": 788.3333333333334
+      }
+    },
+    {
+      "training_seed": 2029,
+      "evaluation_seeds": [
+        7000,
+        7001,
+        7002
+      ],
+      "means": {
+        "served_demand_ratio": 0.3396182078703118,
+        "unseen_fraction": 0.9603155296398334,
+        "average_fleet_used": 16.805555555555557,
+        "forced_hour_finishes": 5.333333333333333,
+        "steps": 733.3333333333334
+      }
+    }
+  ],
+  "mean_of_model_means": {
+    "served_demand_ratio": 0.3425572997610898,
+    "unseen_fraction": 0.9571577760590922,
+    "average_fleet_used": 17.36574074074074,
+    "forced_hour_finishes": 5.333333333333333,
+    "steps": 788.7777777777778
+  },
+  "hourly_demand": [
+    {
+      "file": "od_hour_00.csv",
+      "total": 456.0,
+      "diagonal": 0.0,
+      "off_diagonal": 456.0
+    },
+    {
+      "file": "od_hour_01.csv",
+      "total": 303.0,
+      "diagonal": 0.0,
+      "off_diagonal": 303.0
+    },
+    {
+      "file": "od_hour_02.csv",
+      "total": 304.0,
+      "diagonal": 0.0,
+      "off_diagonal": 304.0
+    },
+    {
+      "file": "od_hour_03.csv",
+      "total": 301.0,
+      "diagonal": 0.0,
+      "off_diagonal": 301.0
+    },
+    {
+      "file": "od_hour_04.csv",
+      "total": 618.0,
+      "diagonal": 0.0,
+      "off_diagonal": 618.0
+    },
+    {
+      "file": "od_hour_05.csv",
+      "total": 1880.0,
+      "diagonal": 0.0,
+      "off_diagonal": 1880.0
+    },
+    {
+      "file": "od_hour_06.csv",
+      "total": 5450.0,
+      "diagonal": 0.0,
+      "off_diagonal": 5450.0
+    },
+    {
+      "file": "od_hour_07.csv",
+      "total": 11676.0,
+      "diagonal": 0.0,
+      "off_diagonal": 11676.0
+    },
+    {
+      "file": "od_hour_08.csv",
+      "total": 15569.0,
+      "diagonal": 0.0,
+      "off_diagonal": 15569.0
+    },
+    {
+      "file": "od_hour_09.csv",
+      "total": 10896.0,
+      "diagonal": 0.0,
+      "off_diagonal": 10896.0
+    },
+    {
+      "file": "od_hour_10.csv",
+      "total": 7781.0,
+      "diagonal": 0.0,
+      "off_diagonal": 7781.0
+    },
+    {
+      "file": "od_hour_11.csv",
+      "total": 7792.0,
+      "diagonal": 0.0,
+      "off_diagonal": 7792.0
+    },
+    {
+      "file": "od_hour_12.csv",
+      "total": 8564.0,
+      "diagonal": 0.0,
+      "off_diagonal": 8564.0
+    },
+    {
+      "file": "od_hour_13.csv",
+      "total": 8564.0,
+      "diagonal": 0.0,
+      "off_diagonal": 8564.0
+    },
+    {
+      "file": "od_hour_14.csv",
+      "total": 8569.0,
+      "diagonal": 0.0,
+      "off_diagonal": 8569.0
+    },
+    {
+      "file": "od_hour_15.csv",
+      "total": 10123.0,
+      "diagonal": 0.0,
+      "off_diagonal": 10123.0
+    },
+    {
+      "file": "od_hour_16.csv",
+      "total": 14012.0,
+      "diagonal": 0.0,
+      "off_diagonal": 14012.0
+    },
+    {
+      "file": "od_hour_17.csv",
+      "total": 15570.0,
+      "diagonal": 0.0,
+      "off_diagonal": 15570.0
+    },
+    {
+      "file": "od_hour_18.csv",
+      "total": 13235.0,
+      "diagonal": 0.0,
+      "off_diagonal": 13235.0
+    },
+    {
+      "file": "od_hour_19.csv",
+      "total": 8565.0,
+      "diagonal": 0.0,
+      "off_diagonal": 8565.0
+    },
+    {
+      "file": "od_hour_20.csv",
+      "total": 6221.0,
+      "diagonal": 0.0,
+      "off_diagonal": 6221.0
+    },
+    {
+      "file": "od_hour_21.csv",
+      "total": 4669.0,
+      "diagonal": 0.0,
+      "off_diagonal": 4669.0
+    },
+    {
+      "file": "od_hour_22.csv",
+      "total": 2807.0,
+      "diagonal": 0.0,
+      "off_diagonal": 2807.0
+    },
+    {
+      "file": "od_hour_23.csv",
+      "total": 1245.0,
+      "diagonal": 0.0,
+      "off_diagonal": 1245.0
+    }
+  ],
+  "source_sha256": {
+    "experiments/EXP-002-evaluation-frequency-repeat/evidence/equal_episodes/EXP-002-S2-A-seed2027-run01/evaluations.json": "01f32b4694f6aae887635a5b4a5fc5c26229556549d63ac37ec9b84072d10dcc",
+    "experiments/EXP-002-evaluation-frequency-repeat/evidence/equal_episodes/EXP-002-S2-A-seed2027-run01/evaluations.json:git_blob_content": "01f32b4694f6aae887635a5b4a5fc5c26229556549d63ac37ec9b84072d10dcc",
+    "experiments/EXP-002-evaluation-frequency-repeat/evidence/equal_episodes/EXP-002-S2-A-seed2028-run01/evaluations.json": "a5eabc0581f13873ba4f47c687ee704fd0401bcd1afe5f4def112b8b3c11ec36",
+    "experiments/EXP-002-evaluation-frequency-repeat/evidence/equal_episodes/EXP-002-S2-A-seed2028-run01/evaluations.json:git_blob_content": "a5eabc0581f13873ba4f47c687ee704fd0401bcd1afe5f4def112b8b3c11ec36",
+    "experiments/EXP-002-evaluation-frequency-repeat/evidence/equal_episodes/EXP-002-S2-A-seed2029-run01/evaluations.json": "672c5e1f67eb7b5a0b1ad421c3505fc4c2d84208d68a986d86252b7a4f0dc1a2",
+    "experiments/EXP-002-evaluation-frequency-repeat/evidence/equal_episodes/EXP-002-S2-A-seed2029-run01/evaluations.json:git_blob_content": "672c5e1f67eb7b5a0b1ad421c3505fc4c2d84208d68a986d86252b7a4f0dc1a2",
+    "transit_rl/data/input/od/od_hour_00.csv": "0aafcc73a46a7a3e11b0ac8c776a32bfb9e0fa12a9231cdbb7c4ea95028e8dba",
+    "transit_rl/data/input/od/od_hour_00.csv:git_blob_content": "8b3610a2bb271bd9c49bee76206e4755987804d28bab18e20dbe48c49b64a188",
+    "transit_rl/data/input/od/od_hour_01.csv": "e393df497d890e8a67cd47dc7ea1f62a66f72d502f36b5441d4e2deaf1daf326",
+    "transit_rl/data/input/od/od_hour_01.csv:git_blob_content": "ee142effbacada5912818474875f30d6a8a994e12986c6ce088184e0fcfcbd71",
+    "transit_rl/data/input/od/od_hour_02.csv": "966a5cd285758fcc6bdaa063721b90f005f907e027e08515d5580feba526043c",
+    "transit_rl/data/input/od/od_hour_02.csv:git_blob_content": "10322a41454911905c3012523a2086ccf31e8ea755f8265c9d3462c7112c80f8",
+    "transit_rl/data/input/od/od_hour_03.csv": "d19685e69a78162c2ea61110f18c382972eac35f9cd45681b708fd09e8a1e9b1",
+    "transit_rl/data/input/od/od_hour_03.csv:git_blob_content": "e64bb12b960ae83e6af32321bb9866eaf43bd49be76e0a4409fa13a5dd8c4a1d",
+    "transit_rl/data/input/od/od_hour_04.csv": "16e7eb8bc3dd3b70d729f94383d977153da359bf8d270a9e20c06c4534208d61",
+    "transit_rl/data/input/od/od_hour_04.csv:git_blob_content": "e8c095528e805e9abe3b0e85c9e15b288766cabb69ce073bd701bc68320cdcc2",
+    "transit_rl/data/input/od/od_hour_05.csv": "00e5384f96eef2986dbc2815d167b9919442d01d1a092ba9b0ea4d034d3fdc12",
+    "transit_rl/data/input/od/od_hour_05.csv:git_blob_content": "d7899d126fc953b9d38c79a31fe73c488dfc5780a91c6662d2aec1434245cd1d",
+    "transit_rl/data/input/od/od_hour_06.csv": "43b5b620107e67207d1159c7d27023112ed07490c330871c2d64ad9a188787d1",
+    "transit_rl/data/input/od/od_hour_06.csv:git_blob_content": "9ad560070141456b304ffc0b0424b33c7752792448064da1881545e4a511eacb",
+    "transit_rl/data/input/od/od_hour_07.csv": "b7d9cd098f662e681375ba721d02d07b71ca3da03e1e6dfa4461a3a89127942c",
+    "transit_rl/data/input/od/od_hour_07.csv:git_blob_content": "0162684b3b65958619cf4ad6d5d20540899b305cbce08a69e284ca3a44c351cc",
+    "transit_rl/data/input/od/od_hour_08.csv": "e60cf7d04b4557a959e294b958ea7e5bc4895abe0e5cfdd16fea7848c86ec4e1",
+    "transit_rl/data/input/od/od_hour_08.csv:git_blob_content": "89035eef9127b9f572c2623cc190e87318443b27f4509ee76fa60e060250695d",
+    "transit_rl/data/input/od/od_hour_09.csv": "7e625ef9e8c108f36b9913790839bb67a9a853dfc64d06580800d154c832d582",
+    "transit_rl/data/input/od/od_hour_09.csv:git_blob_content": "70a71e305e21c1e7b835cb539cc8ab4432ea6f6b8449fa57c59bcb54b13f5dc9",
+    "transit_rl/data/input/od/od_hour_10.csv": "79439fa7aacc0b26597f41ca2181557e2134ab1e7f2b399d9268f9492dee0af3",
+    "transit_rl/data/input/od/od_hour_10.csv:git_blob_content": "34c98724252725d086962fa297693c75bba6bc218f07d17cb41cd5bb97f7d8e1",
+    "transit_rl/data/input/od/od_hour_11.csv": "67ea097005637714fea14f3b844c6a4c1c99fb36a630d1b5c90ee321890606e6",
+    "transit_rl/data/input/od/od_hour_11.csv:git_blob_content": "a7a46c27fde5e44e8b8949e33abefb955fba8728ef54ac8718ec27580113f1f9",
+    "transit_rl/data/input/od/od_hour_12.csv": "20589b87acba220a588205eb8ff1aa0236c90e5b31141c2cce226631975253f9",
+    "transit_rl/data/input/od/od_hour_12.csv:git_blob_content": "d8bcb2f9c5575b1b1b3057b752e23d8cf7fd4b143b3503c6ccb5048de77846bb",
+    "transit_rl/data/input/od/od_hour_13.csv": "05245ed7c7cdf75ee8f7a85fdc6579e61e5040dee4f0ba476db05212c3a4d103",
+    "transit_rl/data/input/od/od_hour_13.csv:git_blob_content": "21aaaab75307c1c563ba2505a32189c80840a4d46c540706234cebdaa37402da",
+    "transit_rl/data/input/od/od_hour_14.csv": "75bbe7feaeef96ae89ac093c4291fb282575e311413069e7f170d98f0d8eb813",
+    "transit_rl/data/input/od/od_hour_14.csv:git_blob_content": "42770b3a3e8ff630360644a6c9041088b0338fb209cea71c65f4bb883ed09686",
+    "transit_rl/data/input/od/od_hour_15.csv": "6d2c7866b8c5c76b9837594fbba57c3722d29e69705541906d5f231d080891e9",
+    "transit_rl/data/input/od/od_hour_15.csv:git_blob_content": "92fd79ed825e1a646bf343c9ffde4444ec68f90f574ef6f7220e2c0ede984ab8",
+    "transit_rl/data/input/od/od_hour_16.csv": "274dfdbeb6621dd9ac8ea5ca1e6400f8d227e5d9f8bd934493bb0979947a0de3",
+    "transit_rl/data/input/od/od_hour_16.csv:git_blob_content": "959db4be75f435389c6add0d0de718d3fca5ff055461db22809c68e4ba6a84c1",
+    "transit_rl/data/input/od/od_hour_17.csv": "be7b321194b0b59a2fea857073b1a52f6def699dbd487ee2fcdbbf38fab5b995",
+    "transit_rl/data/input/od/od_hour_17.csv:git_blob_content": "f4dc842841ab919b3defc795ab24c19b3f636d0d4cd7805962603fede9b274e9",
+    "transit_rl/data/input/od/od_hour_18.csv": "90f1ae7299e2edcb0b543a126a97c62d5c0f8ea974715246b979335d3d179cd3",
+    "transit_rl/data/input/od/od_hour_18.csv:git_blob_content": "b117423995d29fa7194ddf9f3f47f8d19259cdf57349aaee94898f62c95ec3b4",
+    "transit_rl/data/input/od/od_hour_19.csv": "bf209f9bd73feb6aa91e38741db799bc39eb0f98951e2fa78fe35c401f8802e4",
+    "transit_rl/data/input/od/od_hour_19.csv:git_blob_content": "4a05219f04cc83959f906c05b937dc972b04a8bc5b2266914af9f0104853b393",
+    "transit_rl/data/input/od/od_hour_20.csv": "5e79d208f58595de43481ca84f6d6eaee60b9b4cc63565dc526027993d2db874",
+    "transit_rl/data/input/od/od_hour_20.csv:git_blob_content": "9fe66ec68d85c159a5a4503d89d00dbfa15a981b3fb83ff42d86e63314271279",
+    "transit_rl/data/input/od/od_hour_21.csv": "d8670e6c3407574e75b73c5b699382a015fb6c2d351268907523158501bf8297",
+    "transit_rl/data/input/od/od_hour_21.csv:git_blob_content": "1c2b5116f144be953c33675bf89aa52479e85b663afbbfcaf6ea389476474cab",
+    "transit_rl/data/input/od/od_hour_22.csv": "6c2e29420f6ddeca95eb7cb83d6bd9f9bb80e55d5ac2d9a45158e8c3794432a1",
+    "transit_rl/data/input/od/od_hour_22.csv:git_blob_content": "a07533a2ab756a03f309001678200d0e827238156d31eadffb1c64f93d1da407",
+    "transit_rl/data/input/od/od_hour_23.csv": "0943f05baf181021fb64f23839d09bfcee0760678deb9b4e3c563d60a1b53f7e",
+    "transit_rl/data/input/od/od_hour_23.csv:git_blob_content": "13ded882badd3c1d19375228e236e937e15faeee3fe2d6f8c6d127f30c848b2d"
+  },
+  "limitations": [
+    "Same training demand; only 300-episode historical runs.",
+    "No causal attribution or achievable-service bound.",
+    "Evaluation ties are not independent trained models."
+  ]
+}
