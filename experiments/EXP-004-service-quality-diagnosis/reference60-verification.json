@@ -1,0 +1,102 @@
+{
+  "status": "verified",
+  "execution_commit": "adc89555232744f7bd23ef472ce60b89631a7071",
+  "reference": {
+    "served_ratio": 0.9073076224495974,
+    "no_path_demand_share": 0.039644003148271476,
+    "capacity_demand_share": 0.053048374402131136,
+    "average_fleet": 43.291666666666664,
+    "reward": 19.63521550453478,
+    "mean_route_count": 8.0,
+    "peak_served_ratio": 0.7934590611451103,
+    "other_served_ratio": 0.9657817325403444
+  },
+  "baseline": {
+    "served_ratio": {
+      "mean": 0.3199345779333065,
+      "minimum": 0.312441341461442,
+      "maximum": 0.32415144037412
+    },
+    "no_path_demand_share": {
+      "mean": 0.3569749685509206,
+      "minimum": 0.32902060503319813,
+      "maximum": 0.3997013178341507
+    },
+    "capacity_demand_share": {
+      "mean": 0.32309045351577287,
+      "minimum": 0.2878573407044074,
+      "maximum": 0.34776844300244436
+    },
+    "average_fleet": {
+      "mean": 17.175925925925927,
+      "minimum": 17.02777777777778,
+      "maximum": 17.319444444444443
+    },
+    "reward": {
+      "mean": 7.016497384005397,
+      "minimum": 6.672069679822585,
+      "maximum": 7.576739457513181
+    },
+    "mean_route_count": {
+      "mean": 7.467592592592593,
+      "minimum": 7.444444444444445,
+      "maximum": 7.5
+    },
+    "peak_served_ratio": {
+      "mean": 0.28713724269240176,
+      "minimum": 0.281559576731486,
+      "maximum": 0.29077732920043836
+    },
+    "other_served_ratio": {
+      "mean": 0.3367797182634568,
+      "minimum": 0.32444269138870646,
+      "maximum": 0.3460271785922657
+    }
+  },
+  "served_percentage_point_difference": 58.73730445162909,
+  "hours_exceeding_original_action_limit": [],
+  "max_actions_in_hour": 60,
+  "total_accepted_actions": 276,
+  "search_requests": 5041,
+  "hours_reaching_evaluation_budget": [],
+  "hours_reaching_edit_budget": [],
+  "total_elapsed_seconds": 35.468448600000556,
+  "utc_span_seconds": 35.468433,
+  "clock_gap_seconds": -1.560000055889077e-05,
+  "maximum_recorded_working_mb": 114.23046875,
+  "same_transport_config_data_production_sources": true,
+  "checksums": {
+    "config.json": "8e96ea6a71250b8fa73b8b7d2579c2695ded3ddf84869ee0a651b09cbebfcd2f",
+    "manifest.json": "1fab8584a00cdca357125291ceaa1ee2ca2a419bcd95944713f4da57747a5bdb",
+    "requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "route-candidates.json": "35f5b0613d21e813c934388b900ee3fe294e023375551678a3d5fea4fdac2f86",
+    "search-hours.jsonl": "4c89cf0fabc26cfa1aa9ff790e853300a848cdc9bb987aeda7ae791605039632",
+    "service-plan.json": "64f0a7b86eb764062a11b09c9008331512c60cab42a347a867629f5a959b3d36",
+    "source-input-sha256.json": "0f5717340dfbd4cefbdc6930f64b6b4e70d886348900552e169c3ee4c29945b7"
+  },
+  "limitations": [
+    "Single deterministic fixed-demand control; no independent seed repetitions.",
+    "Same accepted-action budget; candidate search/compute/information differ from RL.",
+    "Whole day replanned from empty, not inherited from the extended first-hour reference.",
+    "No global optimality, held-out generalization or causal learning diagnosis.",
+    "Observed differences from RL do not isolate state, reward or exploration effects."
+  ],
+  "stage": "S3-reference60",
+  "strict_original_action_budget": true,
+  "stage2_reference": {
+    "served_ratio": 0.8150753768844221,
+    "no_path_demand_share": 0.1802627595810377,
+    "capacity_demand_share": 0.004661863534540168,
+    "average_fleet": 34.0,
+    "reward": 18.647628652144174,
+    "mean_route_count": 8.0,
+    "peak_served_ratio": 0.7667136510428747,
+    "other_served_ratio": 0.8399145917909149
+  },
+  "difference_from_stage2_percentage_points": 9.223224556517529,
+  "skipped_over_budget_edit_encounters": 16,
+  "hours_exhausting_action_budget": [
+    1
+  ],
+  "same_candidate_pool_and_search_knobs": true
+}

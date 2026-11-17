@@ -1,6 +1,8 @@
 # EXP-004 status and findings
 
-Foundation created 2026-11-17. Full three-seed baseline and deterministic feasible reference completed. [Stage1](stage1-results.md):31.99%served. [Stage2](stage2-results.md):81.51%served, but first-hour trace uses105actions versus original60. No RL improvement treatment/default change executed. Action-budget-matched reference control is next.
+Current status, 2026-11-17: full baseline and strict-action reference completed. [Stage 1](stage1-results.md): **31.99% served**. [Stage 2](stage2-results.md): **81.51%**, with 105 first-hour actions. [Stage 3](stage3-results.md): **90.73%**, all hourly traces within original 60-action limit. No RL improvement treatment/default adopted. Separate RL formulation/learning treatments are next.
+
+Stage 3 establishes achievable daily service under the original transport and accepted-action constraints. Search/compute access still differs from RL. It does not isolate learning causes or justify a universal 70% finish rule: its first hour served only 52.37%. Detailed Stage-3 findings supersede earlier next-stage statements below, retained as stage-closeout context.
 
 Code inspection identifies exact-state random fallback, no service-acceptance condition on FINISH_PLAN, hidden remaining action budget, and equal-hour service weighting versus demand-weighted reporting. These are mechanisms/risks, not measured causal attribution. Assignment uses ordered greedy passenger allocation; no globally maximal throughput guarantee.
 
