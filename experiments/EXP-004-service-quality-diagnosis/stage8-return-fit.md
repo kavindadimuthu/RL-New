@@ -1,0 +1,23 @@
+# Stage 8: fixed-return representational and bootstrap diagnostic
+
+Registered 2026-11-18 before execution. Known Stage-7 findings: learned linear model prefers finishing, while first-route and full-reference continuations have positive returns. Question: can the same normalized features fit known feasible returns, and how do frozen one-step bootstrap targets compare? No online training, new architecture, sweep or adoption.
+
+## Fixed examples and targets
+
+Training examples: all-empty FINISH each hour, and construct the first route of archived Stage-3 hour-1 plan then FINISH each hour. Separate evaluation trajectory: construct the second route in that same archived plan then FINISH each hour. Select by archived order without new search or service-based selection. All three are feasible whole days with original 60-action cap. The evaluation route is excluded from all training fits; it uses the same demand/network and can share prefixes. This is one diagnostic trajectory, not independent research replications or unseen demand. Its chosen route was available in earlier evidence; do not call it a blind test.
+
+Targets are actual undiscounted reward-to-go for each fixed continuation, not Q*. Same state/action can have different targets under different future controllers, so report exact raw-key/action and feature duplicate conflicts. Report all heldout rows as well as subsets excluding raw training key/actions and exact training feature vectors. Different-return shared prefixes must not be presented as evidence that features lose information. Exclude no rows based on prediction quality.
+
+Use original eight action blocks ×32 features, float64 unit-normalized features, zero Q offset. Fit by numpy.linalg.lstsq with rcond1e-10, (1) unregularized minimum-norm least squares and (2) fixed ridge lambda .001 using augmented matrix. No rate/regularizer selection. Training pools both training trajectories with equal weight per transition (longer trajectory contributes more rows). Also fit each trajectory separately, including the evaluation trajectory, only as explicitly in-sample representational diagnostics. These self-fits use their own labels; their residuals are never out-of-sample evidence. Small sample underdetermination and large fitted weights must be reported; fits are not executable/adopted policies.
+
+Primary descriptive measurements: train RMSE/max absolute error, heldout errors and overlap counts, matrix rank/weight norm, zero predictor baseline and initial-action fitted predictions. Small train residual shows only interpolation capacity for these examples, not sufficient Markov information or a good RL policy. No binary improvement threshold or architecture winner. A poor fit may reflect feature limitations, conflicting continuation labels or regularization; do not conflate these.
+
+## Frozen update audit
+
+At each transition record archived Stage-6 checkpoint 0/100/300 Q, next valid-action max, actual immediate reward, target r+gamma maxQ(next), TD error and predicted same-feature Q after one alpha .001 update. Terminal bootstrap zero. Assert the normalized update algebra against the original linear implementation; no weights/visits/RNG updated in the research audit. This is a frozen snapshot audit, not reconstruction of historical updates or proof of the causal source of failure. Compare target to fixed-return label with that distinction explicit.
+
+## Execution and retention
+
+Commit implementation, protocol, analysis and relevant fit/update tests before execution. Clean detached checkout, run EXP-004-S8-return-fit-run01; `python -m transit_rl.experiment.return_fit --run --output <unique-path>`. Existing dependency environment, one numeric CPU thread/process, no GPU, scoped awake; guards 180s total,1536MiB working,4096MiB free checked per transition. Estimate under three minutes. Fail rather than silently change fit settings/replace examples; retain failures and no automatic reruns. No sequential online RL training and no final policy evaluation in this stage.
+
+Retain three original trajectory datasets including block features, per-action frozen targets, 72 hourly records, small fit weights/ranks/singular values, resolved config, dependencies, source/input/model hashes, manifest, summary and SHA256 inventory. Verify archived first-route/empty outcomes, accounting, suffixes, finite fits, normal equations, unchanged models, and reproduce summaries from raw files. Separate evidence commit, expected a few MiB. Production unchanged; no push/merge/delete. Proposed followup must depend on results and receive a new prospective record.
