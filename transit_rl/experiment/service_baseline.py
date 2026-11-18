@@ -107,7 +107,10 @@ def main():
                         help='A/B: S4; S5 E: deadline-aware exact table, L: normalized linear Q')
     parser.add_argument('--episodes', type=int, choices=(2, 300), default=300,
                         help='2 only for registered S5 preflight; epsilon schedule remains300')
+    parser.add_argument('--stability-revision', action='store_true', help='Registered S6: L only, fixed learning rate .001')
     args = parser.parse_args()
+    if args.stability_revision and (args.method != 'L' or args.episodes != 300):
+        parser.error('S6 requires L and 300 episodes')
     if not args.run:
         parser.error('--run required')
     if args.episodes != 300 and args.method not in ('E', 'L'):
@@ -137,12 +140,16 @@ def main():
             feature_count=len(FEATURE_NAMES), feature_normalization='L2_unit_per_action_for_L_only',
             stability_guards=dict(max_abs_q=1000, max_weight_row_norm=10000) if args.method == 'L' else None,
             training_budget_seconds=120 if args.episodes == 2 else 900)
+    if args.stability_revision:
+        manifest.update(stage='S6-linear-stability', paired_workers=1, learning_rate=.001)
     write(args.output / 'manifest.json', manifest)
     training_time = training_cpu = 0.0
     agent = None
     try:
         cfg = replace(ExperimentConfig(), num_episodes=300, reward_mode='dense',
                       make_plots=False, copy_best_qtable=False)
+        if args.stability_revision:
+            cfg = replace(cfg, learning_rate=.001)
         cfg.validate()
         write(args.output / 'config.json', asdict(cfg))
         files = [cfg.links_path, *sorted(cfg.od_dir.glob('*.csv')),
