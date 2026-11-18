@@ -1,0 +1,421 @@
+{
+  "status": "verified",
+  "preflight": false,
+  "execution_commit": "2c6e6a72f8fab7a5f2f5743914c7d398b36575cd",
+  "models": [
+    {
+      "seed": 2034,
+      "method": "T",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "served_ratio": 0.26301183837207326,
+          "reward": 5.9326655611453205,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 15.61111111111111,
+          "forced_finishes": 5.666666666666667
+        },
+        {
+          "episode": 100,
+          "served_ratio": 0.0,
+          "reward": 0.0,
+          "empty_hours": 24,
+          "empty_days": 3,
+          "fleet": 0.0,
+          "forced_finishes": 0
+        },
+        {
+          "episode": 300,
+          "served_ratio": 0.0,
+          "reward": 0.0,
+          "empty_hours": 24,
+          "empty_days": 3,
+          "fleet": 0.0,
+          "forced_finishes": 0
+        }
+      ],
+      "training_seconds": 30.330003799983388,
+      "process_seconds": 38.14746179999929,
+      "cpu_seconds": 36.96875,
+      "clock_gap_seconds": -2.579999929253063e-05,
+      "maximum_recorded_working_mb": 226.34765625,
+      "final_weight_norm": 0.49734917290728997,
+      "minimum_update_target": -0.45316510782795255,
+      "maximum_update_target": 1.1285772636723006
+    },
+    {
+      "seed": 2034,
+      "method": "M",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "served_ratio": 0.26301183837207326,
+          "reward": 5.9326655611453205,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 15.61111111111111,
+          "forced_finishes": 5.666666666666667
+        },
+        {
+          "episode": 100,
+          "served_ratio": 0.23829387903372284,
+          "reward": 5.35696388345143,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 15.375,
+          "forced_finishes": 0
+        },
+        {
+          "episode": 300,
+          "served_ratio": 0.050154386389780224,
+          "reward": 0.1540803790116898,
+          "empty_hours": 13,
+          "empty_days": 0,
+          "fleet": 3.5,
+          "forced_finishes": 20
+        }
+      ],
+      "training_seconds": 373.75894229999903,
+      "process_seconds": 398.1806985000003,
+      "cpu_seconds": 392.203125,
+      "clock_gap_seconds": -2.450000027920396e-05,
+      "maximum_recorded_working_mb": 524.14453125,
+      "final_weight_norm": 28.64278641849467,
+      "minimum_update_target": -2.2695184896078993,
+      "maximum_update_target": 15.732239328475004
+    },
+    {
+      "seed": 2035,
+      "method": "T",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "served_ratio": 0.26301183837207326,
+          "reward": 5.9326655611453205,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 15.61111111111111,
+          "forced_finishes": 5.666666666666667
+        },
+        {
+          "episode": 100,
+          "served_ratio": 0.0,
+          "reward": 0.0,
+          "empty_hours": 24,
+          "empty_days": 3,
+          "fleet": 0.0,
+          "forced_finishes": 0
+        },
+        {
+          "episode": 300,
+          "served_ratio": 0.0,
+          "reward": 0.0,
+          "empty_hours": 24,
+          "empty_days": 3,
+          "fleet": 0.0,
+          "forced_finishes": 0
+        }
+      ],
+      "training_seconds": 31.632814699996743,
+      "process_seconds": 39.25112570000056,
+      "cpu_seconds": 38.015625,
+      "clock_gap_seconds": -2.3700000554072176e-05,
+      "maximum_recorded_working_mb": 232.99609375,
+      "final_weight_norm": 0.5324409905973178,
+      "minimum_update_target": -0.5420262910802136,
+      "maximum_update_target": 1.0533075507403267
+    },
+    {
+      "seed": 2035,
+      "method": "M",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "served_ratio": 0.26301183837207326,
+          "reward": 5.9326655611453205,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 15.61111111111111,
+          "forced_finishes": 5.666666666666667
+        },
+        {
+          "episode": 100,
+          "served_ratio": 0.35142630824806764,
+          "reward": 7.966403391856579,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 18.208333333333332,
+          "forced_finishes": 12
+        },
+        {
+          "episode": 300,
+          "served_ratio": 0.025646303808197615,
+          "reward": 0.38214775337325513,
+          "empty_hours": 15,
+          "empty_days": 0,
+          "fleet": 5.166666666666667,
+          "forced_finishes": 24
+        }
+      ],
+      "training_seconds": 565.9178124000118,
+      "process_seconds": 600.3888844000012,
+      "cpu_seconds": 591.53125,
+      "clock_gap_seconds": -2.3400001168738527e-05,
+      "maximum_recorded_working_mb": 572.4765625,
+      "final_weight_norm": 28.48069065728696,
+      "minimum_update_target": -1.907767862211706,
+      "maximum_update_target": 15.541859528585785
+    },
+    {
+      "seed": 2036,
+      "method": "T",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "served_ratio": 0.26301183837207326,
+          "reward": 5.9326655611453205,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 15.61111111111111,
+          "forced_finishes": 5.666666666666667
+        },
+        {
+          "episode": 100,
+          "served_ratio": 0.0,
+          "reward": 0.0,
+          "empty_hours": 24,
+          "empty_days": 3,
+          "fleet": 0.0,
+          "forced_finishes": 0
+        },
+        {
+          "episode": 300,
+          "served_ratio": 0.0,
+          "reward": 0.0,
+          "empty_hours": 24,
+          "empty_days": 3,
+          "fleet": 0.0,
+          "forced_finishes": 0
+        }
+      ],
+      "training_seconds": 30.811440500014214,
+      "process_seconds": 38.596740499999214,
+      "cpu_seconds": 37.453125,
+      "clock_gap_seconds": -2.4499999213389856e-05,
+      "maximum_recorded_working_mb": 229.98828125,
+      "final_weight_norm": 0.5345387404281992,
+      "minimum_update_target": -0.47041557892032454,
+      "maximum_update_target": 1.0430664241995173
+    },
+    {
+      "seed": 2036,
+      "method": "M",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "served_ratio": 0.26301183837207326,
+          "reward": 5.9326655611453205,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 15.61111111111111,
+          "forced_finishes": 5.666666666666667
+        },
+        {
+          "episode": 100,
+          "served_ratio": 0.3917050109987689,
+          "reward": 7.900495558244673,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 19.958333333333332,
+          "forced_finishes": 20
+        },
+        {
+          "episode": 300,
+          "served_ratio": 0.006423684688502755,
+          "reward": 0.1947920368952617,
+          "empty_hours": 17,
+          "empty_days": 0,
+          "fleet": 0.2916666666666667,
+          "forced_finishes": 24
+        }
+      ],
+      "training_seconds": 449.9240517999897,
+      "process_seconds": 483.8808500000014,
+      "cpu_seconds": 476.25,
+      "clock_gap_seconds": -2.4000001360491297e-05,
+      "maximum_recorded_working_mb": 549.6171875,
+      "final_weight_norm": 26.71109808208244,
+      "minimum_update_target": -2.0085889645196264,
+      "maximum_update_target": 15.231573705771034
+    }
+  ],
+  "hourly_records_verified": 44496,
+  "parent_elapsed_seconds": 1485.8341476000005,
+  "checksums": {
+    "EXP-004-S9-M-seed2034-run01/config.json": "fed77c3756b16b40aeac1c0e7e093d1580c21bd9275c2caa442f5847624015d6",
+    "EXP-004-S9-M-seed2034-run01/episodes.jsonl": "be04911a6719fbb47e181a037d3f15c391aad3c9b7bede2ef4cd38bec4f25d07",
+    "EXP-004-S9-M-seed2034-run01/evaluation-000.json": "20210c18b082a904ddf639278a8730bb2ed2aeb2be6a3a58b881a6fed539225a",
+    "EXP-004-S9-M-seed2034-run01/evaluation-100.json": "0387bb1246ed146b2b58e4f9d0f8ca00364167107507c14362f5ca6baaab8824",
+    "EXP-004-S9-M-seed2034-run01/evaluation-300.json": "15898538ea53afdbebbb61817005653e2c49184337f6b9ac7c9099d64e8fbefe",
+    "EXP-004-S9-M-seed2034-run01/manifest.json": "c35d93e5c694316d5e8e9358a9a5e1ed210f2543a3a8aee2d9ae09a7e30fb4e3",
+    "EXP-004-S9-M-seed2034-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S9-M-seed2034-run01/source-input-sha256.json": "dded97d66f0e5cff2011b63f32ef39b2913bbbe60ae0f64cc988d505d5e5675c",
+    "EXP-004-S9-M-seed2034-run01/target-audit.jsonl.gz": "ecec055c1bd0bf2f5f9b0748b56da13def6d49146c4bffdb3ec277efe172214b",
+    "EXP-004-S9-M-seed2034-run01/training-hours.jsonl.gz": "5dc9eaf3f6db0577e5d53202d060af47e41e86a7775ffbcd09a74ded520bf173",
+    "EXP-004-S9-M-seed2034-run01/weights-000.json": "88a75f692009fc60400b0a0982bb99fc8f317d8f5cd64c3ad72780579dafb290",
+    "EXP-004-S9-M-seed2034-run01/weights-100.json": "359e2a5bf57855da52ba399cb890051f29586fd079bf742feac756d21de70f06",
+    "EXP-004-S9-M-seed2034-run01/weights-300.json": "27fd487fceb84684fc34941a8b1844a841550dbc844e4112a89fac007c1d1d1d",
+    "EXP-004-S9-M-seed2034-run01/weights-final.json": "27fd487fceb84684fc34941a8b1844a841550dbc844e4112a89fac007c1d1d1d",
+    "EXP-004-S9-M-seed2035-run01/config.json": "fed77c3756b16b40aeac1c0e7e093d1580c21bd9275c2caa442f5847624015d6",
+    "EXP-004-S9-M-seed2035-run01/episodes.jsonl": "b9e4366758243b037993b14e5eb2e8dc802f36e98e7a434f74061db99eb27a5f",
+    "EXP-004-S9-M-seed2035-run01/evaluation-000.json": "30e2371bb0aec344dcd07d96b0f08c733a67d8db8e25a52246cab0f70aaf2679",
+    "EXP-004-S9-M-seed2035-run01/evaluation-100.json": "751f303908ccfe588936d46e4b204950fcc4dffd13a80c565b7bd0dec6751c30",
+    "EXP-004-S9-M-seed2035-run01/evaluation-300.json": "affa4ff7f8eb3def1223fb117d648afabcfcc8becb79d48f9bb85d7186896d67",
+    "EXP-004-S9-M-seed2035-run01/manifest.json": "0316229c23615e2b682178423681f928b2b4b5cfea819ae1f600ce8332cf78b9",
+    "EXP-004-S9-M-seed2035-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S9-M-seed2035-run01/source-input-sha256.json": "dded97d66f0e5cff2011b63f32ef39b2913bbbe60ae0f64cc988d505d5e5675c",
+    "EXP-004-S9-M-seed2035-run01/target-audit.jsonl.gz": "032da90ac8652caa444e8cdcecb6d5be2b39d1fc789558acc13c0db7a446a6a3",
+    "EXP-004-S9-M-seed2035-run01/training-hours.jsonl.gz": "a73d7d257da37d622ccc1695716efd6458b56384c0f5d9cc51c88ffff5b62134",
+    "EXP-004-S9-M-seed2035-run01/weights-000.json": "88a75f692009fc60400b0a0982bb99fc8f317d8f5cd64c3ad72780579dafb290",
+    "EXP-004-S9-M-seed2035-run01/weights-100.json": "bb55870d9346d47c4c99d7ab67a6db2b10f4680926c7e8bcb3d80f08c1b10d02",
+    "EXP-004-S9-M-seed2035-run01/weights-300.json": "7ab7a5283d4814def708bf1aafac6c5b25d34ed71e93cda460673c915df83c13",
+    "EXP-004-S9-M-seed2035-run01/weights-final.json": "7ab7a5283d4814def708bf1aafac6c5b25d34ed71e93cda460673c915df83c13",
+    "EXP-004-S9-M-seed2036-run01/config.json": "fed77c3756b16b40aeac1c0e7e093d1580c21bd9275c2caa442f5847624015d6",
+    "EXP-004-S9-M-seed2036-run01/episodes.jsonl": "d1b05f023bbdede90f55f725c10b3a49fe5949d4080e12e701059ea6dcad3136",
+    "EXP-004-S9-M-seed2036-run01/evaluation-000.json": "c3bba78e2135e49f089c9d7351bb3090dd61a72bf4639e6af3b2a28b570ae2d8",
+    "EXP-004-S9-M-seed2036-run01/evaluation-100.json": "e7bc0404e364a6a9ad0c22b48da4c88b6014daff81e63a2057b896575438a1dd",
+    "EXP-004-S9-M-seed2036-run01/evaluation-300.json": "31372ac6f9f94516435293852fc55e66dc2c1de7ee0503111e1c5c106c076053",
+    "EXP-004-S9-M-seed2036-run01/manifest.json": "103155e044c3f468ba2cb9b16625d0d975c02d48c32a9c2e92ff12d539ba8573",
+    "EXP-004-S9-M-seed2036-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S9-M-seed2036-run01/source-input-sha256.json": "dded97d66f0e5cff2011b63f32ef39b2913bbbe60ae0f64cc988d505d5e5675c",
+    "EXP-004-S9-M-seed2036-run01/target-audit.jsonl.gz": "6bb9dcd2c71f1306d22fe857f792f630d0cfc1f260e22e8339bc331efb275c84",
+    "EXP-004-S9-M-seed2036-run01/training-hours.jsonl.gz": "a14d99aa96b45b91240fde8bee070f0199983ffaf7a4f9f9dc89df200ec98210",
+    "EXP-004-S9-M-seed2036-run01/weights-000.json": "88a75f692009fc60400b0a0982bb99fc8f317d8f5cd64c3ad72780579dafb290",
+    "EXP-004-S9-M-seed2036-run01/weights-100.json": "3759fc960f48bdf830bc2e57a0e58d7d068e8453f8612b4a1e18e77e0f3d5922",
+    "EXP-004-S9-M-seed2036-run01/weights-300.json": "7d103bd403bf9afdb9dfcbae8a43e2ff4fcb4b6c52ed07341cf01d0a917a4c63",
+    "EXP-004-S9-M-seed2036-run01/weights-final.json": "7d103bd403bf9afdb9dfcbae8a43e2ff4fcb4b6c52ed07341cf01d0a917a4c63",
+    "EXP-004-S9-T-seed2034-run01/config.json": "fed77c3756b16b40aeac1c0e7e093d1580c21bd9275c2caa442f5847624015d6",
+    "EXP-004-S9-T-seed2034-run01/episodes.jsonl": "79d69866a4f29dde1be735ddd49c1121e4fba2fecc20e370c94e7a4f3e9a16c8",
+    "EXP-004-S9-T-seed2034-run01/evaluation-000.json": "66deb40207fab5375e011d506563f65c13991d051074da50b2de031084e3fd76",
+    "EXP-004-S9-T-seed2034-run01/evaluation-100.json": "2e87d254d5766f17211fb09498604b951c057d98c81f722daa93fc128368fa99",
+    "EXP-004-S9-T-seed2034-run01/evaluation-300.json": "26c57ded8dc143477ccc74671f7281c1641ba63b73ae74f88b402dacfb451a14",
+    "EXP-004-S9-T-seed2034-run01/manifest.json": "b1791ba3ef6bf4acb4a85cead6f4aa02d93e939bc2aa5fbb4845758ba26c7fdd",
+    "EXP-004-S9-T-seed2034-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S9-T-seed2034-run01/source-input-sha256.json": "dded97d66f0e5cff2011b63f32ef39b2913bbbe60ae0f64cc988d505d5e5675c",
+    "EXP-004-S9-T-seed2034-run01/target-audit.jsonl.gz": "ac0958842df3c28caa8364e99ee4b6caebcb3b70cba3901558a7422b52040368",
+    "EXP-004-S9-T-seed2034-run01/training-hours.jsonl.gz": "4f549b8f23748cd9444bc879ca88b9fb0b9ef574c8b89c06e12536ed46795f62",
+    "EXP-004-S9-T-seed2034-run01/weights-000.json": "eeffca85b37115a4204eec601d36aa80390d445b6dad0da86dffce49121c7c1c",
+    "EXP-004-S9-T-seed2034-run01/weights-100.json": "d26acf068adae835cedadcef66ec5bf1c7bb1662d2825519f3f3b2efbfb1e866",
+    "EXP-004-S9-T-seed2034-run01/weights-300.json": "5bb43cfcf528128786d47287a982d138b7f10ae29d775b4e8836ef86ad27698d",
+    "EXP-004-S9-T-seed2034-run01/weights-final.json": "5bb43cfcf528128786d47287a982d138b7f10ae29d775b4e8836ef86ad27698d",
+    "EXP-004-S9-T-seed2035-run01/config.json": "fed77c3756b16b40aeac1c0e7e093d1580c21bd9275c2caa442f5847624015d6",
+    "EXP-004-S9-T-seed2035-run01/episodes.jsonl": "1d266b2de637933b80ab6c0d0b0b280e1e7eb285bddd135e3ca3c7fdf70fd246",
+    "EXP-004-S9-T-seed2035-run01/evaluation-000.json": "8108d3801322f9f9c2b77c4cb5b668363774f92b8494fe99d23a04db4894c28f",
+    "EXP-004-S9-T-seed2035-run01/evaluation-100.json": "e82aac6c471233f53e06eaf5ea936e05663389bb550ba99730047def508835cd",
+    "EXP-004-S9-T-seed2035-run01/evaluation-300.json": "3acb7fdf60d127d19bc78fd5b780f57239ed4963b088acacc408467b5b51f013",
+    "EXP-004-S9-T-seed2035-run01/manifest.json": "c291c77e8e336a115b0b4a4ff747c8ee517779734885d5109ea2cfa66f811cb0",
+    "EXP-004-S9-T-seed2035-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S9-T-seed2035-run01/source-input-sha256.json": "dded97d66f0e5cff2011b63f32ef39b2913bbbe60ae0f64cc988d505d5e5675c",
+    "EXP-004-S9-T-seed2035-run01/target-audit.jsonl.gz": "5f41d5a58c87be840358d7eb6d9351c63fd2f6f71ff6520af0ac7d7be81e1ff6",
+    "EXP-004-S9-T-seed2035-run01/training-hours.jsonl.gz": "91c3d69f05cbf3eaf835801acf84807051d03950a0a9043e8b29978343334fbc",
+    "EXP-004-S9-T-seed2035-run01/weights-000.json": "eeffca85b37115a4204eec601d36aa80390d445b6dad0da86dffce49121c7c1c",
+    "EXP-004-S9-T-seed2035-run01/weights-100.json": "aba641f586052814e7fd7ced9d30f5c94be18a867ffe7d6725fa6bd24e03d367",
+    "EXP-004-S9-T-seed2035-run01/weights-300.json": "8906044e8210ada8fb8eb3143a85c06085a56fb3d2c8c9405c9ce84c47caf0f8",
+    "EXP-004-S9-T-seed2035-run01/weights-final.json": "8906044e8210ada8fb8eb3143a85c06085a56fb3d2c8c9405c9ce84c47caf0f8",
+    "EXP-004-S9-T-seed2036-run01/config.json": "fed77c3756b16b40aeac1c0e7e093d1580c21bd9275c2caa442f5847624015d6",
+    "EXP-004-S9-T-seed2036-run01/episodes.jsonl": "7df8cd24e8a73b2713350f7c6ba2e32f1561f8a3d883f0761a462bec79bce993",
+    "EXP-004-S9-T-seed2036-run01/evaluation-000.json": "97cb3489656d6ef6ea8b33592b7db4525b9fec79f54ff850a32919b298319933",
+    "EXP-004-S9-T-seed2036-run01/evaluation-100.json": "0d6cfe1a490318d6226c1d80d9782318f0dad43fa922e05295a6643fc0850735",
+    "EXP-004-S9-T-seed2036-run01/evaluation-300.json": "467bd17121d41c6f601c6d96514061f1f72cb6c7f5e2f46709c2bb591e3aa216",
+    "EXP-004-S9-T-seed2036-run01/manifest.json": "361f691fa5e44976e24bcba9cef7d1c4c0405b39b7f458fa0e140ba3fcc4824d",
+    "EXP-004-S9-T-seed2036-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S9-T-seed2036-run01/source-input-sha256.json": "dded97d66f0e5cff2011b63f32ef39b2913bbbe60ae0f64cc988d505d5e5675c",
+    "EXP-004-S9-T-seed2036-run01/target-audit.jsonl.gz": "6f0004d2c4a9e4fc14f94a7c46b4a9c2de70acbad519aa3c4053c3673bcbe8dc",
+    "EXP-004-S9-T-seed2036-run01/training-hours.jsonl.gz": "4bb7e8d43dd03cfdb3d5b8315cdb84a7cfdc2574f035478b213737698911693d",
+    "EXP-004-S9-T-seed2036-run01/weights-000.json": "eeffca85b37115a4204eec601d36aa80390d445b6dad0da86dffce49121c7c1c",
+    "EXP-004-S9-T-seed2036-run01/weights-100.json": "d8b3a06ab6023898c931950cc5c475dd5ba8663a042a123d49a368de173e8d56",
+    "EXP-004-S9-T-seed2036-run01/weights-300.json": "8830ce37570ab543ea97013c14fbfc36c7ef7457467a790c0ef0da6b387beed5",
+    "EXP-004-S9-T-seed2036-run01/weights-final.json": "8830ce37570ab543ea97013c14fbfc36c7ef7457467a790c0ef0da6b387beed5",
+    "study-manifest.json": "2651131c0c23b7c82371081a7e009807a0d274823749b620001604c074499cd1"
+  },
+  "paired": [
+    {
+      "seed": 2034,
+      "T": {
+        "episode": 300,
+        "served_ratio": 0.0,
+        "reward": 0.0,
+        "empty_hours": 24,
+        "empty_days": 3,
+        "fleet": 0.0,
+        "forced_finishes": 0
+      },
+      "M": {
+        "episode": 300,
+        "served_ratio": 0.050154386389780224,
+        "reward": 0.1540803790116898,
+        "empty_hours": 13,
+        "empty_days": 0,
+        "fleet": 3.5,
+        "forced_finishes": 20
+      },
+      "served_difference": 0.050154386389780224,
+      "reward_difference": 0.1540803790116898
+    },
+    {
+      "seed": 2035,
+      "T": {
+        "episode": 300,
+        "served_ratio": 0.0,
+        "reward": 0.0,
+        "empty_hours": 24,
+        "empty_days": 3,
+        "fleet": 0.0,
+        "forced_finishes": 0
+      },
+      "M": {
+        "episode": 300,
+        "served_ratio": 0.025646303808197615,
+        "reward": 0.38214775337325513,
+        "empty_hours": 15,
+        "empty_days": 0,
+        "fleet": 5.166666666666667,
+        "forced_finishes": 24
+      },
+      "served_difference": 0.025646303808197615,
+      "reward_difference": 0.38214775337325513
+    },
+    {
+      "seed": 2036,
+      "T": {
+        "episode": 300,
+        "served_ratio": 0.0,
+        "reward": 0.0,
+        "empty_hours": 24,
+        "empty_days": 3,
+        "fleet": 0.0,
+        "forced_finishes": 0
+      },
+      "M": {
+        "episode": 300,
+        "served_ratio": 0.006423684688502755,
+        "reward": 0.1947920368952617,
+        "empty_hours": 17,
+        "empty_days": 0,
+        "fleet": 0.2916666666666667,
+        "forced_finishes": 24
+      },
+      "served_difference": 0.006423684688502755,
+      "reward_difference": 0.1947920368952617
+    }
+  ],
+  "mean_served_difference": 0.027408124962160198,
+  "mean_reward_difference": 0.2436733897600689,
+  "practical_advancement_passed": true,
+  "limitations": [
+    "Three training seeds; average evaluation ties within learner.",
+    "Same training demand; no heldout or convergence claim.",
+    "MC also changes update timing and policy semantics; no isolated target-only causal claim."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "study": "EXP-004",
+  "stage": "S9-return-comparison",
+  "status": "completed",
+  "training_seed": 2034,
+  "evaluation_seeds": [
+    7100,
+    7101,
+    7102
+  ],
+  "checkpoints": [
+    0,
+    100,
+    300
+  ],
+  "target_episodes": 300,
+  "episodes_completed": 300,
+  "code_commit": "2c6e6a72f8fab7a5f2f5743914c7d398b36575cd",
+  "working_tree_status": "",
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S9-execution\\transit_rl\\experiment\\service_baseline.py",
+    "--run",
+    "--method",
+    "L",
+    "--return-comparison",
+    "M",
+    "--seed",
+    "2034",
+    "--episodes",
+    "300",
+    "--output",
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S9-return-control-run01\\EXP-004-S9-M-seed2034-run01"
+  ],
+  "cwd": "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S9-execution",
+  "started_at": "2026-11-18T11:09:24.678115+00:00",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpus": 20,
+  "workers": 1,
+  "numeric_threads": 1,
+  "gpu": false,
+  "training_budget_seconds": 900,
+  "qtable": "not_saved",
+  "checkpoint": "not_saved",
+  "method": "L",
+  "paired_workers": 2,
+  "observation": "original_six_fields_plus_remaining_actions",
+  "algorithm": "linear_episodic_return_regression",
+  "feature_count": 32,
+  "feature_normalization": "L2_unit_per_action_for_L_only",
+  "stability_guards": {
+    "max_abs_q": 1000,
+    "max_weight_row_norm": 10000
+  },
+  "return_method": "M",
+  "learning_rate": 0.001,
+  "power": "Power Scheme GUID: 27fa6203-3987-4dcc-918d-748559d549ec  (Performance)",
+  "battery": "{\n    \"BatteryStatus\":  2,\n    \"EstimatedChargeRemaining\":  100\n}",
+  "initial_memory_mb": {
+    "working": 68.38671875,
+    "free": 12141.13671875
+  },
+  "sleep_prevention": {
+    "requested": true,
+    "previous_flags": 2147483648,
+    "flags": 2147483649
+  },
+  "sleep_scope_exited": true,
+  "finished_at": "2026-11-18T11:16:02.858789+00:00",
+  "total_elapsed_seconds": 398.1806985000003,
+  "total_cpu_seconds": 392.203125,
+  "training_seconds": 373.75894229999903,
+  "training_cpu_seconds": 368.671875
+}

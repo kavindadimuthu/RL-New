@@ -1,0 +1,76 @@
+{
+  "study": "EXP-004",
+  "stage": "S9",
+  "status": "completed",
+  "target_episodes": 300,
+  "code_commit": "2c6e6a72f8fab7a5f2f5743914c7d398b36575cd",
+  "started_at": "2026-11-18T11:09:23.762618+00:00",
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S9-execution\\transit_rl\\experiment\\return_comparison.py",
+    "--run",
+    "--output",
+    "C:/Users/kavin/.codex/worktrees/807a/RL-New/transit_rl/results/EXP-004-S9-return-control-run01"
+  ],
+  "workers": 2,
+  "waves": [
+    {
+      "seed": 2034,
+      "started_at": "2026-11-18T11:09:23.765086+00:00",
+      "results": [
+        {
+          "method": "T",
+          "seed": 2034,
+          "exit_code": 0,
+          "status": "completed"
+        },
+        {
+          "method": "M",
+          "seed": 2034,
+          "exit_code": 0,
+          "status": "completed"
+        }
+      ],
+      "finished_at": "2026-11-18T11:16:03.088322+00:00"
+    },
+    {
+      "seed": 2035,
+      "started_at": "2026-11-18T11:16:03.088839+00:00",
+      "results": [
+        {
+          "method": "T",
+          "seed": 2035,
+          "exit_code": 0,
+          "status": "completed"
+        },
+        {
+          "method": "M",
+          "seed": 2035,
+          "exit_code": 0,
+          "status": "completed"
+        }
+      ],
+      "finished_at": "2026-11-18T11:26:04.587855+00:00"
+    },
+    {
+      "seed": 2036,
+      "started_at": "2026-11-18T11:26:04.588510+00:00",
+      "results": [
+        {
+          "method": "T",
+          "seed": 2036,
+          "exit_code": 0,
+          "status": "completed"
+        },
+        {
+          "method": "M",
+          "seed": 2036,
+          "exit_code": 0,
+          "status": "completed"
+        }
+      ],
+      "finished_at": "2026-11-18T11:34:09.575154+00:00"
+    }
+  ],
+  "finished_at": "2026-11-18T11:34:09.575654+00:00",
+  "total_elapsed_seconds": 1485.8341476000005
+}

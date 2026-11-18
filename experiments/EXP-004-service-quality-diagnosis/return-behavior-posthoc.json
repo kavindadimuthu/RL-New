@@ -1,0 +1,285 @@
+{
+  "status": "verified_posthoc",
+  "purpose": "Inspect final construction behavior after observing checkpoint decline; not used to change run or advancement criteria.",
+  "models": [
+    {
+      "seed": 2034,
+      "evaluations": [
+        {
+          "tie_seed": 7100,
+          "steps": 1214,
+          "action_counts": {
+            "ADD_STOP": 611,
+            "REMOVE_LAST_STOP": 505,
+            "END_ROUTE": 13,
+            "KEEP_ROUTE": 11,
+            "FINISH_PLAN": 4,
+            "REMOVE_ROUTE": 6,
+            "INCREASE_FREQUENCY": 64
+          },
+          "discarded_routes": 20,
+          "mean_routes": 1.4583333333333333,
+          "first_hour": {
+            "actions": 60,
+            "action_counts": {
+              "ADD_STOP": 31,
+              "REMOVE_LAST_STOP": 29
+            },
+            "committed_routes": 0,
+            "served": 0.0,
+            "discarded_unfinished_route": [
+              4,
+              2
+            ]
+          }
+        },
+        {
+          "tie_seed": 7101,
+          "steps": 1214,
+          "action_counts": {
+            "ADD_STOP": 611,
+            "REMOVE_LAST_STOP": 505,
+            "END_ROUTE": 13,
+            "KEEP_ROUTE": 11,
+            "FINISH_PLAN": 4,
+            "REMOVE_ROUTE": 6,
+            "INCREASE_FREQUENCY": 64
+          },
+          "discarded_routes": 20,
+          "mean_routes": 1.4583333333333333,
+          "first_hour": {
+            "actions": 60,
+            "action_counts": {
+              "ADD_STOP": 31,
+              "REMOVE_LAST_STOP": 29
+            },
+            "committed_routes": 0,
+            "served": 0.0,
+            "discarded_unfinished_route": [
+              4,
+              2
+            ]
+          }
+        },
+        {
+          "tie_seed": 7102,
+          "steps": 1214,
+          "action_counts": {
+            "ADD_STOP": 611,
+            "REMOVE_LAST_STOP": 505,
+            "END_ROUTE": 13,
+            "KEEP_ROUTE": 11,
+            "FINISH_PLAN": 4,
+            "REMOVE_ROUTE": 6,
+            "INCREASE_FREQUENCY": 64
+          },
+          "discarded_routes": 20,
+          "mean_routes": 1.4583333333333333,
+          "first_hour": {
+            "actions": 60,
+            "action_counts": {
+              "ADD_STOP": 31,
+              "REMOVE_LAST_STOP": 29
+            },
+            "committed_routes": 0,
+            "served": 0.0,
+            "discarded_unfinished_route": [
+              4,
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2035,
+      "evaluations": [
+        {
+          "tie_seed": 7100,
+          "steps": 1440,
+          "action_counts": {
+            "ADD_STOP": 740,
+            "REMOVE_LAST_STOP": 653,
+            "END_ROUTE": 5,
+            "KEEP_ROUTE": 2,
+            "INCREASE_FREQUENCY": 40
+          },
+          "discarded_routes": 23,
+          "mean_routes": 1.375,
+          "first_hour": {
+            "actions": 60,
+            "action_counts": {
+              "ADD_STOP": 33,
+              "REMOVE_LAST_STOP": 27
+            },
+            "committed_routes": 0,
+            "served": 0.0,
+            "discarded_unfinished_route": [
+              11,
+              13,
+              14,
+              10,
+              8,
+              15
+            ]
+          }
+        },
+        {
+          "tie_seed": 7101,
+          "steps": 1440,
+          "action_counts": {
+            "ADD_STOP": 740,
+            "REMOVE_LAST_STOP": 653,
+            "END_ROUTE": 5,
+            "KEEP_ROUTE": 2,
+            "INCREASE_FREQUENCY": 40
+          },
+          "discarded_routes": 23,
+          "mean_routes": 1.375,
+          "first_hour": {
+            "actions": 60,
+            "action_counts": {
+              "ADD_STOP": 33,
+              "REMOVE_LAST_STOP": 27
+            },
+            "committed_routes": 0,
+            "served": 0.0,
+            "discarded_unfinished_route": [
+              11,
+              13,
+              14,
+              10,
+              8,
+              15
+            ]
+          }
+        },
+        {
+          "tie_seed": 7102,
+          "steps": 1440,
+          "action_counts": {
+            "ADD_STOP": 740,
+            "REMOVE_LAST_STOP": 653,
+            "END_ROUTE": 5,
+            "KEEP_ROUTE": 2,
+            "INCREASE_FREQUENCY": 40
+          },
+          "discarded_routes": 23,
+          "mean_routes": 1.375,
+          "first_hour": {
+            "actions": 60,
+            "action_counts": {
+              "ADD_STOP": 33,
+              "REMOVE_LAST_STOP": 27
+            },
+            "committed_routes": 0,
+            "served": 0.0,
+            "discarded_unfinished_route": [
+              11,
+              13,
+              14,
+              10,
+              8,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2036,
+      "evaluations": [
+        {
+          "tie_seed": 7100,
+          "steps": 1440,
+          "action_counts": {
+            "ADD_STOP": 767,
+            "REMOVE_LAST_STOP": 672,
+            "END_ROUTE": 1
+          },
+          "discarded_routes": 24,
+          "mean_routes": 0.2916666666666667,
+          "first_hour": {
+            "actions": 60,
+            "action_counts": {
+              "ADD_STOP": 34,
+              "REMOVE_LAST_STOP": 26
+            },
+            "committed_routes": 0,
+            "served": 0.0,
+            "discarded_unfinished_route": [
+              11,
+              13,
+              14,
+              10,
+              8,
+              15,
+              6,
+              4
+            ]
+          }
+        },
+        {
+          "tie_seed": 7101,
+          "steps": 1440,
+          "action_counts": {
+            "ADD_STOP": 767,
+            "REMOVE_LAST_STOP": 672,
+            "END_ROUTE": 1
+          },
+          "discarded_routes": 24,
+          "mean_routes": 0.2916666666666667,
+          "first_hour": {
+            "actions": 60,
+            "action_counts": {
+              "ADD_STOP": 34,
+              "REMOVE_LAST_STOP": 26
+            },
+            "committed_routes": 0,
+            "served": 0.0,
+            "discarded_unfinished_route": [
+              11,
+              13,
+              14,
+              10,
+              8,
+              15,
+              6,
+              4
+            ]
+          }
+        },
+        {
+          "tie_seed": 7102,
+          "steps": 1440,
+          "action_counts": {
+            "ADD_STOP": 767,
+            "REMOVE_LAST_STOP": 672,
+            "END_ROUTE": 1
+          },
+          "discarded_routes": 24,
+          "mean_routes": 0.2916666666666667,
+          "first_hour": {
+            "actions": 60,
+            "action_counts": {
+              "ADD_STOP": 34,
+              "REMOVE_LAST_STOP": 26
+            },
+            "committed_routes": 0,
+            "served": 0.0,
+            "discarded_unfinished_route": [
+              11,
+              13,
+              14,
+              10,
+              8,
+              15,
+              6,
+              4
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

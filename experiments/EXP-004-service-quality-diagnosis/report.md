@@ -72,3 +72,8 @@ Frozen-model diagnostic confirms stopping is ranked above productive reference c
 ## Stage 8 update — 2026-11-18
 
 Fixed-return fitting corrects the initial stopping/construction preference but leaves pooled RMSE 1.0440 despite no conflicting training labels. Frozen alpha .001 updates provide tiny local corrections. No causal attribution, new online policy or adoption. See [Stage 8 results and D05](stage8-results.md), [registered protocol](stage8-return-fit.md), and `return-fit-verification.json`. Next proposed test isolates interaction features on fixed data.
+
+
+## Stage 9 update — 2026-11-18
+
+Completed preregistered three-seed return-control comparison: final served T0%,M2.7408%; relative advancement gate passed, but final absolute quality poor and all M runs declined from checkpoint100. No production adoption. All88 tests and44,496full hourly records verified; post-hoc construction/discard inspection separately labeled. See [Stage9 results and D06](stage9-results.md), [protocol](stage9-return-control.md), [full amendment](stage9-full-execution.md), and `return-control-verification.json`.

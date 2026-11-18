@@ -1,0 +1,6891 @@
+{
+  "episode": 100,
+  "learner_unchanged": true,
+  "evaluations": [
+    {
+      "seed": 7100,
+      "reward": 5.35696388345143,
+      "steps": 70,
+      "unseen": 65,
+      "elapsed_seconds": 0.10294810000050347,
+      "cpu_seconds": 0.09375,
+      "daily": {
+        "daily_plan_reward": 5.356963883451431,
+        "hourly_rewards": [
+          0.10778041835270946,
+          0.1438876651982379,
+          0.17229576318382386,
+          0.2343981395059424,
+          0.22135436570280104,
+          0.23209700932727556,
+          0.2293694324503054,
+          0.21293484085146636,
+          0.16753864652808415,
+          0.1394640042038886,
+          0.17409875101601585,
+          0.25928461497638383,
+          0.26724389043951813,
+          0.2564737111963499,
+          0.25094298884822575,
+          0.2529025191675794,
+          0.26208133971291864,
+          0.2719171917191719,
+          0.27085326953748007,
+          0.2574549481526226,
+          0.24783759929390997,
+          0.26497421018697614,
+          0.254356408117876,
+          0.205422155781868
+        ],
+        "served_passengers": 39359.0,
+        "total_demand": 165170.0,
+        "served_demand_ratio": 0.23829387903372284,
+        "total_service_component": 6.475145701633249,
+        "total_operator_component": 3.727272727272727,
+        "total_operator_penalty": 1.1181818181818182,
+        "total_transition_component": 0.0,
+        "total_passenger_travel_time": 499810.65909090906,
+        "average_travel_time": 12.698764173147413,
+        "average_waiting_time": 5.6624827635587565,
+        "unserved_passengers": 125811.0,
+        "direct_passengers": 36942.0,
+        "transfer_passengers": 2417.0,
+        "average_fleet_used": 15.375,
+        "max_fleet_used": 17,
+        "total_transition_cost": 0.0,
+        "forced_hour_finishes": 0
+      },
+      "diagnostics": {
+        "served_ratio": 0.23829387903372284,
+        "no_path_demand_share": 0.6890960828237573,
+        "capacity_demand_share": 0.07261003814251983,
+        "unseen_fraction": 0.9285714285714286,
+        "rare_state_fraction": 0.9714285714285714,
+        "average_fleet": 15.375,
+        "mean_route_count": 7.0,
+        "forced_finishes": 0,
+        "voluntary_finishes": 24,
+        "discarded_routes": 0,
+        "total_demand": 165170.0,
+        "actions": 70,
+        "forced_served_ratio": null,
+        "voluntary_served_ratio": 0.23829387903372284,
+        "peak_served_ratio": 0.1766731493211055,
+        "other_served_ratio": 0.269943091740513
+      },
+      "hours": [
+        {
+          "hour": 1,
+          "clock_hour": 8,
+          "total_demand": 15569.0,
+          "served_passengers": 2197.0,
+          "unserved_passengers": 13372.0,
+          "no_eligible_path_unserved": 10694.0,
+          "capacity_constrained_unserved": 2678.0,
+          "eligible_path_demand": 4875.0,
+          "fleet_used": 11,
+          "fleet_remaining": 88,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.745,
+            0.83,
+            0.0,
+            0.36,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "ADD_STOP": 16,
+            "END_ROUTE": 7,
+            "FINISH_PLAN": 1
+          },
+          "actions": 24,
+          "unseen_decisions": 19,
+          "rare_state_decisions_lt5": 22,
+          "state_visits_before_decision": [
+            100,
+            5,
+            4,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            5,
+            4,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 2,
+          "clock_hour": 9,
+          "total_demand": 10896.0,
+          "served_passengers": 1931.0,
+          "unserved_passengers": 8965.0,
+          "no_eligible_path_unserved": 7608.0,
+          "capacity_constrained_unserved": 1357.0,
+          "eligible_path_demand": 3288.0,
+          "fleet_used": 11,
+          "fleet_remaining": 88,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.685,
+            0.51,
+            0.0,
+            0.245,
+            0.92,
+            1.0
+          ],
+          "saturated_route_count": 2,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 3,
+          "clock_hour": 10,
+          "total_demand": 7781.0,
+          "served_passengers": 1600.0,
+          "unserved_passengers": 6181.0,
+          "no_eligible_path_unserved": 5383.0,
+          "capacity_constrained_unserved": 798.0,
+          "eligible_path_demand": 2398.0,
+          "fleet_used": 11,
+          "fleet_remaining": 88,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.475,
+            0.325,
+            0.0,
+            0.165,
+            0.59,
+            0.74
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 4,
+          "clock_hour": 11,
+          "total_demand": 7792.0,
+          "served_passengers": 2157.0,
+          "unserved_passengers": 5635.0,
+          "no_eligible_path_unserved": 5424.0,
+          "capacity_constrained_unserved": 211.0,
+          "eligible_path_demand": 2368.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.5,
+            0.36,
+            0.0,
+            0.175,
+            0.575,
+            0.68
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "INCREASE_FREQUENCY": 4,
+            "FINISH_PLAN": 1
+          },
+          "actions": 5,
+          "unseen_decisions": 5,
+          "rare_state_decisions_lt5": 5,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 5,
+          "clock_hour": 12,
+          "total_demand": 8564.0,
+          "served_passengers": 2259.0,
+          "unserved_passengers": 6305.0,
+          "no_eligible_path_unserved": 5929.0,
+          "capacity_constrained_unserved": 376.0,
+          "eligible_path_demand": 2635.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.495,
+            0.35,
+            0.0,
+            0.2,
+            0.74,
+            0.76
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 1,
+            "FINISH_PLAN": 1
+          },
+          "actions": 2,
+          "unseen_decisions": 2,
+          "rare_state_decisions_lt5": 2,
+          "state_visits_before_decision": [
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 6,
+          "clock_hour": 13,
+          "total_demand": 8564.0,
+          "served_passengers": 2351.0,
+          "unserved_passengers": 6213.0,
+          "no_eligible_path_unserved": 5823.0,
+          "capacity_constrained_unserved": 390.0,
+          "eligible_path_demand": 2741.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.515,
+            0.41,
+            0.0,
+            0.17,
+            0.695,
+            0.75
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 2,
+            "FINISH_PLAN": 1
+          },
+          "actions": 3,
+          "unseen_decisions": 3,
+          "rare_state_decisions_lt5": 3,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 7,
+          "clock_hour": 14,
+          "total_demand": 8569.0,
+          "served_passengers": 2329.0,
+          "unserved_passengers": 6240.0,
+          "no_eligible_path_unserved": 5898.0,
+          "capacity_constrained_unserved": 342.0,
+          "eligible_path_demand": 2671.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.515,
+            0.385,
+            0.0,
+            0.22,
+            0.72,
+            0.855
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 3,
+            "FINISH_PLAN": 1
+          },
+          "actions": 4,
+          "unseen_decisions": 4,
+          "rare_state_decisions_lt5": 4,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 8,
+          "clock_hour": 15,
+          "total_demand": 10123.0,
+          "served_passengers": 2585.0,
+          "unserved_passengers": 7538.0,
+          "no_eligible_path_unserved": 6961.0,
+          "capacity_constrained_unserved": 577.0,
+          "eligible_path_demand": 3162.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.63,
+            0.495,
+            0.0,
+            0.26,
+            0.77,
+            0.885
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 4,
+            "FINISH_PLAN": 1
+          },
+          "actions": 5,
+          "unseen_decisions": 5,
+          "rare_state_decisions_lt5": 5,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 9,
+          "clock_hour": 16,
+          "total_demand": 14012.0,
+          "served_passengers": 2942.0,
+          "unserved_passengers": 11070.0,
+          "no_eligible_path_unserved": 9638.0,
+          "capacity_constrained_unserved": 1432.0,
+          "eligible_path_demand": 4374.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.845,
+            0.68,
+            0.0,
+            0.315,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 4,
+            "FINISH_PLAN": 1
+          },
+          "actions": 5,
+          "unseen_decisions": 5,
+          "rare_state_decisions_lt5": 5,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 10,
+          "clock_hour": 17,
+          "total_demand": 15570.0,
+          "served_passengers": 2832.0,
+          "unserved_passengers": 12738.0,
+          "no_eligible_path_unserved": 10654.0,
+          "capacity_constrained_unserved": 2084.0,
+          "eligible_path_demand": 4916.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.755,
+            0.725,
+            0.0,
+            0.345,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 2,
+            "FINISH_PLAN": 1
+          },
+          "actions": 3,
+          "unseen_decisions": 3,
+          "rare_state_decisions_lt5": 3,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 11,
+          "clock_hour": 18,
+          "total_demand": 13235.0,
+          "served_passengers": 2986.0,
+          "unserved_passengers": 10249.0,
+          "no_eligible_path_unserved": 9213.0,
+          "capacity_constrained_unserved": 1036.0,
+          "eligible_path_demand": 4022.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.76,
+            0.64,
+            0.0,
+            0.315,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "INCREASE_FREQUENCY": 3,
+            "FINISH_PLAN": 1
+          },
+          "actions": 4,
+          "unseen_decisions": 4,
+          "rare_state_decisions_lt5": 4,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 12,
+          "clock_hour": 19,
+          "total_demand": 8565.0,
+          "served_passengers": 2662.0,
+          "unserved_passengers": 5903.0,
+          "no_eligible_path_unserved": 5863.0,
+          "capacity_constrained_unserved": 40.0,
+          "eligible_path_demand": 2702.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.585,
+            0.435,
+            0.0,
+            0.195,
+            0.965,
+            0.805
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 13,
+          "clock_hour": 20,
+          "total_demand": 6221.0,
+          "served_passengers": 1983.0,
+          "unserved_passengers": 4238.0,
+          "no_eligible_path_unserved": 4238.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 1983.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.769090909090909,
+            0.395,
+            0.305,
+            0.0,
+            0.16,
+            0.615,
+            0.635
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 14,
+          "clock_hour": 21,
+          "total_demand": 4669.0,
+          "served_passengers": 1438.0,
+          "unserved_passengers": 3231.0,
+          "no_eligible_path_unserved": 3231.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 1438.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.5436363636363636,
+            0.31,
+            0.225,
+            0.0,
+            0.11,
+            0.38,
+            0.42
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 15,
+          "clock_hour": 22,
+          "total_demand": 2807.0,
+          "served_passengers": 849.0,
+          "unserved_passengers": 1958.0,
+          "no_eligible_path_unserved": 1958.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 849.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.3381818181818182,
+            0.185,
+            0.125,
+            0.0,
+            0.065,
+            0.265,
+            0.24
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 16,
+          "clock_hour": 23,
+          "total_demand": 1245.0,
+          "served_passengers": 379.0,
+          "unserved_passengers": 866.0,
+          "no_eligible_path_unserved": 866.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 379.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.13818181818181818,
+            0.09,
+            0.055,
+            0.0,
+            0.03,
+            0.11,
+            0.115
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 17,
+          "clock_hour": 0,
+          "total_demand": 456.0,
+          "served_passengers": 143.0,
+          "unserved_passengers": 313.0,
+          "no_eligible_path_unserved": 313.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 143.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.056363636363636366,
+            0.03,
+            0.025,
+            0.0,
+            0.015,
+            0.045,
+            0.04
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 18,
+          "clock_hour": 1,
+          "total_demand": 303.0,
+          "served_passengers": 98.0,
+          "unserved_passengers": 205.0,
+          "no_eligible_path_unserved": 205.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 98.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.04,
+            0.02,
+            0.01,
+            0.0,
+            0.005,
+            0.025,
+            0.03
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 19,
+          "clock_hour": 2,
+          "total_demand": 304.0,
+          "served_passengers": 98.0,
+          "unserved_passengers": 206.0,
+          "no_eligible_path_unserved": 206.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 98.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.04,
+            0.02,
+            0.015,
+            0.0,
+            0.005,
+            0.025,
+            0.03
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 20,
+          "clock_hour": 3,
+          "total_demand": 301.0,
+          "served_passengers": 93.0,
+          "unserved_passengers": 208.0,
+          "no_eligible_path_unserved": 208.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 93.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.038181818181818185,
+            0.02,
+            0.01,
+            0.0,
+            0.005,
+            0.025,
+            0.025
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 21,
+          "clock_hour": 4,
+          "total_demand": 618.0,
+          "served_passengers": 185.0,
+          "unserved_passengers": 433.0,
+          "no_eligible_path_unserved": 433.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 185.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.07636363636363637,
+            0.04,
+            0.025,
+            0.0,
+            0.015,
+            0.055,
+            0.05
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 22,
+          "clock_hour": 5,
+          "total_demand": 1880.0,
+          "served_passengers": 595.0,
+          "unserved_passengers": 1285.0,
+          "no_eligible_path_unserved": 1285.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 595.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.24545454545454545,
+            0.125,
+            0.085,
+            0.0,
+            0.04,
+            0.17,
+            0.16
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 23,
+          "clock_hour": 6,
+          "total_demand": 5450.0,
+          "served_passengers": 1667.0,
+          "unserved_passengers": 3783.0,
+          "no_eligible_path_unserved": 3783.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 1667.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.6854545454545454,
+            0.355,
+            0.28,
+            0.0,
+            0.125,
+            0.435,
+            0.52
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 24,
+          "clock_hour": 7,
+          "total_demand": 11676.0,
+          "served_passengers": 3000.0,
+          "unserved_passengers": 8676.0,
+          "no_eligible_path_unserved": 8004.0,
+          "capacity_constrained_unserved": 672.0,
+          "eligible_path_demand": 3672.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.69,
+            0.515,
+            0.0,
+            0.265,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        }
+      ],
+      "generalization_audit": {
+        "decisions": 70,
+        "unseen_exact_key": 65,
+        "unseen_unique_best": 65,
+        "unseen_tied_best": 0,
+        "unseen_single_valid": 0
+      }
+    },
+    {
+      "seed": 7101,
+      "reward": 5.35696388345143,
+      "steps": 70,
+      "unseen": 65,
+      "elapsed_seconds": 0.1025723000002472,
+      "cpu_seconds": 0.109375,
+      "daily": {
+        "daily_plan_reward": 5.356963883451431,
+        "hourly_rewards": [
+          0.10778041835270946,
+          0.1438876651982379,
+          0.17229576318382386,
+          0.2343981395059424,
+          0.22135436570280104,
+          0.23209700932727556,
+          0.2293694324503054,
+          0.21293484085146636,
+          0.16753864652808415,
+          0.1394640042038886,
+          0.17409875101601585,
+          0.25928461497638383,
+          0.26724389043951813,
+          0.2564737111963499,
+          0.25094298884822575,
+          0.2529025191675794,
+          0.26208133971291864,
+          0.2719171917191719,
+          0.27085326953748007,
+          0.2574549481526226,
+          0.24783759929390997,
+          0.26497421018697614,
+          0.254356408117876,
+          0.205422155781868
+        ],
+        "served_passengers": 39359.0,
+        "total_demand": 165170.0,
+        "served_demand_ratio": 0.23829387903372284,
+        "total_service_component": 6.475145701633249,
+        "total_operator_component": 3.727272727272727,
+        "total_operator_penalty": 1.1181818181818182,
+        "total_transition_component": 0.0,
+        "total_passenger_travel_time": 499810.65909090906,
+        "average_travel_time": 12.698764173147413,
+        "average_waiting_time": 5.6624827635587565,
+        "unserved_passengers": 125811.0,
+        "direct_passengers": 36942.0,
+        "transfer_passengers": 2417.0,
+        "average_fleet_used": 15.375,
+        "max_fleet_used": 17,
+        "total_transition_cost": 0.0,
+        "forced_hour_finishes": 0
+      },
+      "diagnostics": {
+        "served_ratio": 0.23829387903372284,
+        "no_path_demand_share": 0.6890960828237573,
+        "capacity_demand_share": 0.07261003814251983,
+        "unseen_fraction": 0.9285714285714286,
+        "rare_state_fraction": 0.9714285714285714,
+        "average_fleet": 15.375,
+        "mean_route_count": 7.0,
+        "forced_finishes": 0,
+        "voluntary_finishes": 24,
+        "discarded_routes": 0,
+        "total_demand": 165170.0,
+        "actions": 70,
+        "forced_served_ratio": null,
+        "voluntary_served_ratio": 0.23829387903372284,
+        "peak_served_ratio": 0.1766731493211055,
+        "other_served_ratio": 0.269943091740513
+      },
+      "hours": [
+        {
+          "hour": 1,
+          "clock_hour": 8,
+          "total_demand": 15569.0,
+          "served_passengers": 2197.0,
+          "unserved_passengers": 13372.0,
+          "no_eligible_path_unserved": 10694.0,
+          "capacity_constrained_unserved": 2678.0,
+          "eligible_path_demand": 4875.0,
+          "fleet_used": 11,
+          "fleet_remaining": 88,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.745,
+            0.83,
+            0.0,
+            0.36,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "ADD_STOP": 16,
+            "END_ROUTE": 7,
+            "FINISH_PLAN": 1
+          },
+          "actions": 24,
+          "unseen_decisions": 19,
+          "rare_state_decisions_lt5": 22,
+          "state_visits_before_decision": [
+            100,
+            5,
+            4,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            5,
+            4,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 2,
+          "clock_hour": 9,
+          "total_demand": 10896.0,
+          "served_passengers": 1931.0,
+          "unserved_passengers": 8965.0,
+          "no_eligible_path_unserved": 7608.0,
+          "capacity_constrained_unserved": 1357.0,
+          "eligible_path_demand": 3288.0,
+          "fleet_used": 11,
+          "fleet_remaining": 88,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.685,
+            0.51,
+            0.0,
+            0.245,
+            0.92,
+            1.0
+          ],
+          "saturated_route_count": 2,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 3,
+          "clock_hour": 10,
+          "total_demand": 7781.0,
+          "served_passengers": 1600.0,
+          "unserved_passengers": 6181.0,
+          "no_eligible_path_unserved": 5383.0,
+          "capacity_constrained_unserved": 798.0,
+          "eligible_path_demand": 2398.0,
+          "fleet_used": 11,
+          "fleet_remaining": 88,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.475,
+            0.325,
+            0.0,
+            0.165,
+            0.59,
+            0.74
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 4,
+          "clock_hour": 11,
+          "total_demand": 7792.0,
+          "served_passengers": 2157.0,
+          "unserved_passengers": 5635.0,
+          "no_eligible_path_unserved": 5424.0,
+          "capacity_constrained_unserved": 211.0,
+          "eligible_path_demand": 2368.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.5,
+            0.36,
+            0.0,
+            0.175,
+            0.575,
+            0.68
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "INCREASE_FREQUENCY": 4,
+            "FINISH_PLAN": 1
+          },
+          "actions": 5,
+          "unseen_decisions": 5,
+          "rare_state_decisions_lt5": 5,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 5,
+          "clock_hour": 12,
+          "total_demand": 8564.0,
+          "served_passengers": 2259.0,
+          "unserved_passengers": 6305.0,
+          "no_eligible_path_unserved": 5929.0,
+          "capacity_constrained_unserved": 376.0,
+          "eligible_path_demand": 2635.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.495,
+            0.35,
+            0.0,
+            0.2,
+            0.74,
+            0.76
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 1,
+            "FINISH_PLAN": 1
+          },
+          "actions": 2,
+          "unseen_decisions": 2,
+          "rare_state_decisions_lt5": 2,
+          "state_visits_before_decision": [
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 6,
+          "clock_hour": 13,
+          "total_demand": 8564.0,
+          "served_passengers": 2351.0,
+          "unserved_passengers": 6213.0,
+          "no_eligible_path_unserved": 5823.0,
+          "capacity_constrained_unserved": 390.0,
+          "eligible_path_demand": 2741.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.515,
+            0.41,
+            0.0,
+            0.17,
+            0.695,
+            0.75
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 2,
+            "FINISH_PLAN": 1
+          },
+          "actions": 3,
+          "unseen_decisions": 3,
+          "rare_state_decisions_lt5": 3,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 7,
+          "clock_hour": 14,
+          "total_demand": 8569.0,
+          "served_passengers": 2329.0,
+          "unserved_passengers": 6240.0,
+          "no_eligible_path_unserved": 5898.0,
+          "capacity_constrained_unserved": 342.0,
+          "eligible_path_demand": 2671.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.515,
+            0.385,
+            0.0,
+            0.22,
+            0.72,
+            0.855
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 3,
+            "FINISH_PLAN": 1
+          },
+          "actions": 4,
+          "unseen_decisions": 4,
+          "rare_state_decisions_lt5": 4,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 8,
+          "clock_hour": 15,
+          "total_demand": 10123.0,
+          "served_passengers": 2585.0,
+          "unserved_passengers": 7538.0,
+          "no_eligible_path_unserved": 6961.0,
+          "capacity_constrained_unserved": 577.0,
+          "eligible_path_demand": 3162.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.63,
+            0.495,
+            0.0,
+            0.26,
+            0.77,
+            0.885
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 4,
+            "FINISH_PLAN": 1
+          },
+          "actions": 5,
+          "unseen_decisions": 5,
+          "rare_state_decisions_lt5": 5,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 9,
+          "clock_hour": 16,
+          "total_demand": 14012.0,
+          "served_passengers": 2942.0,
+          "unserved_passengers": 11070.0,
+          "no_eligible_path_unserved": 9638.0,
+          "capacity_constrained_unserved": 1432.0,
+          "eligible_path_demand": 4374.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.845,
+            0.68,
+            0.0,
+            0.315,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 4,
+            "FINISH_PLAN": 1
+          },
+          "actions": 5,
+          "unseen_decisions": 5,
+          "rare_state_decisions_lt5": 5,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 10,
+          "clock_hour": 17,
+          "total_demand": 15570.0,
+          "served_passengers": 2832.0,
+          "unserved_passengers": 12738.0,
+          "no_eligible_path_unserved": 10654.0,
+          "capacity_constrained_unserved": 2084.0,
+          "eligible_path_demand": 4916.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.755,
+            0.725,
+            0.0,
+            0.345,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 2,
+            "FINISH_PLAN": 1
+          },
+          "actions": 3,
+          "unseen_decisions": 3,
+          "rare_state_decisions_lt5": 3,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 11,
+          "clock_hour": 18,
+          "total_demand": 13235.0,
+          "served_passengers": 2986.0,
+          "unserved_passengers": 10249.0,
+          "no_eligible_path_unserved": 9213.0,
+          "capacity_constrained_unserved": 1036.0,
+          "eligible_path_demand": 4022.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.76,
+            0.64,
+            0.0,
+            0.315,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "INCREASE_FREQUENCY": 3,
+            "FINISH_PLAN": 1
+          },
+          "actions": 4,
+          "unseen_decisions": 4,
+          "rare_state_decisions_lt5": 4,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 12,
+          "clock_hour": 19,
+          "total_demand": 8565.0,
+          "served_passengers": 2662.0,
+          "unserved_passengers": 5903.0,
+          "no_eligible_path_unserved": 5863.0,
+          "capacity_constrained_unserved": 40.0,
+          "eligible_path_demand": 2702.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.585,
+            0.435,
+            0.0,
+            0.195,
+            0.965,
+            0.805
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 13,
+          "clock_hour": 20,
+          "total_demand": 6221.0,
+          "served_passengers": 1983.0,
+          "unserved_passengers": 4238.0,
+          "no_eligible_path_unserved": 4238.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 1983.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.769090909090909,
+            0.395,
+            0.305,
+            0.0,
+            0.16,
+            0.615,
+            0.635
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 14,
+          "clock_hour": 21,
+          "total_demand": 4669.0,
+          "served_passengers": 1438.0,
+          "unserved_passengers": 3231.0,
+          "no_eligible_path_unserved": 3231.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 1438.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.5436363636363636,
+            0.31,
+            0.225,
+            0.0,
+            0.11,
+            0.38,
+            0.42
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 15,
+          "clock_hour": 22,
+          "total_demand": 2807.0,
+          "served_passengers": 849.0,
+          "unserved_passengers": 1958.0,
+          "no_eligible_path_unserved": 1958.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 849.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.3381818181818182,
+            0.185,
+            0.125,
+            0.0,
+            0.065,
+            0.265,
+            0.24
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 16,
+          "clock_hour": 23,
+          "total_demand": 1245.0,
+          "served_passengers": 379.0,
+          "unserved_passengers": 866.0,
+          "no_eligible_path_unserved": 866.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 379.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.13818181818181818,
+            0.09,
+            0.055,
+            0.0,
+            0.03,
+            0.11,
+            0.115
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 17,
+          "clock_hour": 0,
+          "total_demand": 456.0,
+          "served_passengers": 143.0,
+          "unserved_passengers": 313.0,
+          "no_eligible_path_unserved": 313.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 143.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.056363636363636366,
+            0.03,
+            0.025,
+            0.0,
+            0.015,
+            0.045,
+            0.04
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 18,
+          "clock_hour": 1,
+          "total_demand": 303.0,
+          "served_passengers": 98.0,
+          "unserved_passengers": 205.0,
+          "no_eligible_path_unserved": 205.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 98.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.04,
+            0.02,
+            0.01,
+            0.0,
+            0.005,
+            0.025,
+            0.03
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 19,
+          "clock_hour": 2,
+          "total_demand": 304.0,
+          "served_passengers": 98.0,
+          "unserved_passengers": 206.0,
+          "no_eligible_path_unserved": 206.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 98.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.04,
+            0.02,
+            0.015,
+            0.0,
+            0.005,
+            0.025,
+            0.03
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 20,
+          "clock_hour": 3,
+          "total_demand": 301.0,
+          "served_passengers": 93.0,
+          "unserved_passengers": 208.0,
+          "no_eligible_path_unserved": 208.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 93.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.038181818181818185,
+            0.02,
+            0.01,
+            0.0,
+            0.005,
+            0.025,
+            0.025
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 21,
+          "clock_hour": 4,
+          "total_demand": 618.0,
+          "served_passengers": 185.0,
+          "unserved_passengers": 433.0,
+          "no_eligible_path_unserved": 433.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 185.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.07636363636363637,
+            0.04,
+            0.025,
+            0.0,
+            0.015,
+            0.055,
+            0.05
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 22,
+          "clock_hour": 5,
+          "total_demand": 1880.0,
+          "served_passengers": 595.0,
+          "unserved_passengers": 1285.0,
+          "no_eligible_path_unserved": 1285.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 595.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.24545454545454545,
+            0.125,
+            0.085,
+            0.0,
+            0.04,
+            0.17,
+            0.16
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 23,
+          "clock_hour": 6,
+          "total_demand": 5450.0,
+          "served_passengers": 1667.0,
+          "unserved_passengers": 3783.0,
+          "no_eligible_path_unserved": 3783.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 1667.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.6854545454545454,
+            0.355,
+            0.28,
+            0.0,
+            0.125,
+            0.435,
+            0.52
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 24,
+          "clock_hour": 7,
+          "total_demand": 11676.0,
+          "served_passengers": 3000.0,
+          "unserved_passengers": 8676.0,
+          "no_eligible_path_unserved": 8004.0,
+          "capacity_constrained_unserved": 672.0,
+          "eligible_path_demand": 3672.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.69,
+            0.515,
+            0.0,
+            0.265,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        }
+      ],
+      "generalization_audit": {
+        "decisions": 70,
+        "unseen_exact_key": 65,
+        "unseen_unique_best": 65,
+        "unseen_tied_best": 0,
+        "unseen_single_valid": 0
+      }
+    },
+    {
+      "seed": 7102,
+      "reward": 5.35696388345143,
+      "steps": 70,
+      "unseen": 65,
+      "elapsed_seconds": 0.09921450000001641,
+      "cpu_seconds": 0.09375,
+      "daily": {
+        "daily_plan_reward": 5.356963883451431,
+        "hourly_rewards": [
+          0.10778041835270946,
+          0.1438876651982379,
+          0.17229576318382386,
+          0.2343981395059424,
+          0.22135436570280104,
+          0.23209700932727556,
+          0.2293694324503054,
+          0.21293484085146636,
+          0.16753864652808415,
+          0.1394640042038886,
+          0.17409875101601585,
+          0.25928461497638383,
+          0.26724389043951813,
+          0.2564737111963499,
+          0.25094298884822575,
+          0.2529025191675794,
+          0.26208133971291864,
+          0.2719171917191719,
+          0.27085326953748007,
+          0.2574549481526226,
+          0.24783759929390997,
+          0.26497421018697614,
+          0.254356408117876,
+          0.205422155781868
+        ],
+        "served_passengers": 39359.0,
+        "total_demand": 165170.0,
+        "served_demand_ratio": 0.23829387903372284,
+        "total_service_component": 6.475145701633249,
+        "total_operator_component": 3.727272727272727,
+        "total_operator_penalty": 1.1181818181818182,
+        "total_transition_component": 0.0,
+        "total_passenger_travel_time": 499810.65909090906,
+        "average_travel_time": 12.698764173147413,
+        "average_waiting_time": 5.6624827635587565,
+        "unserved_passengers": 125811.0,
+        "direct_passengers": 36942.0,
+        "transfer_passengers": 2417.0,
+        "average_fleet_used": 15.375,
+        "max_fleet_used": 17,
+        "total_transition_cost": 0.0,
+        "forced_hour_finishes": 0
+      },
+      "diagnostics": {
+        "served_ratio": 0.23829387903372284,
+        "no_path_demand_share": 0.6890960828237573,
+        "capacity_demand_share": 0.07261003814251983,
+        "unseen_fraction": 0.9285714285714286,
+        "rare_state_fraction": 0.9714285714285714,
+        "average_fleet": 15.375,
+        "mean_route_count": 7.0,
+        "forced_finishes": 0,
+        "voluntary_finishes": 24,
+        "discarded_routes": 0,
+        "total_demand": 165170.0,
+        "actions": 70,
+        "forced_served_ratio": null,
+        "voluntary_served_ratio": 0.23829387903372284,
+        "peak_served_ratio": 0.1766731493211055,
+        "other_served_ratio": 0.269943091740513
+      },
+      "hours": [
+        {
+          "hour": 1,
+          "clock_hour": 8,
+          "total_demand": 15569.0,
+          "served_passengers": 2197.0,
+          "unserved_passengers": 13372.0,
+          "no_eligible_path_unserved": 10694.0,
+          "capacity_constrained_unserved": 2678.0,
+          "eligible_path_demand": 4875.0,
+          "fleet_used": 11,
+          "fleet_remaining": 88,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.745,
+            0.83,
+            0.0,
+            0.36,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "ADD_STOP": 16,
+            "END_ROUTE": 7,
+            "FINISH_PLAN": 1
+          },
+          "actions": 24,
+          "unseen_decisions": 19,
+          "rare_state_decisions_lt5": 22,
+          "state_visits_before_decision": [
+            100,
+            5,
+            4,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            5,
+            4,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 2,
+          "clock_hour": 9,
+          "total_demand": 10896.0,
+          "served_passengers": 1931.0,
+          "unserved_passengers": 8965.0,
+          "no_eligible_path_unserved": 7608.0,
+          "capacity_constrained_unserved": 1357.0,
+          "eligible_path_demand": 3288.0,
+          "fleet_used": 11,
+          "fleet_remaining": 88,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.685,
+            0.51,
+            0.0,
+            0.245,
+            0.92,
+            1.0
+          ],
+          "saturated_route_count": 2,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 3,
+          "clock_hour": 10,
+          "total_demand": 7781.0,
+          "served_passengers": 1600.0,
+          "unserved_passengers": 6181.0,
+          "no_eligible_path_unserved": 5383.0,
+          "capacity_constrained_unserved": 798.0,
+          "eligible_path_demand": 2398.0,
+          "fleet_used": 11,
+          "fleet_remaining": 88,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.475,
+            0.325,
+            0.0,
+            0.165,
+            0.59,
+            0.74
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 4,
+          "clock_hour": 11,
+          "total_demand": 7792.0,
+          "served_passengers": 2157.0,
+          "unserved_passengers": 5635.0,
+          "no_eligible_path_unserved": 5424.0,
+          "capacity_constrained_unserved": 211.0,
+          "eligible_path_demand": 2368.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.5,
+            0.36,
+            0.0,
+            0.175,
+            0.575,
+            0.68
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "INCREASE_FREQUENCY": 4,
+            "FINISH_PLAN": 1
+          },
+          "actions": 5,
+          "unseen_decisions": 5,
+          "rare_state_decisions_lt5": 5,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 5,
+          "clock_hour": 12,
+          "total_demand": 8564.0,
+          "served_passengers": 2259.0,
+          "unserved_passengers": 6305.0,
+          "no_eligible_path_unserved": 5929.0,
+          "capacity_constrained_unserved": 376.0,
+          "eligible_path_demand": 2635.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.495,
+            0.35,
+            0.0,
+            0.2,
+            0.74,
+            0.76
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 1,
+            "FINISH_PLAN": 1
+          },
+          "actions": 2,
+          "unseen_decisions": 2,
+          "rare_state_decisions_lt5": 2,
+          "state_visits_before_decision": [
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 6,
+          "clock_hour": 13,
+          "total_demand": 8564.0,
+          "served_passengers": 2351.0,
+          "unserved_passengers": 6213.0,
+          "no_eligible_path_unserved": 5823.0,
+          "capacity_constrained_unserved": 390.0,
+          "eligible_path_demand": 2741.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.515,
+            0.41,
+            0.0,
+            0.17,
+            0.695,
+            0.75
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 2,
+            "FINISH_PLAN": 1
+          },
+          "actions": 3,
+          "unseen_decisions": 3,
+          "rare_state_decisions_lt5": 3,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 7,
+          "clock_hour": 14,
+          "total_demand": 8569.0,
+          "served_passengers": 2329.0,
+          "unserved_passengers": 6240.0,
+          "no_eligible_path_unserved": 5898.0,
+          "capacity_constrained_unserved": 342.0,
+          "eligible_path_demand": 2671.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.515,
+            0.385,
+            0.0,
+            0.22,
+            0.72,
+            0.855
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 3,
+            "FINISH_PLAN": 1
+          },
+          "actions": 4,
+          "unseen_decisions": 4,
+          "rare_state_decisions_lt5": 4,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 8,
+          "clock_hour": 15,
+          "total_demand": 10123.0,
+          "served_passengers": 2585.0,
+          "unserved_passengers": 7538.0,
+          "no_eligible_path_unserved": 6961.0,
+          "capacity_constrained_unserved": 577.0,
+          "eligible_path_demand": 3162.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.63,
+            0.495,
+            0.0,
+            0.26,
+            0.77,
+            0.885
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 4,
+            "FINISH_PLAN": 1
+          },
+          "actions": 5,
+          "unseen_decisions": 5,
+          "rare_state_decisions_lt5": 5,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 9,
+          "clock_hour": 16,
+          "total_demand": 14012.0,
+          "served_passengers": 2942.0,
+          "unserved_passengers": 11070.0,
+          "no_eligible_path_unserved": 9638.0,
+          "capacity_constrained_unserved": 1432.0,
+          "eligible_path_demand": 4374.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.845,
+            0.68,
+            0.0,
+            0.315,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 4,
+            "FINISH_PLAN": 1
+          },
+          "actions": 5,
+          "unseen_decisions": 5,
+          "rare_state_decisions_lt5": 5,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 10,
+          "clock_hour": 17,
+          "total_demand": 15570.0,
+          "served_passengers": 2832.0,
+          "unserved_passengers": 12738.0,
+          "no_eligible_path_unserved": 10654.0,
+          "capacity_constrained_unserved": 2084.0,
+          "eligible_path_demand": 4916.0,
+          "fleet_used": 14,
+          "fleet_remaining": 85,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            8.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.755,
+            0.725,
+            0.0,
+            0.345,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "KEEP_ROUTE": 2,
+            "FINISH_PLAN": 1
+          },
+          "actions": 3,
+          "unseen_decisions": 3,
+          "rare_state_decisions_lt5": 3,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 11,
+          "clock_hour": 18,
+          "total_demand": 13235.0,
+          "served_passengers": 2986.0,
+          "unserved_passengers": 10249.0,
+          "no_eligible_path_unserved": 9213.0,
+          "capacity_constrained_unserved": 1036.0,
+          "eligible_path_demand": 4022.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.76,
+            0.64,
+            0.0,
+            0.315,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "INCREASE_FREQUENCY": 3,
+            "FINISH_PLAN": 1
+          },
+          "actions": 4,
+          "unseen_decisions": 4,
+          "rare_state_decisions_lt5": 4,
+          "state_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 12,
+          "clock_hour": 19,
+          "total_demand": 8565.0,
+          "served_passengers": 2662.0,
+          "unserved_passengers": 5903.0,
+          "no_eligible_path_unserved": 5863.0,
+          "capacity_constrained_unserved": 40.0,
+          "eligible_path_demand": 2702.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.585,
+            0.435,
+            0.0,
+            0.195,
+            0.965,
+            0.805
+          ],
+          "saturated_route_count": 1,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 13,
+          "clock_hour": 20,
+          "total_demand": 6221.0,
+          "served_passengers": 1983.0,
+          "unserved_passengers": 4238.0,
+          "no_eligible_path_unserved": 4238.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 1983.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.769090909090909,
+            0.395,
+            0.305,
+            0.0,
+            0.16,
+            0.615,
+            0.635
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 14,
+          "clock_hour": 21,
+          "total_demand": 4669.0,
+          "served_passengers": 1438.0,
+          "unserved_passengers": 3231.0,
+          "no_eligible_path_unserved": 3231.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 1438.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.5436363636363636,
+            0.31,
+            0.225,
+            0.0,
+            0.11,
+            0.38,
+            0.42
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 15,
+          "clock_hour": 22,
+          "total_demand": 2807.0,
+          "served_passengers": 849.0,
+          "unserved_passengers": 1958.0,
+          "no_eligible_path_unserved": 1958.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 849.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.3381818181818182,
+            0.185,
+            0.125,
+            0.0,
+            0.065,
+            0.265,
+            0.24
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 16,
+          "clock_hour": 23,
+          "total_demand": 1245.0,
+          "served_passengers": 379.0,
+          "unserved_passengers": 866.0,
+          "no_eligible_path_unserved": 866.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 379.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.13818181818181818,
+            0.09,
+            0.055,
+            0.0,
+            0.03,
+            0.11,
+            0.115
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 17,
+          "clock_hour": 0,
+          "total_demand": 456.0,
+          "served_passengers": 143.0,
+          "unserved_passengers": 313.0,
+          "no_eligible_path_unserved": 313.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 143.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.056363636363636366,
+            0.03,
+            0.025,
+            0.0,
+            0.015,
+            0.045,
+            0.04
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 18,
+          "clock_hour": 1,
+          "total_demand": 303.0,
+          "served_passengers": 98.0,
+          "unserved_passengers": 205.0,
+          "no_eligible_path_unserved": 205.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 98.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.04,
+            0.02,
+            0.01,
+            0.0,
+            0.005,
+            0.025,
+            0.03
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 19,
+          "clock_hour": 2,
+          "total_demand": 304.0,
+          "served_passengers": 98.0,
+          "unserved_passengers": 206.0,
+          "no_eligible_path_unserved": 206.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 98.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.04,
+            0.02,
+            0.015,
+            0.0,
+            0.005,
+            0.025,
+            0.03
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 20,
+          "clock_hour": 3,
+          "total_demand": 301.0,
+          "served_passengers": 93.0,
+          "unserved_passengers": 208.0,
+          "no_eligible_path_unserved": 208.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 93.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.038181818181818185,
+            0.02,
+            0.01,
+            0.0,
+            0.005,
+            0.025,
+            0.025
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 21,
+          "clock_hour": 4,
+          "total_demand": 618.0,
+          "served_passengers": 185.0,
+          "unserved_passengers": 433.0,
+          "no_eligible_path_unserved": 433.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 185.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.07636363636363637,
+            0.04,
+            0.025,
+            0.0,
+            0.015,
+            0.055,
+            0.05
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 22,
+          "clock_hour": 5,
+          "total_demand": 1880.0,
+          "served_passengers": 595.0,
+          "unserved_passengers": 1285.0,
+          "no_eligible_path_unserved": 1285.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 595.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.24545454545454545,
+            0.125,
+            0.085,
+            0.0,
+            0.04,
+            0.17,
+            0.16
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 23,
+          "clock_hour": 6,
+          "total_demand": 5450.0,
+          "served_passengers": 1667.0,
+          "unserved_passengers": 3783.0,
+          "no_eligible_path_unserved": 3783.0,
+          "capacity_constrained_unserved": 0.0,
+          "eligible_path_demand": 1667.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            0.6854545454545454,
+            0.355,
+            0.28,
+            0.0,
+            0.125,
+            0.435,
+            0.52
+          ],
+          "saturated_route_count": 0,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        },
+        {
+          "hour": 24,
+          "clock_hour": 7,
+          "total_demand": 11676.0,
+          "served_passengers": 3000.0,
+          "unserved_passengers": 8676.0,
+          "no_eligible_path_unserved": 8004.0,
+          "capacity_constrained_unserved": 672.0,
+          "eligible_path_demand": 3672.0,
+          "fleet_used": 17,
+          "fleet_remaining": 82,
+          "route_count": 7,
+          "routes": [
+            [
+              13,
+              10,
+              11,
+              12
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "route_lengths": [
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "frequencies": [
+            11.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "route_peak_capacity_ratios": [
+            1.0,
+            0.69,
+            0.515,
+            0.0,
+            0.265,
+            1.0,
+            1.0
+          ],
+          "saturated_route_count": 3,
+          "forced_finish": false,
+          "action_counts": {
+            "FINISH_PLAN": 1
+          },
+          "actions": 1,
+          "unseen_decisions": 1,
+          "rare_state_decisions_lt5": 1,
+          "state_visits_before_decision": [
+            0
+          ],
+          "selected_action_visits_before_decision": [
+            0
+          ],
+          "discarded_unfinished_route": [],
+          "discarded_tentative_served_delta": null
+        }
+      ],
+      "generalization_audit": {
+        "decisions": 70,
+        "unseen_exact_key": 65,
+        "unseen_unique_best": 65,
+        "unseen_tied_best": 0,
+        "unseen_single_valid": 0
+      }
+    }
+  ]
+}

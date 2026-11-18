@@ -20,3 +20,5 @@ EXP-004 Stage 6 (2026-11-18): smaller-step linear model completed one 300-episod
 EXP-004 Stage 7 (2026-11-18): frozen linear predictions favor stopping despite productive feasible continuations; no training, cause unisolated. [Results](EXP-004-service-quality-diagnosis/stage7-results.md).
 
 EXP-004 Stage 8 (2026-11-18): fixed-return fits show partial representational capacity and small frozen bootstrap corrections; 84 tests and 72 hourly records verified, no online training or adoption. [Results](EXP-004-service-quality-diagnosis/stage8-results.md).
+
+EXP-004 Stage9 (2026-11-18): completed six300-episode runs; actual-return linear learner2.7408% versus one-step linear control0%, relative screen passed but poor final service and unfinished routes; not adopted. [Results](EXP-004-service-quality-diagnosis/stage9-results.md).
