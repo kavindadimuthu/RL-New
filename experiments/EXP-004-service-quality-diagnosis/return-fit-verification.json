@@ -1,0 +1,395 @@
+{
+  "status": "verified",
+  "execution_commit": "51ae8781e0da16e70dda69b4824333ab4e31260a",
+  "elapsed_seconds": 0.7157714000004489,
+  "hourly_records_verified": 72,
+  "trajectories": [
+    {
+      "name": "empty",
+      "route": [],
+      "steps": 24,
+      "served_ratio": 0.0,
+      "reward": 0.0
+    },
+    {
+      "name": "train_route",
+      "route": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        10,
+        11,
+        13
+      ],
+      "steps": 33,
+      "served_ratio": 0.20934794454198705,
+      "reward": 7.711632871044062
+    },
+    {
+      "name": "heldout_route",
+      "route": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        10,
+        11
+      ],
+      "steps": 32,
+      "served_ratio": 0.1936852939395774,
+      "reward": 6.934918163056516
+    }
+  ],
+  "fit_results": {
+    "train": {
+      "ols": {
+        "training": {
+          "count": 57,
+          "rmse": 1.0440267579087104,
+          "maximum_absolute_error": 2.3800902646426074
+        },
+        "heldout": {
+          "count": 32,
+          "rmse": 0.9250722585894358,
+          "maximum_absolute_error": 2.0487339865640997
+        },
+        "heldout_raw_disjoint": {
+          "count": 25,
+          "rmse": 0.9625233028316137,
+          "maximum_absolute_error": 2.0487339865640997
+        },
+        "heldout_feature_disjoint": {
+          "count": 25,
+          "rmse": 0.9625233028316137,
+          "maximum_absolute_error": 2.0487339865640997
+        },
+        "rank": 17,
+        "weight_norm": 73.91469651136262
+      },
+      "ridge": {
+        "training": {
+          "count": 57,
+          "rmse": 1.0504252063142472,
+          "maximum_absolute_error": 2.2618007765917953
+        },
+        "heldout": {
+          "count": 32,
+          "rmse": 0.9155329041077794,
+          "maximum_absolute_error": 1.691992844415503
+        },
+        "heldout_raw_disjoint": {
+          "count": 25,
+          "rmse": 0.9495293887931003,
+          "maximum_absolute_error": 1.691992844415503
+        },
+        "heldout_feature_disjoint": {
+          "count": 25,
+          "rmse": 0.9495293887931003,
+          "maximum_absolute_error": 1.691992844415503
+        },
+        "rank": 256,
+        "weight_norm": 29.471530591013572
+      }
+    },
+    "empty": {
+      "ols": {
+        "training": {
+          "count": 24,
+          "rmse": 0.0,
+          "maximum_absolute_error": 0.0
+        },
+        "heldout": {
+          "count": 32,
+          "rmse": 5.398958798056202,
+          "maximum_absolute_error": 6.934918163056516
+        },
+        "heldout_raw_disjoint": {
+          "count": 25,
+          "rmse": 4.896960449666573,
+          "maximum_absolute_error": 6.825644295211127
+        },
+        "heldout_feature_disjoint": {
+          "count": 25,
+          "rmse": 4.896960449666573,
+          "maximum_absolute_error": 6.825644295211127
+        },
+        "rank": 5,
+        "weight_norm": 0.0
+      },
+      "ridge": {
+        "training": {
+          "count": 24,
+          "rmse": 0.0,
+          "maximum_absolute_error": 0.0
+        },
+        "heldout": {
+          "count": 32,
+          "rmse": 5.398958798056202,
+          "maximum_absolute_error": 6.934918163056516
+        },
+        "heldout_raw_disjoint": {
+          "count": 25,
+          "rmse": 4.896960449666573,
+          "maximum_absolute_error": 6.825644295211127
+        },
+        "heldout_feature_disjoint": {
+          "count": 25,
+          "rmse": 4.896960449666573,
+          "maximum_absolute_error": 6.825644295211127
+        },
+        "rank": 256,
+        "weight_norm": 0.0
+      }
+    },
+    "train_route": {
+      "ols": {
+        "training": {
+          "count": 33,
+          "rmse": 0.04215812244579256,
+          "maximum_absolute_error": 0.10674033855978737
+        },
+        "heldout": {
+          "count": 32,
+          "rmse": 0.7575778934550826,
+          "maximum_absolute_error": 1.0623759649042661
+        },
+        "heldout_raw_disjoint": {
+          "count": 25,
+          "rmse": 0.7521323369096616,
+          "maximum_absolute_error": 1.0623759649042661
+        },
+        "heldout_feature_disjoint": {
+          "count": 25,
+          "rmse": 0.7521323369096616,
+          "maximum_absolute_error": 1.0623759649042661
+        },
+        "rank": 16,
+        "weight_norm": 30.58461223363206
+      },
+      "ridge": {
+        "training": {
+          "count": 33,
+          "rmse": 0.05011637557560641,
+          "maximum_absolute_error": 0.09136342045447599
+        },
+        "heldout": {
+          "count": 32,
+          "rmse": 0.6097663431125372,
+          "maximum_absolute_error": 0.8094296147500044
+        },
+        "heldout_raw_disjoint": {
+          "count": 25,
+          "rmse": 0.5519353344219596,
+          "maximum_absolute_error": 0.7861860477937128
+        },
+        "heldout_feature_disjoint": {
+          "count": 25,
+          "rmse": 0.5519353344219596,
+          "maximum_absolute_error": 0.7861860477937128
+        },
+        "rank": 256,
+        "weight_norm": 24.396182282782828
+      }
+    },
+    "heldout_route": {
+      "ols": {
+        "training": {
+          "count": 32,
+          "rmse": 0.032248247044157435,
+          "maximum_absolute_error": 0.07232972675929616
+        },
+        "heldout": {
+          "count": 32,
+          "rmse": 0.032248247044157435,
+          "maximum_absolute_error": 0.07232972675929616
+        },
+        "heldout_raw_disjoint": {
+          "count": 25,
+          "rmse": 0.03648472666608441,
+          "maximum_absolute_error": 0.07232972675929616
+        },
+        "heldout_feature_disjoint": {
+          "count": 25,
+          "rmse": 0.03648472666608441,
+          "maximum_absolute_error": 0.07232972675929616
+        },
+        "rank": 15,
+        "weight_norm": 22.585865297338785
+      },
+      "ridge": {
+        "training": {
+          "count": 32,
+          "rmse": 0.03789989626467213,
+          "maximum_absolute_error": 0.07291069506986325
+        },
+        "heldout": {
+          "count": 32,
+          "rmse": 0.03789989626467213,
+          "maximum_absolute_error": 0.07291069506986325
+        },
+        "heldout_raw_disjoint": {
+          "count": 25,
+          "rmse": 0.04227416215043168,
+          "maximum_absolute_error": 0.07291069506986325
+        },
+        "heldout_feature_disjoint": {
+          "count": 25,
+          "rmse": 0.04227416215043168,
+          "maximum_absolute_error": 0.07291069506986325
+        },
+        "rank": 256,
+        "weight_norm": 21.507503088533802
+      }
+    }
+  },
+  "initial_probes": [
+    {
+      "trajectory": "empty",
+      "action": {
+        "type": "FINISH_PLAN",
+        "arg": null
+      },
+      "return_target": 0.0,
+      "frozen": {
+        "0": {
+          "q": 0.0,
+          "next_max": 0.0,
+          "bootstrap_target": 0.0,
+          "td_error": 0.0,
+          "one_update_prediction": 0.0
+        },
+        "100": {
+          "q": 0.2087077045272015,
+          "next_max": 0.20539538058780607,
+          "bootstrap_target": 0.20539538058780607,
+          "td_error": -0.0033123239393954285,
+          "one_update_prediction": 0.2087043922032621
+        },
+        "300": {
+          "q": 0.24451932595051348,
+          "next_max": 0.24120319815792407,
+          "bootstrap_target": 0.24120319815792407,
+          "td_error": -0.003316127792589413,
+          "one_update_prediction": 0.2445160098227209
+        }
+      },
+      "fitted_train": {
+        "ols": 0.922127767018738,
+        "ridge": 1.0210194021460337
+      }
+    },
+    {
+      "trajectory": "train_route",
+      "action": {
+        "type": "ADD_STOP",
+        "arg": 1
+      },
+      "return_target": 7.711632871044062,
+      "frozen": {
+        "0": {
+          "q": 0.0,
+          "next_max": 0.0,
+          "bootstrap_target": 0.0,
+          "td_error": 0.0,
+          "one_update_prediction": 0.0
+        },
+        "100": {
+          "q": 0.019952065353529006,
+          "next_max": 0.02370925935307112,
+          "bootstrap_target": 0.02370925935307112,
+          "td_error": 0.0037571939995421147,
+          "one_update_prediction": 0.019955822547528545
+        },
+        "300": {
+          "q": 0.009457078506929024,
+          "next_max": 0.012622127335171459,
+          "bootstrap_target": 0.012622127335171459,
+          "td_error": 0.003165048828242435,
+          "one_update_prediction": 0.009460243555757267
+        }
+      },
+      "fitted_train": {
+        "ols": 7.711632871044071,
+        "ridge": 7.707513037252915
+      }
+    },
+    {
+      "trajectory": "heldout_route",
+      "action": {
+        "type": "ADD_STOP",
+        "arg": 1
+      },
+      "return_target": 6.934918163056516,
+      "frozen": {
+        "0": {
+          "q": 0.0,
+          "next_max": 0.0,
+          "bootstrap_target": 0.0,
+          "td_error": 0.0,
+          "one_update_prediction": 0.0
+        },
+        "100": {
+          "q": 0.019952065353529006,
+          "next_max": 0.02370925935307112,
+          "bootstrap_target": 0.02370925935307112,
+          "td_error": 0.0037571939995421147,
+          "one_update_prediction": 0.019955822547528545
+        },
+        "300": {
+          "q": 0.009457078506929024,
+          "next_max": 0.012622127335171459,
+          "bootstrap_target": 0.012622127335171459,
+          "td_error": 0.003165048828242435,
+          "one_update_prediction": 0.009460243555757267
+        }
+      },
+      "fitted_train": {
+        "ols": 7.711632871044071,
+        "ridge": 7.707513037252915
+      }
+    }
+  ],
+  "train_raw_conflicts": {
+    "unique": 57,
+    "conflicting_groups": 0,
+    "maximum_target_range": 0
+  },
+  "train_feature_conflicts": {
+    "unique": 57,
+    "conflicting_groups": 0,
+    "maximum_target_range": 0
+  },
+  "combined_raw_conflicts": {
+    "unique": 82,
+    "conflicting_groups": 7,
+    "maximum_target_range": 0.7767147079875452
+  },
+  "combined_feature_conflicts": {
+    "unique": 82,
+    "conflicting_groups": 7,
+    "maximum_target_range": 0.7767147079875452
+  },
+  "train_count": 57,
+  "heldout_count": 32,
+  "heldout_raw_disjoint_count": 25,
+  "heldout_feature_disjoint_count": 25,
+  "zero_predictor_train": {
+    "count": 57,
+    "rmse": 4.638830711513403,
+    "maximum_absolute_error": 7.711632871044062
+  },
+  "checksums": {
+    "config.json": "093583cb330407e295945970d74c52676a2824083b56a53de1db62238982c33f",
+    "empty.json": "67c926b56d07aa2e15b261c6e6fdf26ec4624e335440a27634b67ea4564feca9",
+    "fits.json": "2b34b9ad9689607efb8a01ba5095ad060ebe096a6d0f4d1edc0c3503b7f79cf8",
+    "heldout_route.json": "1856c23556fe6043a6c5e63c8c2c3c3197e87d27b8a7b0b91acee5d847b74568",
+    "manifest.json": "d42b5a58a427cb421d50c225c0927c4bc219c6d5754681ca83f0b1a1fdbffbb0",
+    "requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "source-input-sha256.json": "2e0c16e655433a149d27e9a36dd4c1376364004f5256e59872e088697eb08fe5",
+    "train_route.json": "d8cbc991200c19cb7381302de93f6685b410b8b488eb2b9bd649ea1b35c32129"
+  },
+  "limitation": "Fixed-continuation labels differ across controllers; overlapping prefixes are not independent unseen examples. No online policy or optimal Q learned. Oracle self-fits use heldout labels and are in-sample capacity diagnostics only."
+}

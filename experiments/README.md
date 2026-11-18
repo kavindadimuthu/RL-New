@@ -18,3 +18,5 @@ Current direction from [EXP-002-D01](EXP-002-evaluation-frequency-repeat/decisio
 EXP-004 Stage 6 (2026-11-18): smaller-step linear model completed one 300-episode stability diagnostic but learned empty plans (0% served); not adopted. [Results](EXP-004-service-quality-diagnosis/stage6-results.md).
 
 EXP-004 Stage 7 (2026-11-18): frozen linear predictions favor stopping despite productive feasible continuations; no training, cause unisolated. [Results](EXP-004-service-quality-diagnosis/stage7-results.md).
+
+EXP-004 Stage 8 (2026-11-18): fixed-return fits show partial representational capacity and small frozen bootstrap corrections; 84 tests and 72 hourly records verified, no online training or adoption. [Results](EXP-004-service-quality-diagnosis/stage8-results.md).

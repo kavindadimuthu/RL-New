@@ -59,3 +59,8 @@ Fixed smaller-step diagnostic completed 300 episodes at one seed without a numer
 ## Stage 7 update — 2026-11-18
 
 Frozen-model diagnostic confirms stopping is ranked above productive reference construction; fixed trajectories serve 0%, 20.9348% and 90.7308%. Positive dense rewards already occur during construction. Cause of learning failure remains unisolated. See [Stage 7 results and D04](stage7-results.md), [registered protocol](stage7-stopping-diagnostic.md) and `stopping-verification.json`. No training or adoption; analysis-only visitation-check correction disclosed.
+
+
+## Stage 8 update — 2026-11-18
+
+Fixed-return fitting corrects the initial stopping/construction preference but leaves pooled RMSE 1.0440 despite no conflicting training labels. Frozen alpha .001 updates provide tiny local corrections. No causal attribution, new online policy or adoption. See [Stage 8 results and D05](stage8-results.md), [registered protocol](stage8-return-fit.md), and `return-fit-verification.json`. Next proposed test isolates interaction features on fixed data.

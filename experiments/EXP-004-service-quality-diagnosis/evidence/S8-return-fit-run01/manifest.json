@@ -1,0 +1,31 @@
+{
+  "study": "EXP-004",
+  "stage": "S8-return-fit",
+  "status": "completed",
+  "code_commit": "51ae8781e0da16e70dda69b4824333ab4e31260a",
+  "working_tree_status": "",
+  "started_at": "2026-11-18T10:45:19.870670+00:00",
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S8-execution\\transit_rl\\experiment\\return_fit.py",
+    "--run",
+    "--output",
+    "C:/Users/kavin/.codex/worktrees/807a/RL-New/transit_rl/results/EXP-004-S8-return-fit-run01"
+  ],
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.5.4",
+  "workers": 1,
+  "numeric_threads": 1,
+  "gpu": false,
+  "online_training": "none",
+  "fit_method": "float64 SVD rcond1e-10; OLS and fixed ridge .001",
+  "completed_trajectories": 3,
+  "sleep_prevention": {
+    "requested": true,
+    "previous_flags": 2147483648,
+    "flags": 2147483649
+  },
+  "frozen_models_unchanged": true,
+  "sleep_scope_exited": true,
+  "finished_at": "2026-11-18T10:45:20.566901+00:00",
+  "elapsed_seconds": 0.7157714000004489
+}
