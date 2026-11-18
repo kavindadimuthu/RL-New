@@ -3,7 +3,6 @@ import hashlib
 import json
 import math
 from pathlib import Path
-import runpy
 import sys
 
 STUDY=Path(__file__).resolve().parents[1]
@@ -17,13 +16,21 @@ def analyse(directory):
         return dict(status='incomplete',manifest=manifest,checksums=checksums)
     assert manifest['completed_trajectories']==3 and manifest['model_weights_unchanged'] and manifest['sleep_scope_exited']
     assert not manifest['working_tree_status'].strip()
-    validate=runpy.run_path(str(STUDY/'analysis/summarise_baseline.py'))['validate_hours']
     summaries=[]
     for name in ('empty','first_reference_route','full_reference'):
         value=load(directory/f'{name}.json')
         transitions=value['transitions']
         assert transitions[-1]['done'] and sum(t['done'] for t in transitions)==1
-        validate(value['hours'],value['daily'],len(transitions),0)
+        hours=value['hours']
+        assert len(hours)==24 and [h['hour'] for h in hours]==list(range(1,25))
+        assert sum(h['actions'] for h in hours)==len(transitions)
+        assert math.isclose(sum(h['served_passengers'] for h in hours),value['daily']['served_passengers'],abs_tol=1e-8)
+        for h in hours:
+            assert h['actions']==sum(h['action_counts'].values())
+            assert h['fleet_used']+h['fleet_remaining']==99
+            assert math.isclose(h['served_passengers']+h['no_eligible_path_unserved']+h['capacity_constrained_unserved'],h['total_demand'],abs_tol=1e-8)
+            assert all(math.isfinite(h[k]) and h[k]>=0 for k in ('served_passengers','no_eligible_path_unserved','capacity_constrained_unserved'))
+            assert all(0<=x<=1+1e-8 for x in h['route_peak_capacity_ratios'])
         assert all(h['actions']<=60 for h in value['hours'])
         total=0
         probes=[]
@@ -48,6 +55,7 @@ def analyse(directory):
 
 
 if __name__=='__main__':
+    result=analyse(Path(sys.argv[1]))
     with Path(sys.argv[2]).open('x') as file:
-        json.dump(analyse(Path(sys.argv[1])),file,indent=2)
+        json.dump(result,file,indent=2)
         file.write('\n')

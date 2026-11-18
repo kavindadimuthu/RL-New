@@ -1,0 +1,29 @@
+{
+  "study": "EXP-004",
+  "stage": "S7-stopping-diagnostic",
+  "status": "completed",
+  "code_commit": "95f76561fc1999fdb724aae2a4d211069cb33e1f",
+  "working_tree_status": "",
+  "started_at": "2026-11-18T10:30:22.768733+00:00",
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S7-execution\\transit_rl\\experiment\\stopping_diagnostic.py",
+    "--run",
+    "--output",
+    "C:/Users/kavin/.codex/worktrees/807a/RL-New/transit_rl/results/EXP-004-S7-stopping-run01"
+  ],
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "workers": 1,
+  "numeric_threads": 1,
+  "gpu": false,
+  "training": "none",
+  "completed_trajectories": 3,
+  "sleep_prevention": {
+    "requested": true,
+    "previous_flags": 2147483648,
+    "flags": 2147483649
+  },
+  "model_weights_unchanged": true,
+  "sleep_scope_exited": true,
+  "finished_at": "2026-11-18T10:30:26.923350+00:00",
+  "elapsed_seconds": 4.175359699999717
+}

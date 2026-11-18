@@ -21,3 +21,8 @@ The inherited every-action Q-learning method remains the baseline. No production
 ## Stage 6 update — 2026-11-18
 
 Fixed smaller-step diagnostic completed 300 episodes at one seed without a numerical guard, but both trained checkpoints served 0% by immediately finishing every hour. Not adopted; no larger quality comparison launched. See [Stage 6 results and D03](stage6-results.md), [registered protocol](stage6-linear-stability.md), and `linear-stability-verification.json`. Analysis path-normalization correction is disclosed in the results.
+
+
+## Stage 7 update — 2026-11-18
+
+Frozen-model diagnostic confirms stopping is ranked above productive reference construction; fixed trajectories serve 0%, 20.9348% and 90.7308%. Positive dense rewards already occur during construction. Cause of learning failure remains unisolated. See [Stage 7 results and D04](stage7-results.md), [registered protocol](stage7-stopping-diagnostic.md) and `stopping-verification.json`. No training or adoption; analysis-only visitation-check correction disclosed.

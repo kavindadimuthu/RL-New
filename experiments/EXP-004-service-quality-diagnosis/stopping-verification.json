@@ -1,0 +1,264 @@
+{
+  "status": "verified",
+  "execution_commit": "95f76561fc1999fdb724aae2a4d211069cb33e1f",
+  "elapsed_seconds": 4.175359699999717,
+  "hourly_records_verified": 72,
+  "trajectories": [
+    {
+      "trajectory": "empty",
+      "steps": 24,
+      "served_ratio": 0.0,
+      "reward": 0.0,
+      "minimum_immediate_reward": 0.0,
+      "maximum_immediate_reward": 0.0,
+      "probes": [
+        {
+          "index": 0,
+          "hour": 1,
+          "action": {
+            "type": "FINISH_PLAN",
+            "arg": null
+          },
+          "fixed_continuation_return": 0.0,
+          "stop_rest_of_day": 0.0,
+          "predictions": {
+            "0": {
+              "chosen": 0.0,
+              "finish": 0.0,
+              "best": 0.0
+            },
+            "100": {
+              "chosen": 0.2087077045272015,
+              "finish": 0.2087077045272015,
+              "best": 0.2087077045272015
+            },
+            "300": {
+              "chosen": 0.24451932595051348,
+              "finish": 0.24451932595051348,
+              "best": 0.24451932595051348
+            }
+          }
+        },
+        {
+          "index": 1,
+          "hour": 2,
+          "action": {
+            "type": "FINISH_PLAN",
+            "arg": null
+          },
+          "fixed_continuation_return": 0.0,
+          "stop_rest_of_day": 0.0,
+          "predictions": {
+            "0": {
+              "chosen": 0.0,
+              "finish": 0.0,
+              "best": 0.0
+            },
+            "100": {
+              "chosen": 0.20539538058780607,
+              "finish": 0.20539538058780607,
+              "best": 0.20539538058780607
+            },
+            "300": {
+              "chosen": 0.24120319815792407,
+              "finish": 0.24120319815792407,
+              "best": 0.24120319815792407
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trajectory": "first_reference_route",
+      "steps": 33,
+      "served_ratio": 0.20934794454198705,
+      "reward": 7.711632871044062,
+      "minimum_immediate_reward": 0.0,
+      "maximum_immediate_reward": 0.6094332024564583,
+      "probes": [
+        {
+          "index": 0,
+          "hour": 1,
+          "action": {
+            "type": "ADD_STOP",
+            "arg": 1
+          },
+          "fixed_continuation_return": 7.711632871044062,
+          "stop_rest_of_day": 0.0,
+          "predictions": {
+            "0": {
+              "chosen": 0.0,
+              "finish": 0.0,
+              "best": 0.0
+            },
+            "100": {
+              "chosen": 0.019952065353529006,
+              "finish": 0.2087077045272015,
+              "best": 0.2087077045272015
+            },
+            "300": {
+              "chosen": 0.009457078506929024,
+              "finish": 0.24451932595051348,
+              "best": 0.24451932595051348
+            }
+          }
+        },
+        {
+          "index": 9,
+          "hour": 1,
+          "action": {
+            "type": "FINISH_PLAN",
+            "arg": null
+          },
+          "fixed_continuation_return": 7.593121337830234,
+          "stop_rest_of_day": 7.593121337830235,
+          "predictions": {
+            "0": {
+              "chosen": 0.0,
+              "finish": 0.0,
+              "best": 0.0
+            },
+            "100": {
+              "chosen": 0.25557987103348856,
+              "finish": 0.25557987103348856,
+              "best": 0.25557987103348856
+            },
+            "300": {
+              "chosen": 0.2932583044377809,
+              "finish": 0.2932583044377809,
+              "best": 0.2932583044377809
+            }
+          }
+        },
+        {
+          "index": 10,
+          "hour": 2,
+          "action": {
+            "type": "FINISH_PLAN",
+            "arg": null
+          },
+          "fixed_continuation_return": 7.593121337830234,
+          "stop_rest_of_day": 7.593121337830235,
+          "predictions": {
+            "0": {
+              "chosen": 0.0,
+              "finish": 0.0,
+              "best": 0.0
+            },
+            "100": {
+              "chosen": 0.26233634570235553,
+              "finish": 0.26233634570235553,
+              "best": 0.26233634570235553
+            },
+            "300": {
+              "chosen": 0.3020777409532208,
+              "finish": 0.3020777409532208,
+              "best": 0.3020777409532208
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trajectory": "full_reference",
+      "steps": 276,
+      "served_ratio": 0.9073076224495974,
+      "reward": 19.63521550453482,
+      "minimum_immediate_reward": -0.09357456012253607,
+      "maximum_immediate_reward": 0.9090909090909091,
+      "probes": [
+        {
+          "index": 0,
+          "hour": 1,
+          "action": {
+            "type": "ADD_STOP",
+            "arg": 1
+          },
+          "fixed_continuation_return": 19.63521550453482,
+          "stop_rest_of_day": 0.0,
+          "predictions": {
+            "0": {
+              "chosen": 0.0,
+              "finish": 0.0,
+              "best": 0.0
+            },
+            "100": {
+              "chosen": 0.019952065353529006,
+              "finish": 0.2087077045272015,
+              "best": 0.2087077045272015
+            },
+            "300": {
+              "chosen": 0.009457078506929024,
+              "finish": 0.24451932595051348,
+              "best": 0.24451932595051348
+            }
+          }
+        },
+        {
+          "index": 9,
+          "hour": 1,
+          "action": {
+            "type": "ADD_STOP",
+            "arg": 1
+          },
+          "fixed_continuation_return": 19.516703971320997,
+          "stop_rest_of_day": 7.593121337830235,
+          "predictions": {
+            "0": {
+              "chosen": 0.0,
+              "finish": 0.0,
+              "best": 0.0
+            },
+            "100": {
+              "chosen": 0.026326503085522535,
+              "finish": 0.25557987103348856,
+              "best": 0.25557987103348856
+            },
+            "300": {
+              "chosen": 0.018855308349132543,
+              "finish": 0.2932583044377809,
+              "best": 0.2932583044377809
+            }
+          }
+        },
+        {
+          "index": 60,
+          "hour": 2,
+          "action": {
+            "type": "INCREASE_FREQUENCY",
+            "arg": 2
+          },
+          "fixed_continuation_return": 19.208452142220047,
+          "stop_rest_of_day": 15.899151324809733,
+          "predictions": {
+            "0": {
+              "chosen": 0.0,
+              "finish": 0.0,
+              "best": 0.0
+            },
+            "100": {
+              "chosen": 0.05868618293318885,
+              "finish": 0.3102944358257494,
+              "best": 0.3102944358257494
+            },
+            "300": {
+              "chosen": 0.06575082770236573,
+              "finish": 0.3508280601901427,
+              "best": 0.3508280601901427
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "checksums": {
+    "config.json": "0968b087382df1f08d4363561fe109645672c70ea6057d9511665f7caff78a01",
+    "empty.json": "bb8c733ceb2231ca981997c1dfb75777855ed463f04ca410a368a23862641080",
+    "first_reference_route.json": "b078e5ed2332c2e1368d17fbf4b27732113126dd480f29186bce74b1bdb87e2d",
+    "full_reference.json": "676c0c279526f9cca41ea73702060f5a144b6a310f520bce27cd282adc2be73d",
+    "manifest.json": "79e5dd708c388ce628cd13bc4f1d3cf731cd136d7da51aceaa16f1cc7b6e3ce5",
+    "requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "source-input-sha256.json": "2710697aafe1b5adcd403b089860463ec64ef3de6d08f20dd8b30b0e2bf9f659"
+  },
+  "limitation": "Fixed-continuation returns are not exact optimal action values; no causal attribution or independent quality comparison."
+}
