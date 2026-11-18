@@ -1,0 +1,9 @@
+# Stage 9 full-execution amendment
+
+2026-11-18, after preflight and before full training. Operational gate passed at source `3395b8f0797473304d105e83c52fd112b2238f94`: both methods completed25, all 1488 hourly records and every target suffix/accounting check verified; T exactly reproduced Stage6 first25, initial evaluations and first exploratory-day physics matched. All88 tests passed before preflight.
+
+Parent elapsed53.7162s; T training15.4120s/process21.2325s; M training40.7790s/process52.6540s. Maximum recorded working sets134.35MiB/238.20MiB; finite parameters. Preflight25 greedy service T0%,M32.7198%, but M24forced finishes/day and8empty hours: do not use this short result for quality ranking, adoption, tuning or pooling. Preflight remains an operational check only.
+
+Proceed with the unchanged full design registered in stage9-return-control.md: fresh T/M each seeds2034/2035/2036,300episodes, checkpoints0/100/300, ties7100/7101/7102, alpha.001/gamma1/original300epsilon, original features/reward/assignment/action rules. No settings changed based on service results. Two child processes/seed wave, one numerical thread each; three serial waves, no GPU.900measured training seconds/child and existing RAM/numeric guards unchanged. Practical screen rule unchanged. Full parent output EXP-004-S9-return-control-run01, clean checkout EXP-004-S9-execution at this amendment's commit. Separate evidence commit after verification.
+
+Revised estimate25–35minutes total based on M1.63training seconds/episode at preflight, approximately24.5minutes over900Mepisodes plus checkpoint/serialization overhead. This is a projection; policy behavior can change trajectories and runtime. No claim against earlier serial timings. Preserve failed/incomplete children and stop later waves without replacements. No additional training phases or automatic rescue. Original small artifacts/hashes retained; off-machine backup pending. No push/merge/deletion.

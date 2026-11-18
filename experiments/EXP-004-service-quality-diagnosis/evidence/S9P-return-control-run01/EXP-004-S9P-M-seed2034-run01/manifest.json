@@ -1,0 +1,76 @@
+{
+  "study": "EXP-004",
+  "stage": "S9-preflight",
+  "status": "completed",
+  "training_seed": 2034,
+  "evaluation_seeds": [
+    7100,
+    7101,
+    7102
+  ],
+  "checkpoints": [
+    0,
+    25
+  ],
+  "target_episodes": 25,
+  "episodes_completed": 25,
+  "code_commit": "3395b8f0797473304d105e83c52fd112b2238f94",
+  "working_tree_status": "",
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S9P-execution\\transit_rl\\experiment\\service_baseline.py",
+    "--run",
+    "--method",
+    "L",
+    "--return-comparison",
+    "M",
+    "--seed",
+    "2034",
+    "--episodes",
+    "25",
+    "--output",
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S9P-return-control-run01\\EXP-004-S9P-M-seed2034-run01"
+  ],
+  "cwd": "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S9P-execution",
+  "started_at": "2026-11-18T11:07:42.038529+00:00",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Users\\kavin\\Desktop\\automation\\rl-repo\\RL-New\\.venv-visualizer\\Scripts\\python.exe",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpus": 20,
+  "workers": 1,
+  "numeric_threads": 1,
+  "gpu": false,
+  "training_budget_seconds": 300,
+  "qtable": "not_saved",
+  "checkpoint": "not_saved",
+  "method": "L",
+  "paired_workers": 2,
+  "observation": "original_six_fields_plus_remaining_actions",
+  "algorithm": "linear_episodic_return_regression",
+  "feature_count": 32,
+  "feature_normalization": "L2_unit_per_action_for_L_only",
+  "stability_guards": {
+    "max_abs_q": 1000,
+    "max_weight_row_norm": 10000
+  },
+  "return_method": "M",
+  "learning_rate": 0.001,
+  "power": "Power Scheme GUID: 27fa6203-3987-4dcc-918d-748559d549ec  (Performance)",
+  "battery": "{\n    \"BatteryStatus\":  2,\n    \"EstimatedChargeRemaining\":  100\n}",
+  "initial_memory_mb": {
+    "working": 68.9453125,
+    "free": 12209.96875
+  },
+  "sleep_prevention": {
+    "requested": true,
+    "previous_flags": 2147483648,
+    "flags": 2147483649
+  },
+  "sleep_scope_exited": true,
+  "finished_at": "2026-11-18T11:08:34.692463+00:00",
+  "total_elapsed_seconds": 52.65395869999884,
+  "total_cpu_seconds": 51.375,
+  "training_seconds": 40.778998399995544,
+  "training_cpu_seconds": 40.390625
+}

@@ -1,0 +1,39 @@
+{
+  "study": "EXP-004",
+  "stage": "S9P",
+  "status": "completed",
+  "target_episodes": 25,
+  "code_commit": "3395b8f0797473304d105e83c52fd112b2238f94",
+  "started_at": "2026-11-18T11:07:41.091372+00:00",
+  "command": [
+    "C:\\Users\\kavin\\.codex\\worktrees\\807a\\RL-New\\transit_rl\\results\\EXP-004-S9P-execution\\transit_rl\\experiment\\return_comparison.py",
+    "--run",
+    "--preflight",
+    "--output",
+    "C:/Users/kavin/.codex/worktrees/807a/RL-New/transit_rl/results/EXP-004-S9P-return-control-run01"
+  ],
+  "workers": 2,
+  "waves": [
+    {
+      "seed": 2034,
+      "started_at": "2026-11-18T11:07:41.091834+00:00",
+      "results": [
+        {
+          "method": "T",
+          "seed": 2034,
+          "exit_code": 0,
+          "status": "completed"
+        },
+        {
+          "method": "M",
+          "seed": 2034,
+          "exit_code": 0,
+          "status": "completed"
+        }
+      ],
+      "finished_at": "2026-11-18T11:08:34.785714+00:00"
+    }
+  ],
+  "finished_at": "2026-11-18T11:08:34.786177+00:00",
+  "total_elapsed_seconds": 53.71624949999932
+}

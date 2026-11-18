@@ -1,0 +1,101 @@
+{
+  "status": "verified",
+  "preflight": true,
+  "execution_commit": "3395b8f0797473304d105e83c52fd112b2238f94",
+  "models": [
+    {
+      "seed": 2034,
+      "method": "T",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "served_ratio": 0.26301183837207326,
+          "reward": 5.9326655611453205,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 15.61111111111111,
+          "forced_finishes": 5.666666666666667
+        },
+        {
+          "episode": 25,
+          "served_ratio": 0.0,
+          "reward": 0.0,
+          "empty_hours": 24,
+          "empty_days": 3,
+          "fleet": 0.0,
+          "forced_finishes": 0
+        }
+      ],
+      "training_seconds": 15.4119615000036,
+      "process_seconds": 21.23252769999999,
+      "cpu_seconds": 20.265625,
+      "clock_gap_seconds": -2.3699999992743415e-05,
+      "maximum_recorded_working_mb": 134.3515625,
+      "final_weight_norm": 0.17840314464343696,
+      "minimum_update_target": -0.45316510782795255,
+      "maximum_update_target": 1.0377287056103903
+    },
+    {
+      "seed": 2034,
+      "method": "M",
+      "checkpoints": [
+        {
+          "episode": 0,
+          "served_ratio": 0.26301183837207326,
+          "reward": 5.9326655611453205,
+          "empty_hours": 0,
+          "empty_days": 0,
+          "fleet": 15.61111111111111,
+          "forced_finishes": 5.666666666666667
+        },
+        {
+          "episode": 25,
+          "served_ratio": 0.32719777602873806,
+          "reward": 2.664144746767966,
+          "empty_hours": 8,
+          "empty_days": 0,
+          "fleet": 14.25,
+          "forced_finishes": 24
+        }
+      ],
+      "training_seconds": 40.778998399995544,
+      "process_seconds": 52.65395869999884,
+      "cpu_seconds": 51.375,
+      "clock_gap_seconds": -2.4699998839139425e-05,
+      "maximum_recorded_working_mb": 238.19921875,
+      "final_weight_norm": 8.936848313737059,
+      "minimum_update_target": -0.45319143238397946,
+      "maximum_update_target": 8.069833086050265
+    }
+  ],
+  "hourly_records_verified": 1488,
+  "parent_elapsed_seconds": 53.71624949999932,
+  "checksums": {
+    "EXP-004-S9P-M-seed2034-run01/config.json": "e94de83134e568089e5ce80927f7468bff014ce10a99c72e06fdb0554aee1390",
+    "EXP-004-S9P-M-seed2034-run01/episodes.jsonl": "1e1844fb930652d37891b73c5cbcd9672a954287710bacd7250eb7347164fcc5",
+    "EXP-004-S9P-M-seed2034-run01/evaluation-000.json": "ccd662a06ef85559b02bcc40b15e3e2e6ee67836e0bf6d35a39d83e886b71b9a",
+    "EXP-004-S9P-M-seed2034-run01/evaluation-025.json": "4db1155116a12cd4efa9c161d3c54f6d543a76643563e402b07358c4a0837afe",
+    "EXP-004-S9P-M-seed2034-run01/manifest.json": "81f101b857f127a741a2f9334c3586d9d277b55ec90148f65aee02a0e144200a",
+    "EXP-004-S9P-M-seed2034-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S9P-M-seed2034-run01/source-input-sha256.json": "dded97d66f0e5cff2011b63f32ef39b2913bbbe60ae0f64cc988d505d5e5675c",
+    "EXP-004-S9P-M-seed2034-run01/target-audit.jsonl.gz": "832564033c5676b359d4a53834426c72bb191000ef76a9918f70afbd736b02eb",
+    "EXP-004-S9P-M-seed2034-run01/training-hours.jsonl.gz": "f8c2260f7816ddae3113ebb49e7a697ab926889d353714734cb01c2bfdeff2cf",
+    "EXP-004-S9P-M-seed2034-run01/weights-000.json": "88a75f692009fc60400b0a0982bb99fc8f317d8f5cd64c3ad72780579dafb290",
+    "EXP-004-S9P-M-seed2034-run01/weights-025.json": "b528b46d2ba909fd3130cfc5a371632e1c9da351212a9f21d3f378dad2b6add7",
+    "EXP-004-S9P-M-seed2034-run01/weights-final.json": "b528b46d2ba909fd3130cfc5a371632e1c9da351212a9f21d3f378dad2b6add7",
+    "EXP-004-S9P-T-seed2034-run01/config.json": "e94de83134e568089e5ce80927f7468bff014ce10a99c72e06fdb0554aee1390",
+    "EXP-004-S9P-T-seed2034-run01/episodes.jsonl": "79c804b5b3c63eb2651857cc516f61d8099818937901233173e6be6b189c6564",
+    "EXP-004-S9P-T-seed2034-run01/evaluation-000.json": "aa7c3c5bcb0a4490816d7dc67dabec98954aeb8ab5755401e97bd5fb5c22b50c",
+    "EXP-004-S9P-T-seed2034-run01/evaluation-025.json": "b8ebb7839c5abfff45d79edfadb965a7870856ebf9f5234297c0aa307527d7ba",
+    "EXP-004-S9P-T-seed2034-run01/manifest.json": "ecc08f9abf63561f0fb0cdfc94780eee2a7a8031ddb49f6174adcd9e8c0ca3a6",
+    "EXP-004-S9P-T-seed2034-run01/requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "EXP-004-S9P-T-seed2034-run01/source-input-sha256.json": "dded97d66f0e5cff2011b63f32ef39b2913bbbe60ae0f64cc988d505d5e5675c",
+    "EXP-004-S9P-T-seed2034-run01/target-audit.jsonl.gz": "9bfe99856a50702ffc7d213856a8ed78d245c4d5a194e0c2f833695a25bd96c5",
+    "EXP-004-S9P-T-seed2034-run01/training-hours.jsonl.gz": "06b5e33286fb39c4f8889b851dbf1f7f97a631edbaf7550dcd24319f0a89b057",
+    "EXP-004-S9P-T-seed2034-run01/weights-000.json": "eeffca85b37115a4204eec601d36aa80390d445b6dad0da86dffce49121c7c1c",
+    "EXP-004-S9P-T-seed2034-run01/weights-025.json": "85817af89c0cb1c145e7dfa9c4191ad4b6276bb238a31ba1ded59e0edada4bec",
+    "EXP-004-S9P-T-seed2034-run01/weights-final.json": "85817af89c0cb1c145e7dfa9c4191ad4b6276bb238a31ba1ded59e0edada4bec",
+    "study-manifest.json": "c004b6d41a54f9704ea9ce158fd5d400ff8ccd3e5b7860049933936bcf2b1bb6"
+  },
+  "decision": "Operational gate passed; no quality ranking or tuning from preflight."
+}
