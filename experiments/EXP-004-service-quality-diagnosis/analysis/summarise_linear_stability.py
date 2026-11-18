@@ -20,7 +20,7 @@ def analyse(run):
     old = STUDY / 'evidence/S5-function-approx-run01/EXP-004-S5-L-seed2034-run01'
     prior = load(old / 'config.json')
     assert cfg['learning_rate'] == .001 and prior['learning_rate'] == .1
-    assert {k:v for k,v in cfg.items() if k != 'learning_rate'} == {k:v for k,v in prior.items() if k != 'learning_rate'}
+    assert {k:v for k,v in cfg.items() if k not in ('learning_rate', 'data_dir', 'results_dir')} == {k:v for k,v in prior.items() if k not in ('learning_rate', 'data_dir', 'results_dir')}
     inputs = load(run / 'source-input-sha256.json')
     old_inputs = load(old / 'source-input-sha256.json')
     assert {k:v for k,v in inputs.items() if k.endswith('.csv')} == {k:v for k,v in old_inputs.items() if k.endswith('.csv')}

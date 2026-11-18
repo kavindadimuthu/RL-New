@@ -49,3 +49,8 @@ Primary quality outcome: demand-weighted daily served fraction. Also report orig
 Future model stages: serial processes, one numerical-library thread, scoped Windows sleep prevention, CPU backend, no GPU change. Measure CPU, elapsed and UTC span separately. Preflight a complete episode before final runtime estimate; stop safely after a complete episode if total stage training exceeds 30 minutes or memory exceeds 1.5 GiB per process, preserve incomplete status. Record hardware, interpreter/dependencies, AC status and concurrent load. Check memory availability before execution. No full training starts as part of foundation setup.
 
 Retain protocols, exact execution commits, resolved configs, source/data hashes, commands, dependencies, small metrics, failures and analysis in Git. Large Q-tables and PDFs not needed. New IDs on rerun; no silent exclusion or overwrite. Local commits are not off-machine backup; backup pending, no push authorized. No default adoption without reviewing measured quality and costs.
+
+
+## Stage 6 update — 2026-11-18
+
+Fixed smaller-step diagnostic completed 300 episodes at one seed without a numerical guard, but both trained checkpoints served 0% by immediately finishing every hour. Not adopted; no larger quality comparison launched. See [Stage 6 results and D03](stage6-results.md), [registered protocol](stage6-linear-stability.md), and `linear-stability-verification.json`. Analysis path-normalization correction is disclosed in the results.

@@ -14,3 +14,5 @@ Add study records in their own experiment changes. Distinguish a local inventory
 For each new study add a row linking its tracked protocol and report. Record repeated runs under unique IDs. Keep failed/incomplete runs visible and document corrections instead of overwriting observations.
 
 Current direction from [EXP-002-D01](EXP-002-evaluation-frequency-repeat/decision.md): retain A (every-action evaluation) as the default baseline, retain B (committed changes) for further investigation, and deprioritize C (hour-end evaluation) under the tested settings. Future experiments receive their own IDs and prospectively committed protocols.
+
+EXP-004 Stage 6 (2026-11-18): smaller-step linear model completed one 300-episode stability diagnostic but learned empty plans (0% served); not adopted. [Results](EXP-004-service-quality-diagnosis/stage6-results.md).

@@ -57,3 +57,8 @@ Next: finalize and commit the three-seed 300-episode baseline execution amendmen
 Subsequent status: the full baseline above is completed and archived under source `578086b`; that earlier next-task statement records preflight closeout. [Stage-1 results](stage1-results.md) is the current detailed result/decision. All900training episodes and27evaluation days completed;22,248hourly records verified. Reference and controlled fixes remain pending.
 
 Stage2subsequently completed under source `e87f633`: see [stage2-results.md](stage2-results.md) for current reference findings/qualification and next decision. Retain the earlier stage closeout statements as historical context. No claim that the81.51%plan satisfies the original 60-action first-hour budget.
+
+
+## Stage 6 update — 2026-11-18
+
+Fixed smaller-step diagnostic completed 300 episodes at one seed without a numerical guard, but both trained checkpoints served 0% by immediately finishing every hour. Not adopted; no larger quality comparison launched. See [Stage 6 results and D03](stage6-results.md), [registered protocol](stage6-linear-stability.md), and `linear-stability-verification.json`. Analysis path-normalization correction is disclosed in the results.

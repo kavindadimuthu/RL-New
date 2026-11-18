@@ -19,3 +19,8 @@ Do not advance or deploy this linear semi-gradient Q variant. Its seed-2034 run 
 Keep preflight, failed-run metrics/manifests, final stored finite weights and completed exact control. Parameters at failure are not certified stable. This finding does not establish that knowledge sharing or DQN is ineffective. Original production/default remains unchanged.
 
 Next design a separately preregistered stability-focused update revision with fixed features and transport settings before another quality comparison. Candidate stabilizers/alternative updates need prospective choice and tests; no automatic larger neural run, reward change or service threshold is implied.
+
+
+## Stage 6 update — 2026-11-18
+
+Fixed smaller-step diagnostic completed 300 episodes at one seed without a numerical guard, but both trained checkpoints served 0% by immediately finishing every hour. Not adopted; no larger quality comparison launched. See [Stage 6 results and D03](stage6-results.md), [registered protocol](stage6-linear-stability.md), and `linear-stability-verification.json`. Analysis path-normalization correction is disclosed in the results.

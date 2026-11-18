@@ -29,3 +29,8 @@ Stage-5 registration: 78 tests passed (8.674s), including pure/no-assignment fea
 Stage-5 preflight source `a84499b`: two E/Lepisodes each, all384hourly records passed; E historical reproduction and initial physics/empty-model checks passed. Linear predictions finite, no stability/resource guards hit, all evaluation digests immutable. Raw archive `evidence/S5P-function-approx-run01/`, summary `function-approx-preflight-verification.json` regenerates exactly. Full-execution amendment finalized before full runs; no algorithm/feature tuning after preflight.
 
 Stage5full source `89ebd99`: L2034completed48episodes, failed in49on registered Qguard; E2034completed300and reproduced historical S4Bexactly. Later waves not launched, no reruns or rescue tuning. Registered analysis correctly returns incomplete, no full quality comparison. Explicitly post-hoc failure audit verifies8,640available hourly records, same source/config/input metadata, initial physics/evaluation consistency and finite stored weights. Raw archive and both summaries regenerate exactly. Exceptions lack Lsleep-scope success flag and exact offending Q/state; limitations retained rather than invented. See `stage5-results.md`, `linear-failure-audit.json`.
+
+
+## Stage 6 update — 2026-11-18
+
+Fixed smaller-step diagnostic completed 300 episodes at one seed without a numerical guard, but both trained checkpoints served 0% by immediately finishing every hour. Not adopted; no larger quality comparison launched. See [Stage 6 results and D03](stage6-results.md), [registered protocol](stage6-linear-stability.md), and `linear-stability-verification.json`. Analysis path-normalization correction is disclosed in the results.

@@ -1,0 +1,46 @@
+{
+  "status": "verified",
+  "operational_gate_passed": true,
+  "run_status": "completed",
+  "execution_commit": "2536f381e720f5ac27275c5ea98d001d6ca71aca",
+  "episodes_completed": 300,
+  "hourly_records_verified": 7416,
+  "checkpoints": [
+    {
+      "episode": 0,
+      "served_ratio": 0.26301183837207326,
+      "reward": 5.9326655611453205
+    },
+    {
+      "episode": 100,
+      "served_ratio": 0.0,
+      "reward": 0.0
+    },
+    {
+      "episode": 300,
+      "served_ratio": 0.0,
+      "reward": 0.0
+    }
+  ],
+  "final_weight_norm": 0.49734917290728997,
+  "maximum_episode_weight_norm": 0.49748738043408874,
+  "training_seconds": 25.63424909999685,
+  "process_seconds": 32.67439049999939,
+  "maximum_recorded_working_mb": 225.66796875,
+  "checksums": {
+    "config.json": "3d180424f4c3cd8dc8cc04113aa4c0aad1de55a9f6f27bd7976e752b6ba8de12",
+    "episodes.jsonl": "a40bc6ef5da00f5421f94e5f29925cb48debb5c0a5592a2e89de1336b761b9e8",
+    "evaluation-000.json": "5bc9ed49ae20b3ce14bdad8a0f530b6ded11c93aa48da4cb82b50e76bcdbd8f4",
+    "evaluation-100.json": "773b0e15c1cf5a29eb89ddfe8ed101c3b758a7fe69cc29e95e9a3ac667e966b8",
+    "evaluation-300.json": "2d8a4b708468e6a177388240d2271c93a09a30aaf399690063c0a26cd213a65c",
+    "manifest.json": "3fda31d6343cddb3c758ca3db6fbc063f0548c39082be2e1fad6ba0a83441bca",
+    "requirements-lock.txt": "4ac860bd00b2428fb695be3684998a657e774ea680cc8bf481b8778f94ba3cf5",
+    "source-input-sha256.json": "bf4b0672a14c267a63c1165ca828b8daa855f1a30103b524ce308d65dd9a5674",
+    "training-hours.jsonl.gz": "d383e3a27ed214b7384782562aadb2c98942fe5498d293ff7f347e26dc6f37a3",
+    "weights-000.json": "eeffca85b37115a4204eec601d36aa80390d445b6dad0da86dffce49121c7c1c",
+    "weights-100.json": "d26acf068adae835cedadcef66ec5bf1c7bb1662d2825519f3f3b2efbfb1e866",
+    "weights-300.json": "5bb43cfcf528128786d47287a982d138b7f10ae29d775b4e8836ef86ad27698d",
+    "weights-final.json": "5bb43cfcf528128786d47287a982d138b7f10ae29d775b4e8836ef86ad27698d"
+  },
+  "interpretation": "Single-seed visited-input stability only; no convergence or quality-superiority claim."
+}
