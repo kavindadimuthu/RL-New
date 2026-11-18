@@ -1,5 +1,6 @@
 """EXP-004 S1: one registered 300-episode diagnostic baseline per process."""
 import argparse
+from contextlib import nullcontext
 from dataclasses import asdict, replace
 from datetime import datetime, timezone
 import gzip
@@ -29,6 +30,7 @@ from .service_preflight import write
 from .trainer import run_episode, summarise_day
 from .remaining_action_state import RemainingActionEnvironment, keyed_episode
 from .linear_q import LinearQAgent, FEATURE_NAMES
+from .return_control import ReturnAgent, comparison_episode
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -105,10 +107,15 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--method', choices=('A', 'B', 'E', 'L'), default=None,
                         help='A/B: S4; S5 E: deadline-aware exact table, L: normalized linear Q')
-    parser.add_argument('--episodes', type=int, choices=(2, 300), default=300,
+    parser.add_argument('--episodes', type=int, choices=(2, 25, 300), default=300,
                         help='2 only for registered S5 preflight; epsilon schedule remains300')
     parser.add_argument('--stability-revision', action='store_true', help='Registered S6: L only, fixed learning rate .001')
+    parser.add_argument('--return-comparison', choices=('T', 'M'), help='S9: .001 linear TD or episodic return update')
     args = parser.parse_args()
+    if args.return_comparison and (args.method != 'L' or args.stability_revision or args.episodes not in (25, 300)):
+        parser.error('S9 requires L, 25/300 episodes, no S6 flag')
+    if args.episodes == 25 and not args.return_comparison:
+        parser.error('25 episodes reserved for S9 preflight')
     if args.stability_revision and (args.method != 'L' or args.episodes != 300):
         parser.error('S6 requires L and 300 episodes')
     if not args.run:
@@ -142,13 +149,20 @@ def main():
             training_budget_seconds=120 if args.episodes == 2 else 900)
     if args.stability_revision:
         manifest.update(stage='S6-linear-stability', paired_workers=1, learning_rate=.001)
+    if args.return_comparison:
+        checkpoints = (0, 25) if args.episodes == 25 else (0, 100, 300)
+        manifest.update(stage='S9-preflight' if args.episodes == 25 else 'S9-return-comparison',
+            return_method=args.return_comparison, target_episodes=args.episodes,
+            checkpoints=list(checkpoints), learning_rate=.001,
+            training_budget_seconds=300 if args.episodes == 25 else 900,
+            algorithm='linear_q_online' if args.return_comparison == 'T' else 'linear_episodic_return_regression')
     write(args.output / 'manifest.json', manifest)
     training_time = training_cpu = 0.0
     agent = None
     try:
         cfg = replace(ExperimentConfig(), num_episodes=300, reward_mode='dense',
                       make_plots=False, copy_best_qtable=False)
-        if args.stability_revision:
+        if args.stability_revision or args.return_comparison:
             cfg = replace(cfg, learning_rate=.001)
         cfg.validate()
         write(args.output / 'config.json', asdict(cfg))
@@ -176,16 +190,21 @@ def main():
                              cfg.num_stops, cfg.od_file_numbers())
         with keep_awake() as awake:
             manifest['sleep_prevention'] = awake
-            agent = LinearQAgent(cfg, args.seed, net) if args.method == 'L' else QLearningAgent(cfg, args.seed)
+            agent = (ReturnAgent(cfg, args.seed, net) if args.return_comparison == 'M' else
+                     LinearQAgent(cfg, args.seed, net) if args.method == 'L' else QLearningAgent(cfg, args.seed))
             env_type = RemainingActionEnvironment if args.method in ('B', 'E', 'L') else DiagnosticEnvironment
             env = env_type(net, od, cfg)
             env.observer_agent = agent
             evaluate(agent, cfg, net, od, 0, args.output, env_type)
             with (args.output / 'episodes.jsonl').open('w', encoding='utf-8') as metrics, \
-                 gzip.open(args.output / 'training-hours.jsonl.gz', 'wt', encoding='utf-8') as hours:
+                 gzip.open(args.output / 'training-hours.jsonl.gz', 'wt', encoding='utf-8') as hours, \
+                 (gzip.open(args.output / 'target-audit.jsonl.gz', 'wt', encoding='utf-8') if args.return_comparison else nullcontext(None)) as targets:
                 for episode in range(1, args.episodes+1):
                     tick, proc = time.perf_counter(), time.process_time()
-                    reward, records, steps, unseen = keyed_episode(env, agent, True)
+                    if args.return_comparison:
+                        reward, records, steps, unseen, audit = comparison_episode(env, agent, args.return_comparison == 'M')
+                    else:
+                        reward, records, steps, unseen = keyed_episode(env, agent, True)
                     elapsed, cpu = time.perf_counter()-tick, time.process_time()-proc
                     training_time += elapsed
                     training_cpu += cpu
@@ -199,6 +218,12 @@ def main():
                     if isinstance(agent, LinearQAgent):
                         row.update(weight_norm=float(np.linalg.norm(agent.weights)),
                                    parameter_count=int(agent.weights.size))
+                    if args.return_comparison:
+                        row.update(empty_hours=sum(h['route_count'] == 0 for h in env.diagnostics),
+                            minimum_update_target=min(a['target'] for a in audit),
+                            maximum_update_target=max(a['target'] for a in audit))
+                        targets.write(json.dumps(dict(episode=episode, updates=audit), separators=(',', ':'))+'\n')
+                        targets.flush()
                     metrics.write(json.dumps(row, separators=(',', ':')) + '\n')
                     metrics.flush()
                     hours.write(json.dumps(dict(episode=episode, hours=env.diagnostics), separators=(',', ':'))+'\n')
